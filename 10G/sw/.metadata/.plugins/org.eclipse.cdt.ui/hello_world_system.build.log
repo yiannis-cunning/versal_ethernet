@@ -1,0 +1,6 @@
+15:54:24 **** Build of configuration Debug for project hello_world_system ****
+make all 
+Skipping SD card image generation. Reason: "The system project only has applications for microblaze processors."
+
+15:54:24 Build Finished (took 222ms)
+

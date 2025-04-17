@@ -1,0 +1,24 @@
+12:18:02 **** Incremental Build of configuration Debug for project xaxidma_example_simple_poll_1 ****
+make all 
+'Building file: ../src/xaxidma_example_simple_poll.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xaxidma_example_simple_poll.o" -IC:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/sw/proc_1_wrapper/standalone_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/xaxidma_example_simple_poll.d" -MT"src/xaxidma_example_simple_poll.o" -o "src/xaxidma_example_simple_poll.o" "../src/xaxidma_example_simple_poll.c"
+../src/xaxidma_example_simple_poll.c:96:2: warning: #warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, DEFAULT SET TO 0x01000000 [-Wcpp]
+   96 | #warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, \
+      |  ^~~~~~~
+'Finished building: ../src/xaxidma_example_simple_poll.c'
+' '
+'Building target: xaxidma_example_simple_poll_1.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/sw/proc_1_wrapper/standalone_microblaze_0/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "xaxidma_example_simple_poll_1.elf"  ./src/xaxidma_example_simple_poll.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: xaxidma_example_simple_poll_1.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size xaxidma_example_simple_poll_1.elf  |tee "xaxidma_example_simple_poll_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11316	    412	   4984	  16712	   4148	xaxidma_example_simple_poll_1.elf
+'Finished building: xaxidma_example_simple_poll_1.elf.size'
+' '
+
+12:18:04 Build Finished (took 1s.915ms)
+

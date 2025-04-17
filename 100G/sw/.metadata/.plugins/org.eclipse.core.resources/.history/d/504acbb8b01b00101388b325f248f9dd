@@ -1,0 +1,147 @@
+
+
+void start_mrmac_stats(){
+	xil_printf("Starting statistics \n\r");
+	*(u32 *) (MRMAC_0_TICK_REG_0) = 0x00000001;
+}
+
+void end_mrmac_stats(){
+	xil_printf("Stopping statistics\n\r");
+	*(u32 *) (MRMAC_0_TICK_REG_0) = 0x00000001;
+
+
+    // Wait for Statistics ready
+	time_out =0;
+	ReadData_100G = 0;
+	do
+	{
+		ReadData_100G = *(u32 *) (MRMAC_0_STAT_STATISTICS_READY_0);
+		ReadData_100G =   (((1 << 2) - 1) & (ReadData_100G >> (1 - 1)));
+		time_out = time_out + 1;
+	}
+	while (ReadData_100G!= 0x3 && time_out<1000);
+	if (time_out>= 1000)
+	{
+		xil_printf("INFO : Port 0 - Statistics ready Failed (Status  = 0x%x)\n\r", ReadData_100G);
+		return 0;
+	} else {
+		xil_printf("INFO : Port 0 - Statistics ready (Status  = 0x%x)\n\r", ReadData_100G);
+	}
+
+	// Print statistics
+    print_port0_statistics();
+
+}
+
+void setup_mrmac(){
+	u32 ReadData;
+
+	ReadData = *(u32 *)(MRMAC_0_CONFIGURATION_REVISION_REG);
+    xil_printf("MRMAC Core Version is  = 0x%x\n\r", ReadData);
+
+	// Reset and Config MRMAC
+	xil_printf("Reset MRMAC \n\r");
+	*(u32 *) (MRMAC_0_RESET_REG_0) = 0xFFFFFFFF;
+	*(u32 *) (MRMAC_0_MODE_REG_0)  = 0x40000A64;
+
+	*(u32 *) (MRMAC_0_CONFIGURATION_RX_REG1_0) = 0x00000033;
+	*(u32 *) (MRMAC_0_CONFIGURATION_TX_REG1_0) = 0x00000C03;
+	*(u32 *) (MRMAC_0_FEC_CONFIGURATION_REG1_0) = 0x0000000A;
+    *(u32 *) (MRMAC_0_RESET_REG_0) = 0x00000000;
+	xil_printf("Reset GT \n\r");
+
+	// Set GPIO sigs
+	// bits 0-3 	: gt_reset_all (0xf)
+	// bit 4		: cdrhold (1)
+	// bits 5-7		: loopback (001)
+	// bits 8-15	: line_rate (0)
+	// bits 16-22	: maincursor (75/4b)
+	// bits 23-28 	: postcursor (0)
+
+	*gt_sigs0 = 0x4b003f;
+
+	// Assert and de-assert reset_all
+	*gt_sigs0 = 0x4b0030;
+
+	sleep(2);
+
+	// Wait for reset done
+	xil_printf("Waiting for GT to come out of reset\n\r");
+	while( (*gt_sigs0 & 0xF) == 0 ){
+		usleep(1);
+	}
+	xil_printf("GT reset has finished\n\r");
+
+	// Assert and de-assert rx datapth reset
+	*gt_sigs1 = 0xf;
+	wait(5000);
+	*gt_sigs1 = 0x0;
+
+	// Wait for reset done
+	xil_printf("Waiting for GT to come out of reset 2\n\r");
+	while( (*gt_sigs0 & 0xF) == 0 ){
+		usleep(1);
+	}
+	xil_printf("GT reset has finished 2\n\r");
+
+
+	// Wait for alignment
+	int time_out =0;
+	u32 ReadData_100G;
+	do
+	{
+		*(u32 *) (MRMAC_0_STAT_RX_STATUS_REG1_0) = 0xFFFFFFFF;
+		ReadData_100G = *(u32 *) (MRMAC_0_STAT_RX_STATUS_REG1_0);
+		ReadData_100G =   (((1 << 3) - 1) & (ReadData_100G >> (1 - 1)));
+		time_out = time_out + 1;
+	}
+	while (ReadData_100G!= 0x7 && time_out<100000);
+	if (time_out>= 100000)
+	{
+		xil_printf("INFO : Port 0 - RX ALIGN FAILED     (Stat RX Status  = 0x%x)\n\r", ReadData_100G);
+	} else {
+		xil_printf("INFO : Port 0 - RX ALIGNED      (Stat RX Status  = 0x%x)\n\r", ReadData_100G);
+	}
+
+	/*
+	 gt_reset_all = 4'hF
+      [7:0]: gt_line_rate = 8'h0
+      15: cdrhold
+      [30:24]: gt_maincursor = 7'd75
+      [14:12]: gt_loopback = 3'b000 (External: 3'b000; Near-End PCS: 3'b001)
+	 *
+	 *
+	 *
+	 */
+
+
+
+
+	//data_test();
+
+	xil_printf("Stopping statistics\n\r");
+	*(u32 *) (MRMAC_0_TICK_REG_0) = 0x00000001;
+
+
+    // Wait for Statistics ready
+	time_out =0;
+	ReadData_100G = 0;
+	do
+	{
+		ReadData_100G = *(u32 *) (MRMAC_0_STAT_STATISTICS_READY_0);
+		ReadData_100G =   (((1 << 2) - 1) & (ReadData_100G >> (1 - 1)));
+		time_out = time_out + 1;
+	}
+	while (ReadData_100G!= 0x3 && time_out<1000);
+	if (time_out>= 1000)
+	{
+		xil_printf("INFO : Port 0 - Statistics ready Failed (Status  = 0x%x)\n\r", ReadData_100G);
+		return 0;
+	} else {
+		xil_printf("INFO : Port 0 - Statistics ready (Status  = 0x%x)\n\r", ReadData_100G);
+	}
+
+	// Print statistics
+    print_port0_statistics();
+
+}

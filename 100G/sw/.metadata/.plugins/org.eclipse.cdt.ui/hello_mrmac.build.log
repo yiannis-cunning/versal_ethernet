@@ -1,0 +1,65 @@
+13:41:40 **** Incremental Build of configuration Debug for project hello_mrmac ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a72 -IC:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/export/control_wrapper/sw/control_wrapper/standalone_psv_cortexa72_0/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'setup_mrmac':
+../src/helloworld.c:663:66: warning: pointer targets in passing argument 4 of 'send_packet' differ in signedness [-Wpointer-sign]
+  663 |         send_packet(0x1234567, 0x7383939, strlen("Hello World"), "Hello World" );
+      |                                                                  ^~~~~~~~~~~~~
+      |                                                                  |
+      |                                                                  char *
+../src/helloworld.c:437:57: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'char *'
+  437 | void send_packet(u64 srcaddr, u64 dstaddr, int len, u8 *data){
+      |                                                     ~~~~^~~~
+../src/helloworld.c:667:67: warning: pointer targets in passing argument 4 of 'send_packet' differ in signedness [-Wpointer-sign]
+  667 |         send_packet(0x1345345, 0x745454, strlen("Hello World 2"), "Hello World 2" );
+      |                                                                   ^~~~~~~~~~~~~~~
+      |                                                                   |
+      |                                                                   char *
+../src/helloworld.c:437:57: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'char *'
+  437 | void send_packet(u64 srcaddr, u64 dstaddr, int len, u8 *data){
+      |                                                     ~~~~^~~~
+../src/helloworld.c:672:64: warning: pointer targets in passing argument 4 of 'send_packet' differ in signedness [-Wpointer-sign]
+  672 |         send_packet(0x12222, 0x11111, strlen("Hello World 3"), "Hello World 3" );
+      |                                                                ^~~~~~~~~~~~~~~
+      |                                                                |
+      |                                                                char *
+../src/helloworld.c:437:57: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'char *'
+  437 | void send_packet(u64 srcaddr, u64 dstaddr, int len, u8 *data){
+      |                                                     ~~~~^~~~
+../src/helloworld.c:695:24: warning: 'return' with a value, in function returning void [-Wreturn-type]
+  695 |                 return 0;
+      |                        ^
+../src/helloworld.c:574:6: note: declared here
+  574 | void setup_mrmac(){
+      |      ^~~~~~~~~~~
+../src/helloworld.c: In function 'dma_send_bytes':
+../src/helloworld.c:342:1: warning: control reaches end of non-void function [-Wreturn-type]
+  342 | }
+      | ^
+../src/helloworld.c: In function 'dma_recive_bytes':
+../src/helloworld.c:363:1: warning: control reaches end of non-void function [-Wreturn-type]
+  363 | }
+      | ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a72 -IC:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/export/control_wrapper/sw/control_wrapper/standalone_psv_cortexa72_0/bspinclude/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: hello_mrmac.elf'
+'Invoking: ARM v8 gcc linker'
+aarch64-none-elf-gcc -mcpu=cortex-a72 -Wl,-T -Wl,../src/lscript.ld -LC:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/export/control_wrapper/sw/control_wrapper/standalone_psv_cortexa72_0/bsplib/lib -o "hello_mrmac.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hello_mrmac.elf'
+' '
+'Invoking: ARM v8 Print Size'
+aarch64-none-elf-size hello_mrmac.elf  |tee "hello_mrmac.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 177861	   4424	  27131	 209416	  33208	hello_mrmac.elf
+'Finished building: hello_mrmac.elf.size'
+' '
+
+13:41:42 Build Finished (took 1s.192ms)
+

@@ -1,0 +1,216 @@
+
+
+#include <stdio.h>
+#include "platform.h"
+#include "xil_printf.h"
+#include "xaxidma.h"
+#include "xparameters.h"
+#include "xdebug.h"
+#include "sleep.h"
+
+
+
+#define DMA_DEV_ID		XPAR_AXIDMA_0_DEVICE_ID
+u16 DeviceId = (u16) DMA_DEV_ID;
+XAxiDma AxiDma;
+
+
+
+
+int init_dma(){
+	XAxiDma_Config *CfgPtr;
+	int Status;
+
+	CfgPtr = XAxiDma_LookupConfig(DeviceId);
+	if (!CfgPtr) {
+		xil_printf("No config found for %d\r\n", DeviceId);
+		return XST_FAILURE;
+	}
+
+
+	Status = XAxiDma_CfgInitialize(&AxiDma, CfgPtr);
+	if (Status != XST_SUCCESS) {
+		xil_printf("Initialization failed %d\r\n", Status);
+		return XST_FAILURE;
+	}
+
+	if (XAxiDma_HasSg(&AxiDma)) {
+		xil_printf("Device configured as SG mode \r\n");
+		return XST_FAILURE;
+	}
+
+	/* Disable interrupts, we use polling mode
+	 */
+	XAxiDma_IntrDisable(&AxiDma, XAXIDMA_IRQ_ALL_MASK,
+			    XAXIDMA_DEVICE_TO_DMA);
+	XAxiDma_IntrDisable(&AxiDma, XAXIDMA_IRQ_ALL_MASK,
+			    XAXIDMA_DMA_TO_DEVICE);
+
+	return XST_SUCCESS;
+}
+
+int print_port0_statistics() {
+	int stat_match_flag_port0;
+	uint32_t tx_total_pkt_0_MSB, tx_total_pkt_0_LSB, tx_total_bytes_0_MSB, tx_total_bytes_0_LSB, tx_total_good_pkts_0_MSB, tx_total_good_pkts_0_LSB, tx_total_good_bytes_0_MSB, tx_total_good_bytes_0_LSB;
+	uint32_t rx_total_pkt_0_MSB, rx_total_pkt_0_LSB, rx_total_bytes_0_MSB, rx_total_bytes_0_LSB, rx_total_good_pkts_0_MSB, rx_total_good_pkts_0_LSB, rx_total_good_bytes_0_MSB, rx_total_good_bytes_0_LSB;
+	uint64_t tx_total_pkt_0, tx_total_bytes_0, tx_total_good_bytes_0, tx_total_good_pkts_0, rx_total_pkt_0, rx_total_bytes_0, rx_total_good_bytes_0, rx_total_good_pkts_0;
+    tx_total_pkt_0_MSB        = *(u32 *) (MRMAC_0_STAT_TX_TOTAL_PACKETS_0_MSB);
+	tx_total_pkt_0_LSB        = *(u32 *) (MRMAC_0_STAT_TX_TOTAL_PACKETS_0_LSB);
+	tx_total_good_pkts_0_MSB  = *(u32 *) (MRMAC_0_STAT_TX_TOTAL_GOOD_PACKETS_0_MSB);
+	tx_total_good_pkts_0_LSB  = *(u32 *) (MRMAC_0_STAT_TX_TOTAL_GOOD_PACKETS_0_LSB);
+	tx_total_bytes_0_MSB      = *(u32 *) (MRMAC_0_STAT_TX_TOTAL_BYTES_0_MSB);
+	tx_total_bytes_0_LSB      = *(u32 *) (MRMAC_0_STAT_TX_TOTAL_BYTES_0_LSB);
+	tx_total_good_bytes_0_LSB = *(u32 *) (MRMAC_0_STAT_TX_TOTAL_GOOD_BYTES_0_LSB);
+	tx_total_good_bytes_0_MSB = *(u32 *) (MRMAC_0_STAT_TX_TOTAL_GOOD_BYTES_0_LSB);
+
+	rx_total_pkt_0_MSB        = *(u32 *) (MRMAC_0_STAT_RX_TOTAL_PACKETS_0_MSB);
+	rx_total_pkt_0_LSB        = *(u32 *) (MRMAC_0_STAT_RX_TOTAL_PACKETS_0_LSB);
+	rx_total_good_pkts_0_MSB  = *(u32 *) (MRMAC_0_STAT_RX_TOTAL_GOOD_PACKETS_0_MSB);
+	rx_total_good_pkts_0_LSB  = *(u32 *) (MRMAC_0_STAT_RX_TOTAL_GOOD_PACKETS_0_LSB);
+	rx_total_bytes_0_MSB      = *(u32 *) (MRMAC_0_STAT_RX_TOTAL_BYTES_0_MSB);
+	rx_total_bytes_0_LSB      = *(u32 *) (MRMAC_0_STAT_RX_TOTAL_BYTES_0_LSB);
+	rx_total_good_bytes_0_LSB = *(u32 *) (MRMAC_0_STAT_RX_TOTAL_GOOD_BYTES_0_LSB);
+	rx_total_good_bytes_0_MSB = *(u32 *) (MRMAC_0_STAT_RX_TOTAL_GOOD_BYTES_0_LSB);
+	xil_printf( "\n\rPORT - 0 Statistics           \n\r\n\r" );
+    tx_total_pkt_0 = (uint64_t) tx_total_pkt_0_MSB << 32 | tx_total_pkt_0_LSB;
+	tx_total_bytes_0 = (uint64_t) tx_total_bytes_0_MSB << 32 | tx_total_bytes_0_LSB;
+	tx_total_good_pkts_0 = (uint64_t) tx_total_good_pkts_0_MSB << 32 | tx_total_good_pkts_0_LSB;
+	rx_total_pkt_0 = (uint64_t) rx_total_pkt_0_MSB << 32 | rx_total_pkt_0_LSB;
+	rx_total_bytes_0 = (uint64_t) rx_total_bytes_0_MSB << 32 | rx_total_bytes_0_LSB;
+	rx_total_good_pkts_0 = (uint64_t) rx_total_good_pkts_0_MSB << 32 | rx_total_good_pkts_0_LSB;
+	tx_total_good_bytes_0 =(uint64_t) tx_total_good_bytes_0_MSB << 32 | tx_total_good_bytes_0_LSB;
+	rx_total_good_bytes_0 =(uint64_t) rx_total_good_bytes_0_MSB << 32 | rx_total_good_bytes_0_LSB;
+
+	xil_printf("  STAT_TX_TOTAL_PACKETS           = %d,     \t STAT_RX_TOTAL_PACKETS           = %d\n\r\n\r", tx_total_pkt_0,rx_total_pkt_0);
+	xil_printf("  STAT_TX_TOTAL_GOOD_PACKETS      = %d,     \t STAT_RX_TOTAL_GOOD_PACKETS      = %d\n\r\n\r", tx_total_good_pkts_0,rx_total_good_pkts_0);
+	xil_printf("  STAT_TX_TOTAL_BYTES             = %d,     \t STAT_RX_BYTES                   = %d\n\r\n\r", tx_total_bytes_0,rx_total_bytes_0);
+	xil_printf("  STAT_TX_TOTAL_GOOD_BYTES        = %d,     \t STAT_RX_TOTAL_GOOD_BYTES        = %d\n\r\n\r", tx_total_good_bytes_0,rx_total_good_bytes_0);
+	if ((tx_total_pkt_0 != 0) && (tx_total_pkt_0 == rx_total_pkt_0) && (tx_total_bytes_0 == rx_total_bytes_0) && (tx_total_good_pkts_0 == rx_total_good_pkts_0) && (tx_total_good_bytes_0 == rx_total_good_bytes_0) )
+	    {
+		stat_match_flag_port0 = 1;
+	    } else {
+	    stat_match_flag_port0 = 0;
+	    }
+	return stat_match_flag_port0;
+}
+
+void start_mrmac_stats(){
+	xil_printf("Starting statistics \n\r");
+	*(u32 *) (MRMAC_0_TICK_REG_0) = 0x00000001;
+}
+
+void end_mrmac_stats(){
+	xil_printf("Stopping statistics\n\r");
+	*(u32 *) (MRMAC_0_TICK_REG_0) = 0x00000001;
+
+
+    // Wait for Statistics ready
+	int time_out =0;
+	u32 ReadData_100G;
+
+	time_out =0;
+	ReadData_100G = 0;
+	do
+	{
+		ReadData_100G = *(u32 *) (MRMAC_0_STAT_STATISTICS_READY_0);
+		ReadData_100G =   (((1 << 2) - 1) & (ReadData_100G >> (1 - 1)));
+		time_out = time_out + 1;
+	}
+	while (ReadData_100G!= 0x3 && time_out<1000);
+	if (time_out>= 1000)
+	{
+		xil_printf("INFO : Port 0 - Statistics ready Failed (Status  = 0x%x)\n\r", ReadData_100G);
+		return 0;
+	} else {
+		xil_printf("INFO : Port 0 - Statistics ready (Status  = 0x%x)\n\r", ReadData_100G);
+	}
+
+	// Print statistics
+    print_port0_statistics();
+
+}
+
+void init_mrmac(){
+	u32 ReadData;
+
+	ReadData = *(u32 *)(MRMAC_0_CONFIGURATION_REVISION_REG);
+    xil_printf("MRMAC Core Version is  = 0x%x\n\r", ReadData);
+
+	// Reset and Config MRMAC
+	xil_printf("Reset MRMAC \n\r");
+	*(u32 *) (MRMAC_0_RESET_REG_0) = 0xFFFFFFFF;
+	*(u32 *) (MRMAC_0_MODE_REG_0)  = 0x40000A64;
+
+	*(u32 *) (MRMAC_0_CONFIGURATION_RX_REG1_0) = 0x00000033;
+	*(u32 *) (MRMAC_0_CONFIGURATION_TX_REG1_0) = 0x00000C03;
+	*(u32 *) (MRMAC_0_FEC_CONFIGURATION_REG1_0) = 0x0000000A;
+    *(u32 *) (MRMAC_0_RESET_REG_0) = 0x00000000;
+	xil_printf("Reset GT \n\r");
+
+	// Set GPIO sigs
+	// bits 0-3 	: gt_reset_all (0xf)
+	// bit 4		: cdrhold (1)
+	// bits 5-7		: loopback (001)
+	// bits 8-15	: line_rate (0)
+	// bits 16-22	: maincursor (75/4b)
+	// bits 23-28 	: postcursor (0)
+
+	*gt_sigs0 = 0x4b003f;
+
+	// Assert and de-assert reset_all
+	*gt_sigs0 = 0x4b0030;
+
+	sleep(2);
+
+	// Wait for reset done
+	xil_printf("Waiting for GT to come out of reset\n\r");
+	while( (*gt_sigs0 & 0xF) == 0 ){
+		usleep(1);
+	}
+	xil_printf("GT reset has finished\n\r");
+
+	// Assert and de-assert rx datapth reset
+	*gt_sigs1 = 0xf;
+	wait(5000);
+	*gt_sigs1 = 0x0;
+
+	// Wait for reset done
+	xil_printf("Waiting for GT to come out of reset 2\n\r");
+	while( (*gt_sigs0 & 0xF) == 0 ){
+		usleep(1);
+	}
+	xil_printf("GT reset has finished 2\n\r");
+
+
+	// Wait for alignment
+	int time_out =0;
+	u32 ReadData_100G;
+	do
+	{
+		*(u32 *) (MRMAC_0_STAT_RX_STATUS_REG1_0) = 0xFFFFFFFF;
+		ReadData_100G = *(u32 *) (MRMAC_0_STAT_RX_STATUS_REG1_0);
+		ReadData_100G =   (((1 << 3) - 1) & (ReadData_100G >> (1 - 1)));
+		time_out = time_out + 1;
+	}
+	while (ReadData_100G!= 0x7 && time_out<100000);
+	if (time_out>= 100000)
+	{
+		xil_printf("INFO : Port 0 - RX ALIGN FAILED     (Stat RX Status  = 0x%x)\n\r", ReadData_100G);
+	} else {
+		xil_printf("INFO : Port 0 - RX ALIGNED      (Stat RX Status  = 0x%x)\n\r", ReadData_100G);
+	}
+
+	/*
+	 gt_reset_all = 4'hF
+      [7:0]: gt_line_rate = 8'h0
+      15: cdrhold
+      [30:24]: gt_maincursor = 7'd75
+      [14:12]: gt_loopback = 3'b000 (External: 3'b000; Near-End PCS: 3'b001)
+	 *
+	 *
+	 *
+	 */
+
+
+
+}

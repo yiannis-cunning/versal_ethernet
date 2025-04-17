@@ -1,0 +1,599 @@
+
+
+#include <stdio.h>
+#include "platform.h"
+#include "xil_printf.h"
+#include "xaxidma.h"
+#include "xparameters.h"
+#include "xdebug.h"
+#include "sleep.h"
+
+
+#define PACKETER_32P  ((u32 *)XPAR_PACKETER_TOP_RTL_0_BASEADDR)
+volatile u32 * packeter_p = (u32 *)XPAR_PACKETER_TOP_RTL_0_BASEADDR;
+volatile u32 * gt_sigs0 = (u32 *)XPAR_AXI_GPIO_GT_SIGS_0_BASEADDR;
+volatile u32 * gt_sigs1 = (u32 *)XPAR_AXI_GPIO_GT_SIGS_1_BASEADDR;
+
+// Custom IP
+volatile u32 *tx_packet_size_wr		 	= PACKETER_32P;
+volatile u32 *tx_packet_send_wr			= PACKETER_32P + 5;
+volatile u32 *rx_packet_ack_wr 			= PACKETER_32P + 6;
+volatile u32 *rx_packet_size_rd 		= PACKETER_32P + 7;
+volatile u32 *rx_packet_ready_rd 		= PACKETER_32P + 8;
+volatile u32 *magic_number_rd 			= PACKETER_32P + 9;
+volatile u32 *loopback_en_wr			= PACKETER_32P + 9;
+volatile u32 *rx_packet_size_real_rd 	= PACKETER_32P + 10;
+
+// MRMAC
+#define MRMAC_0_BASEADDR                 	XPAR_DESIGN_1_WRAPPER_0_BASEADDR
+#define MRMAC_0_GENMON_CTL_BASEADDR      	XPAR_AXI_GPIO_PRBS_CTL_BASEADDR
+#define MRMAC_0_COMMON_CTL_STAT_BASEADDR 	XPAR_AXI_GPIO_GT_PRBS_COMM_CTL_BASEADDR
+#define MRMAC_0_GPIO_DEBUG_BASEADDR 		XPAR_AXI_GPIO_DEBUG_BASEADDR
+
+/* Contents from Header file*/
+#define CONFIGURATION_REVISION_REG_OFFSET 		0x00000000
+//// Port 0
+#define RESET_REG_0_OFFSET 				0x00000004
+#define MODE_REG_0_OFFSET 				0x00000008
+#define CONFIGURATION_TX_REG1_0_OFFSET 			0x0000000C
+#define CONFIGURATION_RX_REG1_0_OFFSET 			0x00000010
+#define TICK_REG_0_OFFSET 				0x0000002C
+#define FEC_CONFIGURATION_REG1_0_OFFSET 		0x000000D0
+#define STAT_RX_STATUS_REG1_0_OFFSET 			0x00000744
+#define STAT_RX_RT_STATUS_REG1_0_OFFSET 		0x0000074C
+#define STAT_STATISTICS_READY_0_OFFSET 			0x000007D8
+#define STAT_TX_TOTAL_PACKETS_0_LSB_OFFSET 		0x00000818
+#define STAT_TX_TOTAL_PACKETS_0_MSB_OFFSET 		0x0000081C
+#define STAT_TX_TOTAL_GOOD_PACKETS_0_LSB_OFFSET 	0x00000820
+#define STAT_TX_TOTAL_GOOD_PACKETS_0_MSB_OFFSET 	0x00000824
+#define STAT_TX_TOTAL_BYTES_0_LSB_OFFSET 		0x00000828
+#define STAT_TX_TOTAL_BYTES_0_MSB_OFFSET 		0x0000082C
+#define STAT_TX_TOTAL_GOOD_BYTES_0_LSB_OFFSET 		0x00000830
+#define STAT_TX_TOTAL_GOOD_BYTES_0_MSB_OFFSET 		0x00000834
+#define STAT_RX_TOTAL_PACKETS_0_LSB_OFFSET 		0x00000E30
+#define STAT_RX_TOTAL_PACKETS_0_MSB_OFFSET 		0x00000E34
+#define STAT_RX_TOTAL_GOOD_PACKETS_0_LSB_OFFSET 	0x00000E38
+#define STAT_RX_TOTAL_GOOD_PACKETS_0_MSB_OFFSET 	0x00000E3C
+#define STAT_RX_TOTAL_BYTES_0_LSB_OFFSET 		0x00000E40
+#define STAT_RX_TOTAL_BYTES_0_MSB_OFFSET 		0x00000E44
+#define STAT_RX_TOTAL_GOOD_BYTES_0_LSB_OFFSET 		0x00000E48
+#define STAT_RX_TOTAL_GOOD_BYTES_0_MSB_OFFSET 		0x00000E4C
+//// Port 1
+#define RESET_REG_1_OFFSET 				0x00001004
+#define MODE_REG_1_OFFSET 				0x00001008
+#define CONFIGURATION_TX_REG1_1_OFFSET 			0x0000100C
+#define CONFIGURATION_RX_REG1_1_OFFSET 			0x00001010
+#define TICK_REG_1_OFFSET 				0x0000102C
+#define FEC_CONFIGURATION_REG1_1_OFFSET 		0x000010D0
+#define STAT_RX_STATUS_REG1_1_OFFSET 			0x00001744
+#define STAT_RX_RT_STATUS_REG1_1_OFFSET 		0x0000174C
+#define STAT_STATISTICS_READY_1_OFFSET 			0x000017D8
+#define STAT_TX_TOTAL_PACKETS_1_LSB_OFFSET 		0x00001818
+#define STAT_TX_TOTAL_PACKETS_1_MSB_OFFSET 		0x0000181C
+#define STAT_TX_TOTAL_GOOD_PACKETS_1_LSB_OFFSET         0x00001820
+#define STAT_TX_TOTAL_GOOD_PACKETS_1_MSB_OFFSET         0x00001824
+#define STAT_TX_TOTAL_BYTES_1_LSB_OFFSET 		0x00001828
+#define STAT_TX_TOTAL_BYTES_1_MSB_OFFSET 		0x0000182C
+#define STAT_TX_TOTAL_GOOD_BYTES_1_LSB_OFFSET 	        0x00001830
+#define STAT_TX_TOTAL_GOOD_BYTES_1_MSB_OFFSET 	        0x00001834
+#define STAT_RX_TOTAL_PACKETS_1_LSB_OFFSET 	        0x00001E30
+#define STAT_RX_TOTAL_PACKETS_1_MSB_OFFSET 	        0x00001E34
+#define STAT_RX_TOTAL_GOOD_PACKETS_1_LSB_OFFSET         0x00001E38
+#define STAT_RX_TOTAL_GOOD_PACKETS_1_MSB_OFFSET         0x00001E3C
+#define STAT_RX_TOTAL_BYTES_1_LSB_OFFSET 	        0x00001E40
+#define STAT_RX_TOTAL_BYTES_1_MSB_OFFSET 	        0x00001E44
+#define STAT_RX_TOTAL_GOOD_BYTES_1_LSB_OFFSET 	        0x00001E48
+#define STAT_RX_TOTAL_GOOD_BYTES_1_MSB_OFFSET 	        0x00001E4C
+//// Port 2
+#define RESET_REG_2_OFFSET 				0x00002004
+#define MODE_REG_2_OFFSET 				0x00002008
+#define CONFIGURATION_TX_REG1_2_OFFSET 			0x0000200C
+#define CONFIGURATION_RX_REG1_2_OFFSET 			0x00002010
+#define TICK_REG_2_OFFSET 				0x0000202C
+#define FEC_CONFIGURATION_REG1_2_OFFSET 		0x000020D0
+#define STAT_RX_STATUS_REG1_2_OFFSET 			0x00002744
+#define STAT_RX_RT_STATUS_REG1_2_OFFSET 		0x0000274C
+#define STAT_STATISTICS_READY_2_OFFSET 			0x000027D8
+#define STAT_TX_TOTAL_PACKETS_2_LSB_OFFSET 		0x00002818
+#define STAT_TX_TOTAL_PACKETS_2_MSB_OFFSET 		0x0000281C
+#define STAT_TX_TOTAL_GOOD_PACKETS_2_LSB_OFFSET         0x00002820
+#define STAT_TX_TOTAL_GOOD_PACKETS_2_MSB_OFFSET 	0x00002824
+#define STAT_TX_TOTAL_BYTES_2_LSB_OFFSET 		0x00002828
+#define STAT_TX_TOTAL_BYTES_2_MSB_OFFSET 		0x0000282C
+#define STAT_TX_TOTAL_GOOD_BYTES_2_LSB_OFFSET 		0x00002830
+#define STAT_TX_TOTAL_GOOD_BYTES_2_MSB_OFFSET 		0x00002834
+#define STAT_RX_TOTAL_PACKETS_2_LSB_OFFSET 		0x00002E30
+#define STAT_RX_TOTAL_PACKETS_2_MSB_OFFSET 		0x00002E34
+#define STAT_RX_TOTAL_GOOD_PACKETS_2_LSB_OFFSET 	0x00002E38
+#define STAT_RX_TOTAL_GOOD_PACKETS_2_MSB_OFFSET 	0x00002E3C
+#define STAT_RX_TOTAL_BYTES_2_LSB_OFFSET 		0x00002E40
+#define STAT_RX_TOTAL_BYTES_2_MSB_OFFSET 		0x00002E44
+#define STAT_RX_TOTAL_GOOD_BYTES_2_LSB_OFFSET 		0x00002E48
+#define STAT_RX_TOTAL_GOOD_BYTES_2_MSB_OFFSET 		0x00002E4C
+//// Port 3
+#define RESET_REG_3_OFFSET 				0x00003004
+#define MODE_REG_3_OFFSET 				0x00003008
+#define CONFIGURATION_TX_REG1_3_OFFSET 			0x0000300C
+#define CONFIGURATION_RX_REG1_3_OFFSET 			0x00003010
+#define TICK_REG_3_OFFSET 				0x0000302C
+#define FEC_CONFIGURATION_REG1_3_OFFSET 		0x000030D0
+#define STAT_RX_STATUS_REG1_3_OFFSET 			0x00003744
+#define STAT_RX_RT_STATUS_REG1_3_OFFSET 		0x0000374C
+#define STAT_STATISTICS_READY_3_OFFSET 			0x000037D8
+#define STAT_TX_TOTAL_PACKETS_3_LSB_OFFSET 		0x00003818
+#define STAT_TX_TOTAL_PACKETS_3_MSB_OFFSET 		0x0000381C
+#define STAT_TX_TOTAL_GOOD_PACKETS_3_LSB_OFFSET 	0x00003820
+#define STAT_TX_TOTAL_GOOD_PACKETS_3_MSB_OFFSET 	0x00003824
+#define STAT_TX_TOTAL_BYTES_3_LSB_OFFSET 		0x00003828
+#define STAT_TX_TOTAL_BYTES_3_MSB_OFFSET 		0x0000382C
+#define STAT_TX_TOTAL_GOOD_BYTES_3_LSB_OFFSET 		0x00003830
+#define STAT_TX_TOTAL_GOOD_BYTES_3_MSB_OFFSET 		0x00003834
+#define STAT_RX_TOTAL_PACKETS_3_LSB_OFFSET 		0x00003E30
+#define STAT_RX_TOTAL_PACKETS_3_MSB_OFFSET 		0x00003E34
+#define STAT_RX_TOTAL_GOOD_PACKETS_3_LSB_OFFSET 	0x00003E38
+#define STAT_RX_TOTAL_GOOD_PACKETS_3_MSB_OFFSET 	0x00003E3C
+#define STAT_RX_TOTAL_BYTES_3_LSB_OFFSET 		0x00003E40
+#define STAT_RX_TOTAL_BYTES_3_MSB_OFFSET 		0x00003E44
+#define STAT_RX_TOTAL_GOOD_BYTES_3_LSB_OFFSET 		0x00003E48
+#define STAT_RX_TOTAL_GOOD_BYTES_3_MSB_OFFSET 		0x00003E4C
+/* Create MAP */
+
+#define MRMAC_0_CONFIGURATION_REVISION_REG        	MRMAC_0_BASEADDR + CONFIGURATION_REVISION_REG_OFFSET
+////// Port 0
+#define MRMAC_0_RESET_REG_0        			MRMAC_0_BASEADDR + RESET_REG_0_OFFSET
+#define MRMAC_0_MODE_REG_0        			MRMAC_0_BASEADDR + MODE_REG_0_OFFSET
+#define MRMAC_0_CONFIGURATION_TX_REG1_0        		MRMAC_0_BASEADDR + CONFIGURATION_TX_REG1_0_OFFSET
+#define MRMAC_0_CONFIGURATION_RX_REG1_0        		MRMAC_0_BASEADDR + CONFIGURATION_RX_REG1_0_OFFSET
+#define MRMAC_0_TICK_REG_0        			MRMAC_0_BASEADDR + TICK_REG_0_OFFSET
+#define MRMAC_0_FEC_CONFIGURATION_REG1_0        	MRMAC_0_BASEADDR + FEC_CONFIGURATION_REG1_0_OFFSET
+#define MRMAC_0_STAT_RX_STATUS_REG1_0        		MRMAC_0_BASEADDR + STAT_RX_STATUS_REG1_0_OFFSET
+#define MRMAC_0_STAT_RX_RT_STATUS_REG1_0        	MRMAC_0_BASEADDR + STAT_RX_RT_STATUS_REG1_0_OFFSET
+#define MRMAC_0_STAT_STATISTICS_READY_0        		MRMAC_0_BASEADDR + STAT_STATISTICS_READY_0_OFFSET
+#define MRMAC_0_STAT_TX_TOTAL_PACKETS_0_LSB     	MRMAC_0_BASEADDR + STAT_TX_TOTAL_PACKETS_0_LSB_OFFSET
+#define MRMAC_0_STAT_TX_TOTAL_PACKETS_0_MSB     	MRMAC_0_BASEADDR + STAT_TX_TOTAL_PACKETS_0_MSB_OFFSET
+#define MRMAC_0_STAT_TX_TOTAL_GOOD_PACKETS_0_LSB        MRMAC_0_BASEADDR + STAT_TX_TOTAL_GOOD_PACKETS_0_LSB_OFFSET
+#define MRMAC_0_STAT_TX_TOTAL_GOOD_PACKETS_0_MSB        MRMAC_0_BASEADDR + STAT_TX_TOTAL_GOOD_PACKETS_0_MSB_OFFSET
+#define MRMAC_0_STAT_TX_TOTAL_BYTES_0_LSB        	MRMAC_0_BASEADDR + STAT_TX_TOTAL_BYTES_0_LSB_OFFSET
+#define MRMAC_0_STAT_TX_TOTAL_BYTES_0_MSB        	MRMAC_0_BASEADDR + STAT_TX_TOTAL_BYTES_0_MSB_OFFSET
+#define MRMAC_0_STAT_TX_TOTAL_GOOD_BYTES_0_LSB        	MRMAC_0_BASEADDR + STAT_TX_TOTAL_GOOD_BYTES_0_LSB_OFFSET
+#define MRMAC_0_STAT_TX_TOTAL_GOOD_BYTES_0_MSB        	MRMAC_0_BASEADDR + STAT_TX_TOTAL_GOOD_BYTES_0_MSB_OFFSET
+#define MRMAC_0_STAT_RX_TOTAL_PACKETS_0_LSB        	MRMAC_0_BASEADDR + STAT_RX_TOTAL_PACKETS_0_LSB_OFFSET
+#define MRMAC_0_STAT_RX_TOTAL_PACKETS_0_MSB        	MRMAC_0_BASEADDR + STAT_RX_TOTAL_PACKETS_0_MSB_OFFSET
+#define MRMAC_0_STAT_RX_TOTAL_GOOD_PACKETS_0_LSB        MRMAC_0_BASEADDR + STAT_RX_TOTAL_GOOD_PACKETS_0_LSB_OFFSET
+#define MRMAC_0_STAT_RX_TOTAL_GOOD_PACKETS_0_MSB        MRMAC_0_BASEADDR + STAT_RX_TOTAL_GOOD_PACKETS_0_MSB_OFFSET
+#define MRMAC_0_STAT_RX_TOTAL_BYTES_0_LSB        	MRMAC_0_BASEADDR + STAT_RX_TOTAL_BYTES_0_LSB_OFFSET
+#define MRMAC_0_STAT_RX_TOTAL_BYTES_0_MSB        	MRMAC_0_BASEADDR + STAT_RX_TOTAL_BYTES_0_MSB_OFFSET
+#define MRMAC_0_STAT_RX_TOTAL_GOOD_BYTES_0_LSB        	MRMAC_0_BASEADDR + STAT_RX_TOTAL_GOOD_BYTES_0_LSB_OFFSET
+#define MRMAC_0_STAT_RX_TOTAL_GOOD_BYTES_0_MSB        	MRMAC_0_BASEADDR + STAT_RX_TOTAL_GOOD_BYTES_0_MSB_OFFSET
+////// Port 1
+#define MRMAC_0_RESET_REG_1        			MRMAC_0_BASEADDR + RESET_REG_1_OFFSET
+#define MRMAC_0_MODE_REG_1        			MRMAC_0_BASEADDR + MODE_REG_1_OFFSET
+#define MRMAC_0_CONFIGURATION_TX_REG1_1        		MRMAC_0_BASEADDR + CONFIGURATION_TX_REG1_1_OFFSET
+#define MRMAC_0_CONFIGURATION_RX_REG1_1        		MRMAC_0_BASEADDR + CONFIGURATION_RX_REG1_1_OFFSET
+#define MRMAC_0_TICK_REG_1        			MRMAC_0_BASEADDR + TICK_REG_1_OFFSET
+#define MRMAC_0_FEC_CONFIGURATION_REG1_1                MRMAC_0_BASEADDR + FEC_CONFIGURATION_REG1_1_OFFSET
+#define MRMAC_0_STAT_RX_STATUS_REG1_1        	        MRMAC_0_BASEADDR + STAT_RX_STATUS_REG1_1_OFFSET
+#define MRMAC_0_STAT_RX_RT_STATUS_REG1_1                MRMAC_0_BASEADDR + STAT_RX_RT_STATUS_REG1_1_OFFSET
+#define MRMAC_0_STAT_STATISTICS_READY_1        	        MRMAC_0_BASEADDR + STAT_STATISTICS_READY_1_OFFSET
+#define MRMAC_0_STAT_TX_TOTAL_PACKETS_1_LSB             MRMAC_0_BASEADDR + STAT_TX_TOTAL_PACKETS_1_LSB_OFFSET
+#define MRMAC_0_STAT_TX_TOTAL_PACKETS_1_MSB             MRMAC_0_BASEADDR + STAT_TX_TOTAL_PACKETS_1_MSB_OFFSET
+#define MRMAC_0_STAT_TX_TOTAL_GOOD_PACKETS_1_LSB        MRMAC_0_BASEADDR + STAT_TX_TOTAL_GOOD_PACKETS_1_LSB_OFFSET
+#define MRMAC_0_STAT_TX_TOTAL_GOOD_PACKETS_1_MSB        MRMAC_0_BASEADDR + STAT_TX_TOTAL_GOOD_PACKETS_1_MSB_OFFSET
+#define MRMAC_0_STAT_TX_TOTAL_BYTES_1_LSB        	MRMAC_0_BASEADDR + STAT_TX_TOTAL_BYTES_1_LSB_OFFSET
+#define MRMAC_0_STAT_TX_TOTAL_BYTES_1_MSB        	MRMAC_0_BASEADDR + STAT_TX_TOTAL_BYTES_1_MSB_OFFSET
+#define MRMAC_0_STAT_TX_TOTAL_GOOD_BYTES_1_LSB        	MRMAC_0_BASEADDR + STAT_TX_TOTAL_GOOD_BYTES_1_LSB_OFFSET
+#define MRMAC_0_STAT_TX_TOTAL_GOOD_BYTES_1_MSB        	MRMAC_0_BASEADDR + STAT_TX_TOTAL_GOOD_BYTES_1_MSB_OFFSET
+#define MRMAC_0_STAT_RX_TOTAL_PACKETS_1_LSB        	MRMAC_0_BASEADDR + STAT_RX_TOTAL_PACKETS_1_LSB_OFFSET
+#define MRMAC_0_STAT_RX_TOTAL_PACKETS_1_MSB        	MRMAC_0_BASEADDR + STAT_RX_TOTAL_PACKETS_1_MSB_OFFSET
+#define MRMAC_0_STAT_RX_TOTAL_GOOD_PACKETS_1_LSB        MRMAC_0_BASEADDR + STAT_RX_TOTAL_GOOD_PACKETS_1_LSB_OFFSET
+#define MRMAC_0_STAT_RX_TOTAL_GOOD_PACKETS_1_MSB        MRMAC_0_BASEADDR + STAT_RX_TOTAL_GOOD_PACKETS_1_MSB_OFFSET
+#define MRMAC_0_STAT_RX_TOTAL_BYTES_1_LSB        	MRMAC_0_BASEADDR + STAT_RX_TOTAL_BYTES_1_LSB_OFFSET
+#define MRMAC_0_STAT_RX_TOTAL_BYTES_1_MSB        	MRMAC_0_BASEADDR + STAT_RX_TOTAL_BYTES_1_MSB_OFFSET
+#define MRMAC_0_STAT_RX_TOTAL_GOOD_BYTES_1_LSB        	MRMAC_0_BASEADDR + STAT_RX_TOTAL_GOOD_BYTES_1_LSB_OFFSET
+#define MRMAC_0_STAT_RX_TOTAL_GOOD_BYTES_1_MSB        	MRMAC_0_BASEADDR + STAT_RX_TOTAL_GOOD_BYTES_1_MSB_OFFSET
+//// Port 2
+#define MRMAC_0_RESET_REG_2        			MRMAC_0_BASEADDR + RESET_REG_2_OFFSET
+#define MRMAC_0_MODE_REG_2        			MRMAC_0_BASEADDR + MODE_REG_2_OFFSET
+#define MRMAC_0_CONFIGURATION_TX_REG1_2        		MRMAC_0_BASEADDR + CONFIGURATION_TX_REG1_2_OFFSET
+#define MRMAC_0_CONFIGURATION_RX_REG1_2        		MRMAC_0_BASEADDR + CONFIGURATION_RX_REG1_2_OFFSET
+#define MRMAC_0_TICK_REG_2        			MRMAC_0_BASEADDR + TICK_REG_2_OFFSET
+#define MRMAC_0_FEC_CONFIGURATION_REG1_2         	MRMAC_0_BASEADDR + FEC_CONFIGURATION_REG1_2_OFFSET
+#define MRMAC_0_STAT_RX_STATUS_REG1_2        		MRMAC_0_BASEADDR + STAT_RX_STATUS_REG1_2_OFFSET
+#define MRMAC_0_STAT_RX_RT_STATUS_REG1_2        	MRMAC_0_BASEADDR + STAT_RX_RT_STATUS_REG1_2_OFFSET
+#define MRMAC_0_STAT_STATISTICS_READY_2        		MRMAC_0_BASEADDR + STAT_STATISTICS_READY_2_OFFSET
+#define MRMAC_0_STAT_TX_TOTAL_PACKETS_2_LSB        	MRMAC_0_BASEADDR + STAT_TX_TOTAL_PACKETS_2_LSB_OFFSET
+#define MRMAC_0_STAT_TX_TOTAL_PACKETS_2_MSB        	MRMAC_0_BASEADDR + STAT_TX_TOTAL_PACKETS_2_MSB_OFFSET
+#define MRMAC_0_STAT_TX_TOTAL_GOOD_PACKETS_2_LSB        MRMAC_0_BASEADDR + STAT_TX_TOTAL_GOOD_PACKETS_2_LSB_OFFSET
+#define MRMAC_0_STAT_TX_TOTAL_GOOD_PACKETS_2_MSB        MRMAC_0_BASEADDR + STAT_TX_TOTAL_GOOD_PACKETS_2_MSB_OFFSET
+#define MRMAC_0_STAT_TX_TOTAL_BYTES_2_LSB        	MRMAC_0_BASEADDR + STAT_TX_TOTAL_BYTES_2_LSB_OFFSET
+#define MRMAC_0_STAT_TX_TOTAL_BYTES_2_MSB        	MRMAC_0_BASEADDR + STAT_TX_TOTAL_BYTES_2_MSB_OFFSET
+#define MRMAC_0_STAT_TX_TOTAL_GOOD_BYTES_2_LSB        	MRMAC_0_BASEADDR + STAT_TX_TOTAL_GOOD_BYTES_2_LSB_OFFSET
+#define MRMAC_0_STAT_TX_TOTAL_GOOD_BYTES_2_MSB        	MRMAC_0_BASEADDR + STAT_TX_TOTAL_GOOD_BYTES_2_MSB_OFFSET
+#define MRMAC_0_STAT_RX_TOTAL_PACKETS_2_LSB        	MRMAC_0_BASEADDR + STAT_RX_TOTAL_PACKETS_2_LSB_OFFSET
+#define MRMAC_0_STAT_RX_TOTAL_PACKETS_2_MSB        	MRMAC_0_BASEADDR + STAT_RX_TOTAL_PACKETS_2_MSB_OFFSET
+#define MRMAC_0_STAT_RX_TOTAL_GOOD_PACKETS_2_LSB        MRMAC_0_BASEADDR + STAT_RX_TOTAL_GOOD_PACKETS_2_LSB_OFFSET
+#define MRMAC_0_STAT_RX_TOTAL_GOOD_PACKETS_2_MSB        MRMAC_0_BASEADDR + STAT_RX_TOTAL_GOOD_PACKETS_2_MSB_OFFSET
+#define MRMAC_0_STAT_RX_TOTAL_BYTES_2_LSB        	MRMAC_0_BASEADDR + STAT_RX_TOTAL_BYTES_2_LSB_OFFSET
+#define MRMAC_0_STAT_RX_TOTAL_BYTES_2_MSB        	MRMAC_0_BASEADDR + STAT_RX_TOTAL_BYTES_2_MSB_OFFSET
+#define MRMAC_0_STAT_RX_TOTAL_GOOD_BYTES_2_LSB        	MRMAC_0_BASEADDR + STAT_RX_TOTAL_GOOD_BYTES_2_LSB_OFFSET
+#define MRMAC_0_STAT_RX_TOTAL_GOOD_BYTES_2_MSB        	MRMAC_0_BASEADDR + STAT_RX_TOTAL_GOOD_BYTES_2_MSB_OFFSET
+//// Port 3
+#define MRMAC_0_RESET_REG_3        			MRMAC_0_BASEADDR + RESET_REG_3_OFFSET
+#define MRMAC_0_MODE_REG_3        			MRMAC_0_BASEADDR + MODE_REG_3_OFFSET
+#define MRMAC_0_CONFIGURATION_TX_REG1_3        		MRMAC_0_BASEADDR + CONFIGURATION_TX_REG1_3_OFFSET
+#define MRMAC_0_CONFIGURATION_RX_REG1_3        		MRMAC_0_BASEADDR + CONFIGURATION_RX_REG1_3_OFFSET
+#define MRMAC_0_TICK_REG_3        			MRMAC_0_BASEADDR + TICK_REG_3_OFFSET
+#define MRMAC_0_FEC_CONFIGURATION_REG1_3                MRMAC_0_BASEADDR + FEC_CONFIGURATION_REG1_3_OFFSET
+#define MRMAC_0_STAT_RX_STATUS_REG1_3        	        MRMAC_0_BASEADDR + STAT_RX_STATUS_REG1_3_OFFSET
+#define MRMAC_0_STAT_RX_RT_STATUS_REG1_3                MRMAC_0_BASEADDR + STAT_RX_RT_STATUS_REG1_3_OFFSET
+#define MRMAC_0_STAT_STATISTICS_READY_3        	        MRMAC_0_BASEADDR + STAT_STATISTICS_READY_3_OFFSET
+#define MRMAC_0_STAT_TX_TOTAL_PACKETS_3_MSB             MRMAC_0_BASEADDR + STAT_TX_TOTAL_PACKETS_3_MSB_OFFSET
+
+#define MRMAC_0_STAT_TX_TOTAL_PACKETS_3_LSB             MRMAC_0_BASEADDR + STAT_TX_TOTAL_PACKETS_3_LSB_OFFSET
+#define MRMAC_0_STAT_TX_TOTAL_GOOD_PACKETS_3_LSB        MRMAC_0_BASEADDR + STAT_TX_TOTAL_GOOD_PACKETS_3_LSB_OFFSET
+#define MRMAC_0_STAT_TX_TOTAL_GOOD_PACKETS_3_MSB        MRMAC_0_BASEADDR + STAT_TX_TOTAL_GOOD_PACKETS_3_MSB_OFFSET
+#define MRMAC_0_STAT_TX_TOTAL_BYTES_3_LSB        	MRMAC_0_BASEADDR + STAT_TX_TOTAL_BYTES_3_LSB_OFFSET
+#define MRMAC_0_STAT_TX_TOTAL_BYTES_3_MSB        	MRMAC_0_BASEADDR + STAT_TX_TOTAL_BYTES_3_MSB_OFFSET
+#define MRMAC_0_STAT_TX_TOTAL_GOOD_BYTES_3_LSB        	MRMAC_0_BASEADDR + STAT_TX_TOTAL_GOOD_BYTES_3_LSB_OFFSET
+#define MRMAC_0_STAT_TX_TOTAL_GOOD_BYTES_3_MSB        	MRMAC_0_BASEADDR + STAT_TX_TOTAL_GOOD_BYTES_3_MSB_OFFSET
+#define MRMAC_0_STAT_RX_TOTAL_PACKETS_3_LSB        	MRMAC_0_BASEADDR + STAT_RX_TOTAL_PACKETS_3_LSB_OFFSET
+#define MRMAC_0_STAT_RX_TOTAL_PACKETS_3_MSB        	MRMAC_0_BASEADDR + STAT_RX_TOTAL_PACKETS_3_MSB_OFFSET
+#define MRMAC_0_STAT_RX_TOTAL_GOOD_PACKETS_3_LSB        MRMAC_0_BASEADDR + STAT_RX_TOTAL_GOOD_PACKETS_3_LSB_OFFSET
+#define MRMAC_0_STAT_RX_TOTAL_GOOD_PACKETS_3_MSB        MRMAC_0_BASEADDR + STAT_RX_TOTAL_GOOD_PACKETS_3_MSB_OFFSET
+#define MRMAC_0_STAT_RX_TOTAL_BYTES_3_LSB        	MRMAC_0_BASEADDR + STAT_RX_TOTAL_BYTES_3_LSB_OFFSET
+#define MRMAC_0_STAT_RX_TOTAL_BYTES_3_MSB        	MRMAC_0_BASEADDR + STAT_RX_TOTAL_BYTES_3_MSB_OFFSET
+#define MRMAC_0_STAT_RX_TOTAL_GOOD_BYTES_3_LSB        	MRMAC_0_BASEADDR + STAT_RX_TOTAL_GOOD_BYTES_3_LSB_OFFSET
+#define MRMAC_0_STAT_RX_TOTAL_GOOD_BYTES_3_MSB        	MRMAC_0_BASEADDR + STAT_RX_TOTAL_GOOD_BYTES_3_MSB_OFFSET
+
+#define MRMAC_0_GT_DATAPATH_RESET                       MRMAC_0_GPIO_DEBUG_BASEADDR + 0x00000000
+#define MRMAC_0_GT_LINERATE_RESET        	        MRMAC_0_COMMON_CTL_STAT_BASEADDR + 0x00000000
+#define MRMAC_0_GT_STATUS               	        MRMAC_0_COMMON_CTL_STAT_BASEADDR + 0x00000008
+#define MRMAC_0_GENMON_CTL_BASEADDR_LSB                 MRMAC_0_GENMON_CTL_BASEADDR + 0x00000000
+#define MRMAC_0_GENMON_CTL_BASEADDR_LSB2                MRMAC_0_GENMON_CTL_BASEADDR + 0x00000004
+#define MRMAC_0_GENMON_CTL_BASEADDR_MSB                 MRMAC_0_GENMON_CTL_BASEADDR + 0x00000008
+#define MRMAC_0_GENMON_CTL_BASEADDR_MSB2                MRMAC_0_GENMON_CTL_BASEADDR + 0x0000000C
+
+
+#define DMA_DEV_ID		XPAR_AXIDMA_0_DEVICE_ID
+u16 DeviceId = (u16) DMA_DEV_ID;
+XAxiDma AxiDma;
+
+
+
+int dma_send_bytes(u8 *bytes, int nbytes){
+
+
+	Xil_DCacheFlushRange((UINTPTR)bytes, nbytes);
+
+	xil_printf("Initing TX transfer of bytes\n\r");
+
+	int Status = XAxiDma_SimpleTransfer(&AxiDma, (UINTPTR) bytes,
+			nbytes, XAXIDMA_DMA_TO_DEVICE);
+
+	if (Status != XST_SUCCESS) {
+		xil_printf("Failed to send tx request %d\n\r", Status);
+		xil_printf("Address %p\n\r", bytes);
+		xil_printf("invalid param = %d\n\r", XST_INVALID_PARAM );
+		exit(1);
+		return XST_FAILURE;
+	}
+
+	xil_printf("Waiting until tx transfer is done\n\r");
+	/*Wait till tranfer is done or 1usec * 10^6 iterations of timeout occurs*/
+	while(XAxiDma_Busy(&AxiDma, XAXIDMA_DMA_TO_DEVICE) ){
+		usleep(1U);
+	}
+
+
+	xil_printf("TX transfer done\n\r");
+}
+
+int dma_recive_bytes(u8 *bytes, int nbytes){
+
+
+	Xil_DCacheFlushRange((UINTPTR)bytes, nbytes);
+
+	int Status = XAxiDma_SimpleTransfer(&AxiDma, (UINTPTR) bytes,
+			nbytes, XAXIDMA_DEVICE_TO_DMA);
+
+	if (Status != XST_SUCCESS) {
+		xil_printf("Failed to send rx request\n\r");
+		exit(1);
+		return XST_FAILURE;
+	}
+
+	/*Wait till tranfer is done or 1usec * 10^6 iterations of timeout occurs*/
+	while(XAxiDma_Busy(&AxiDma, XAXIDMA_DEVICE_TO_DMA) ){
+		usleep(1U);
+	}
+	xil_printf("Recived bytes done\n\r");
+}
+
+
+int init_dma(){
+	XAxiDma_Config *CfgPtr;
+	int Status;
+
+	CfgPtr = XAxiDma_LookupConfig(DeviceId);
+	if (!CfgPtr) {
+		xil_printf("No config found for %d\r\n", DeviceId);
+		return XST_FAILURE;
+	}
+
+
+	Status = XAxiDma_CfgInitialize(&AxiDma, CfgPtr);
+	if (Status != XST_SUCCESS) {
+		xil_printf("Initialization failed %d\r\n", Status);
+		return XST_FAILURE;
+	}
+
+	if (XAxiDma_HasSg(&AxiDma)) {
+		xil_printf("Device configured as SG mode \r\n");
+		return XST_FAILURE;
+	}
+
+	/* Disable interrupts, we use polling mode
+	 */
+	XAxiDma_IntrDisable(&AxiDma, XAXIDMA_IRQ_ALL_MASK,
+			    XAXIDMA_DEVICE_TO_DMA);
+	XAxiDma_IntrDisable(&AxiDma, XAXIDMA_IRQ_ALL_MASK,
+			    XAXIDMA_DMA_TO_DEVICE);
+
+	return XST_SUCCESS;
+}
+
+int print_port0_statistics() {
+	int stat_match_flag_port0;
+	uint32_t tx_total_pkt_0_MSB, tx_total_pkt_0_LSB, tx_total_bytes_0_MSB, tx_total_bytes_0_LSB, tx_total_good_pkts_0_MSB, tx_total_good_pkts_0_LSB, tx_total_good_bytes_0_MSB, tx_total_good_bytes_0_LSB;
+	uint32_t rx_total_pkt_0_MSB, rx_total_pkt_0_LSB, rx_total_bytes_0_MSB, rx_total_bytes_0_LSB, rx_total_good_pkts_0_MSB, rx_total_good_pkts_0_LSB, rx_total_good_bytes_0_MSB, rx_total_good_bytes_0_LSB;
+	uint64_t tx_total_pkt_0, tx_total_bytes_0, tx_total_good_bytes_0, tx_total_good_pkts_0, rx_total_pkt_0, rx_total_bytes_0, rx_total_good_bytes_0, rx_total_good_pkts_0;
+    tx_total_pkt_0_MSB        = *(u32 *) (MRMAC_0_STAT_TX_TOTAL_PACKETS_0_MSB);
+	tx_total_pkt_0_LSB        = *(u32 *) (MRMAC_0_STAT_TX_TOTAL_PACKETS_0_LSB);
+	tx_total_good_pkts_0_MSB  = *(u32 *) (MRMAC_0_STAT_TX_TOTAL_GOOD_PACKETS_0_MSB);
+	tx_total_good_pkts_0_LSB  = *(u32 *) (MRMAC_0_STAT_TX_TOTAL_GOOD_PACKETS_0_LSB);
+	tx_total_bytes_0_MSB      = *(u32 *) (MRMAC_0_STAT_TX_TOTAL_BYTES_0_MSB);
+	tx_total_bytes_0_LSB      = *(u32 *) (MRMAC_0_STAT_TX_TOTAL_BYTES_0_LSB);
+	tx_total_good_bytes_0_LSB = *(u32 *) (MRMAC_0_STAT_TX_TOTAL_GOOD_BYTES_0_LSB);
+	tx_total_good_bytes_0_MSB = *(u32 *) (MRMAC_0_STAT_TX_TOTAL_GOOD_BYTES_0_LSB);
+
+	rx_total_pkt_0_MSB        = *(u32 *) (MRMAC_0_STAT_RX_TOTAL_PACKETS_0_MSB);
+	rx_total_pkt_0_LSB        = *(u32 *) (MRMAC_0_STAT_RX_TOTAL_PACKETS_0_LSB);
+	rx_total_good_pkts_0_MSB  = *(u32 *) (MRMAC_0_STAT_RX_TOTAL_GOOD_PACKETS_0_MSB);
+	rx_total_good_pkts_0_LSB  = *(u32 *) (MRMAC_0_STAT_RX_TOTAL_GOOD_PACKETS_0_LSB);
+	rx_total_bytes_0_MSB      = *(u32 *) (MRMAC_0_STAT_RX_TOTAL_BYTES_0_MSB);
+	rx_total_bytes_0_LSB      = *(u32 *) (MRMAC_0_STAT_RX_TOTAL_BYTES_0_LSB);
+	rx_total_good_bytes_0_LSB = *(u32 *) (MRMAC_0_STAT_RX_TOTAL_GOOD_BYTES_0_LSB);
+	rx_total_good_bytes_0_MSB = *(u32 *) (MRMAC_0_STAT_RX_TOTAL_GOOD_BYTES_0_LSB);
+	xil_printf( "\n\rPORT - 0 Statistics           \n\r\n\r" );
+    tx_total_pkt_0 = (uint64_t) tx_total_pkt_0_MSB << 32 | tx_total_pkt_0_LSB;
+	tx_total_bytes_0 = (uint64_t) tx_total_bytes_0_MSB << 32 | tx_total_bytes_0_LSB;
+	tx_total_good_pkts_0 = (uint64_t) tx_total_good_pkts_0_MSB << 32 | tx_total_good_pkts_0_LSB;
+	rx_total_pkt_0 = (uint64_t) rx_total_pkt_0_MSB << 32 | rx_total_pkt_0_LSB;
+	rx_total_bytes_0 = (uint64_t) rx_total_bytes_0_MSB << 32 | rx_total_bytes_0_LSB;
+	rx_total_good_pkts_0 = (uint64_t) rx_total_good_pkts_0_MSB << 32 | rx_total_good_pkts_0_LSB;
+	tx_total_good_bytes_0 =(uint64_t) tx_total_good_bytes_0_MSB << 32 | tx_total_good_bytes_0_LSB;
+	rx_total_good_bytes_0 =(uint64_t) rx_total_good_bytes_0_MSB << 32 | rx_total_good_bytes_0_LSB;
+
+	xil_printf("  STAT_TX_TOTAL_PACKETS           = %d,     \t STAT_RX_TOTAL_PACKETS           = %d\n\r\n\r", tx_total_pkt_0,rx_total_pkt_0);
+	xil_printf("  STAT_TX_TOTAL_GOOD_PACKETS      = %d,     \t STAT_RX_TOTAL_GOOD_PACKETS      = %d\n\r\n\r", tx_total_good_pkts_0,rx_total_good_pkts_0);
+	xil_printf("  STAT_TX_TOTAL_BYTES             = %d,     \t STAT_RX_BYTES                   = %d\n\r\n\r", tx_total_bytes_0,rx_total_bytes_0);
+	xil_printf("  STAT_TX_TOTAL_GOOD_BYTES        = %d,     \t STAT_RX_TOTAL_GOOD_BYTES        = %d\n\r\n\r", tx_total_good_bytes_0,rx_total_good_bytes_0);
+	if ((tx_total_pkt_0 != 0) && (tx_total_pkt_0 == rx_total_pkt_0) && (tx_total_bytes_0 == rx_total_bytes_0) && (tx_total_good_pkts_0 == rx_total_good_pkts_0) && (tx_total_good_bytes_0 == rx_total_good_bytes_0) )
+	    {
+		stat_match_flag_port0 = 1;
+	    } else {
+	    stat_match_flag_port0 = 0;
+	    }
+	return stat_match_flag_port0;
+}
+
+void start_mrmac_stats(){
+	xil_printf("Starting statistics \n\r");
+	*(u32 *) (MRMAC_0_TICK_REG_0) = 0x00000001;
+}
+
+void end_mrmac_stats(){
+	xil_printf("Stopping statistics\n\r");
+	*(u32 *) (MRMAC_0_TICK_REG_0) = 0x00000001;
+
+
+    // Wait for Statistics ready
+	int time_out =0;
+	u32 ReadData_100G;
+
+	time_out =0;
+	ReadData_100G = 0;
+	do
+	{
+		ReadData_100G = *(u32 *) (MRMAC_0_STAT_STATISTICS_READY_0);
+		ReadData_100G =   (((1 << 2) - 1) & (ReadData_100G >> (1 - 1)));
+		time_out = time_out + 1;
+	}
+	while (ReadData_100G!= 0x3 && time_out<1000);
+	if (time_out>= 1000)
+	{
+		xil_printf("INFO : Port 0 - Statistics ready Failed (Status  = 0x%x)\n\r", ReadData_100G);
+		return 0;
+	} else {
+		xil_printf("INFO : Port 0 - Statistics ready (Status  = 0x%x)\n\r", ReadData_100G);
+	}
+
+	// Print statistics
+    print_port0_statistics();
+
+}
+
+void init_mrmac(){
+	u32 ReadData;
+
+	ReadData = *(u32 *)(MRMAC_0_CONFIGURATION_REVISION_REG);
+    xil_printf("MRMAC Core Version is  = 0x%x\n\r", ReadData);
+
+	// Reset and Config MRMAC
+	xil_printf("Reset MRMAC \n\r");
+	*(u32 *) (MRMAC_0_RESET_REG_0) = 0xFFFFFFFF;
+	*(u32 *) (MRMAC_0_MODE_REG_0)  = 0x40000A64;
+
+	*(u32 *) (MRMAC_0_CONFIGURATION_RX_REG1_0) = 0x00000033;
+	*(u32 *) (MRMAC_0_CONFIGURATION_TX_REG1_0) = 0x00000C03;
+	*(u32 *) (MRMAC_0_FEC_CONFIGURATION_REG1_0) = 0x0000000A;
+    *(u32 *) (MRMAC_0_RESET_REG_0) = 0x00000000;
+	xil_printf("Reset GT \n\r");
+
+	// Set GPIO sigs
+	// bits 0-3 	: gt_reset_all (0xf)
+	// bit 4		: cdrhold (1)
+	// bits 5-7		: loopback (001)
+	// bits 8-15	: line_rate (0)
+	// bits 16-22	: maincursor (75/4b)
+	// bits 23-28 	: postcursor (0)
+
+	*gt_sigs0 = 0x4b003f;
+
+	// Assert and de-assert reset_all
+	*gt_sigs0 = 0x4b0030;
+
+	sleep(2);
+
+	// Wait for reset done
+	xil_printf("Waiting for GT to come out of reset\n\r");
+	while( (*gt_sigs0 & 0xF) == 0 ){
+		usleep(1);
+	}
+	xil_printf("GT reset has finished\n\r");
+
+	// Assert and de-assert rx datapth reset
+	*gt_sigs1 = 0xf;
+	wait(5000);
+	*gt_sigs1 = 0x0;
+
+	// Wait for reset done
+	xil_printf("Waiting for GT to come out of reset 2\n\r");
+	while( (*gt_sigs0 & 0xF) == 0 ){
+		usleep(1);
+	}
+	xil_printf("GT reset has finished 2\n\r");
+
+
+	// Wait for alignment
+	int time_out =0;
+	u32 ReadData_100G;
+	do
+	{
+		*(u32 *) (MRMAC_0_STAT_RX_STATUS_REG1_0) = 0xFFFFFFFF;
+		ReadData_100G = *(u32 *) (MRMAC_0_STAT_RX_STATUS_REG1_0);
+		ReadData_100G =   (((1 << 3) - 1) & (ReadData_100G >> (1 - 1)));
+		time_out = time_out + 1;
+	}
+	while (ReadData_100G!= 0x7 && time_out<100000);
+	if (time_out>= 100000)
+	{
+		xil_printf("INFO : Port 0 - RX ALIGN FAILED     (Stat RX Status  = 0x%x)\n\r", ReadData_100G);
+	} else {
+		xil_printf("INFO : Port 0 - RX ALIGNED      (Stat RX Status  = 0x%x)\n\r", ReadData_100G);
+	}
+
+	/*
+	 gt_reset_all = 4'hF
+      [7:0]: gt_line_rate = 8'h0
+      15: cdrhold
+      [30:24]: gt_maincursor = 7'd75
+      [14:12]: gt_loopback = 3'b000 (External: 3'b000; Near-End PCS: 3'b001)
+	 *
+	 *
+	 *
+	 */
+
+
+
+}
+
+
+u8 temp_buffer[1024];
+void send_packet(u64 srcaddr, u64 dstaddr, int len, u8 *data){
+
+	xil_printf("Sending a packet from src %x to dst %x\n\r", srcaddr, dstaddr);
+	xil_printf("Data: ");
+	for(int i = 0; i < len; i += 1){
+		if(data[i] == 0){break;}
+		xil_printf("%c", data[i]);
+	}
+	xil_printf("\n\r");
+
+	// Make the real packet
+	// 1)
+	for(int i = 0; i < 6; i += 1){
+		temp_buffer[i] = (dstaddr >> (6 - i - 1)*8 ) & 0xff;
+	}
+	for(int i = 0; i < 6; i += 1){
+		temp_buffer[6 + i] = (srcaddr >> (6 - i - 1)*8 ) & 0xff;
+	}
+	temp_buffer[12] = 0x80;
+	temp_buffer[13] = 0x00;
+
+	if(len > 1010){xil_printf("Packet too big\n\r"); exit(1);}
+
+	for(int i = 0; i < len; i += 1){
+		temp_buffer[14 + i] = data[i];
+	}
+
+	*tx_packet_send_wr = 1;
+
+	u8 real_size = len + 14;
+	if(real_size <= 48){real_size = 144;}
+
+	dma_send_bytes(temp_buffer, real_size);
+
+    while(*tx_packet_send_wr == 0){}; // wait for ack
+    *tx_packet_send_wr = 0;
+    xil_printf("Packet sent\n\r");
+
+
+}
+
+int check_packet_waiting(){
+	u32 regval = *rx_packet_ready_rd;
+
+	if(regval != 1){
+		return -1;
+	}
+	return (int) *rx_packet_size_real_rd;
+}
+
+
+int get_packet(u64 *srcaddr_p, u64 *dstaddr_p, u8 *data){
+
+    u32 regval = *rx_packet_ready_rd;
+    while(regval != 1){
+    	regval = *rx_packet_ready_rd;
+    }
+
+    regval = *rx_packet_size_real_rd;
+    xil_printf("Recived packet size %d (real), %d (fake)\n\r", regval, *rx_packet_size_rd);
+
+    *rx_packet_ack_wr = 1;
+    wait(100);
+    *rx_packet_ack_wr = 0;
+
+    dma_recive_bytes(data, regval);
+
+    // Recreate data
+    u64 dst_addr = 0;
+    for(int i = 0; i < 6; i += 1){
+    	dst_addr = dst_addr + (temp_buffer[i] << (5 - i)*8 );
+    }
+
+    u64 src_addr = 0;
+    for(int i = 0; i < 6; i += 1){
+    	src_addr = src_addr + (temp_buffer[i + 6] << (5 - i)*8);
+    }
+
+    xil_printf("RX: Got a packet from src %x to dst %x\n\r", src_addr, dst_addr);
+	xil_printf("Data: ");
+	for(int i = 0; i < regval - 14; i += 1){
+		if(temp_buffer[i + 14] == 0){break;}
+		xil_printf("%c", temp_buffer[14 + i]);
+	}
+
+
+}

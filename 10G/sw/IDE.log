@@ -1,0 +1,2110 @@
+09:40:51 DEBUG : Logs will be stored at 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/IDE.log'.
+09:40:58 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\yiann\vivado23\testbench1\processor_project\sw\temp_xsdb_launch_script.tcl
+09:40:59 INFO  : Registering command handlers for Vitis TCF services
+09:41:01 INFO  : Platform repository initialization has completed.
+09:41:04 INFO  : XSCT server has started successfully.
+09:41:04 INFO  : Successfully done setting XSCT server connection channel  
+09:41:04 INFO  : plnx-install-location is set to ''
+09:41:04 INFO  : Successfully done query RDI_DATADIR 
+09:41:04 INFO  : Successfully done setting workspace for the tool. 
+09:45:14 INFO  : Result from executing command 'getProjects': proc_1_wrapper
+09:45:14 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_vck190_base_202320_1/xilinx_vck190_base_202320_1.xpfm;xilinx_vck190_base_dfx_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_vck190_base_dfx_202320_1/xilinx_vck190_base_dfx_202320_1.xpfm;xilinx_vek280_es1_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_vek280_es1_base_202320_1/xilinx_vek280_es1_base_202320_1.xpfm;xilinx_vmk180_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_vmk180_base_202320_1/xilinx_vmk180_base_202320_1.xpfm;xilinx_zcu102_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu102_base_202320_1/xilinx_zcu102_base_202320_1.xpfm;xilinx_zcu102_base_dfx_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu102_base_dfx_202320_1/xilinx_zcu102_base_dfx_202320_1.xpfm;xilinx_zcu104_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu104_base_202320_1/xilinx_zcu104_base_202320_1.xpfm
+09:45:16 WARN  : An unexpected exception occurred in the module 'platform project logging'
+09:45:19 INFO  : Platform 'proc_1_wrapper' is added to custom repositories.
+09:45:57 INFO  : Platform 'proc_1_wrapper' is added to custom repositories.
+09:46:51 INFO  : Example project xaxidma_example_simple_poll_1 has been created successfully.
+09:47:46 INFO  : Result from executing command 'getProjects': proc_1_wrapper
+09:47:46 INFO  : Result from executing command 'getPlatforms': proc_1_wrapper|C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/proc_1_wrapper.xpfm;xilinx_vck190_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_vck190_base_202320_1/xilinx_vck190_base_202320_1.xpfm;xilinx_vck190_base_dfx_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_vck190_base_dfx_202320_1/xilinx_vck190_base_dfx_202320_1.xpfm;xilinx_vek280_es1_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_vek280_es1_base_202320_1/xilinx_vek280_es1_base_202320_1.xpfm;xilinx_vmk180_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_vmk180_base_202320_1/xilinx_vmk180_base_202320_1.xpfm;xilinx_zcu102_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu102_base_202320_1/xilinx_zcu102_base_202320_1.xpfm;xilinx_zcu102_base_dfx_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu102_base_dfx_202320_1/xilinx_zcu102_base_dfx_202320_1.xpfm;xilinx_zcu104_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu104_base_202320_1/xilinx_zcu104_base_202320_1.xpfm
+09:47:48 INFO  : Checking for BSP changes to sync application flags for project 'xaxidma_example_simple_poll_1'...
+09:51:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:51:38 INFO  : Jtag cable 'Xilinx VPK180 FT4232H 382249155078A' is selected.
+09:51:38 INFO  : 'jtag frequency' command is executed.
+09:51:38 INFO  : Context for 'APU' is selected.
+09:51:40 INFO  : Hardware design and registers information is loaded from 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa'.
+09:51:40 INFO  : 'configparams force-mem-access 1' command is executed.
+09:51:40 INFO  : Context for 'Versal' is selected.
+09:51:42 INFO  : System reset is completed.
+09:51:45 INFO  : 'after 3000' command is executed.
+09:51:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx VPK180 FT4232H 382249155078A" && name=="PMC" && jtag_device_ctx=="jsn-VPK180 FT4232H-382249155078A-14d14093-0"}' command is executed.
+09:51:49 INFO  : Device configured successfully with "C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/_ide/bootimage/resources/proc_1_wrapper.pdi"
+09:51:49 INFO  : Context for processor 'microblaze_0' is selected.
+09:51:50 INFO  : Processor reset is completed for 'microblaze_0'.
+09:51:50 INFO  : The application 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/Debug/xaxidma_example_simple_poll_1.elf' is downloaded to processor 'microblaze_0'.
+09:51:50 INFO  : 'configparams force-mem-access 0' command is executed.
+09:51:50 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa -mem-ranges [list {0x80000000 0x9fffffff} {0xa4000000 0xafffffff} {0xb0000000 0xbfffffff} {0x20000000000 0x3FFFFFFFFFF}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"Versal*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx VPK180 FT4232H 382249155078A" && name=="PMC" && jtag_device_ctx=="jsn-VPK180 FT4232H-382249155078A-14d14093-0"}
+device program C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/_ide/bootimage/resources/proc_1_wrapper.pdi
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+rst -processor
+dow C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/Debug/xaxidma_example_simple_poll_1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+09:51:50 INFO  : Context for processor 'microblaze_0' is selected.
+09:51:50 INFO  : 'con' command is executed.
+09:51:50 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+con
+----------------End of Script----------------
+
+09:51:50 INFO  : Launch script is exported to file 'C:\Users\yiann\vivado23\testbench1\processor_project\sw\xaxidma_example_simple_poll_1_system\_ide\scripts\systemdebugger_xaxidma_example_simple_poll_1_system_standalone.tcl'
+09:52:24 INFO  : Disconnected from the channel tcfchan#2.
+09:52:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:52:24 INFO  : Jtag cable 'Xilinx VPK180 FT4232H 382249155078A' is selected.
+09:52:24 INFO  : 'jtag frequency' command is executed.
+09:52:24 INFO  : Context for 'APU' is selected.
+09:52:24 INFO  : Hardware design and registers information is loaded from 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa'.
+09:52:24 INFO  : 'configparams force-mem-access 1' command is executed.
+09:52:24 INFO  : Context for 'Versal' is selected.
+09:52:27 INFO  : System reset is completed.
+09:52:30 INFO  : 'after 3000' command is executed.
+09:52:33 ERROR : no targets found with "name =~ "*microblaze*#0"". available targets:
+  1* Versal xcvp1802
+     2  RPU (No LPD debug clock)
+        3  Cortex-R5 #0 (No LPD debug clock)
+        4  Cortex-R5 #1 (No LPD debug clock)
+     5  APU (FPD Reset)
+        6  Cortex-A72 #0 (FPD Reset)
+        7  Cortex-A72 #1 (FPD Reset)
+     8  PPU
+        9  MicroBlaze PPU (Sleeping after reset)
+    10  PSM
+       11  MicroBlaze PSM (Sleeping after reset)
+    12  PMC
+    13  PL
+ 16  DPC
+09:52:33 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa -mem-ranges [list {0x80000000 0x9fffffff} {0xa4000000 0xafffffff} {0xb0000000 0xbfffffff} {0x20000000000 0x3FFFFFFFFFF}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"Versal*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+----------------End of Script----------------
+
+09:52:33 ERROR : no targets found with "name =~ "*microblaze*#0"". available targets:
+  1* Versal xcvp1802
+     2  RPU (No LPD debug clock)
+        3  Cortex-R5 #0 (No LPD debug clock)
+        4  Cortex-R5 #1 (No LPD debug clock)
+     5  APU (FPD Reset)
+        6  Cortex-A72 #0 (FPD Reset)
+        7  Cortex-A72 #1 (FPD Reset)
+     8  PPU
+        9  MicroBlaze PPU (Sleeping after reset)
+    10  PSM
+       11  MicroBlaze PSM (Sleeping after reset)
+    12  PMC
+    13  PL
+ 16  DPC
+09:54:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:54:00 INFO  : Jtag cable 'Xilinx VPK180 FT4232H 382249155078A' is selected.
+09:54:00 INFO  : 'jtag frequency' command is executed.
+09:54:00 INFO  : Context for 'APU' is selected.
+09:54:00 INFO  : Hardware design and registers information is loaded from 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa'.
+09:54:00 INFO  : 'configparams force-mem-access 1' command is executed.
+09:54:00 INFO  : Context for 'Versal' is selected.
+09:54:02 INFO  : System reset is completed.
+09:54:05 INFO  : 'after 3000' command is executed.
+09:55:01 ERROR : 'targets -set -nocase -filter {name =~ "*microblaze*#0"}' is cancelled.
+09:55:01 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa -mem-ranges [list {0x80000000 0x9fffffff} {0xa4000000 0xafffffff} {0xb0000000 0xbfffffff} {0x20000000000 0x3FFFFFFFFFF}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"Versal*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+----------------End of Script----------------
+
+09:55:01 ERROR : 'targets -set -nocase -filter {name =~ "*microblaze*#0"}' is cancelled.
+09:55:56 ERROR : Failed to connect to hardware server on host '127.0.0.1' and port '3121'.
+Reason: 'connect -url tcp:127.0.0.1:3121' is cancelled.
+09:55:56 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+09:55:56 ERROR : Failed to connect to hardware server on host '127.0.0.1' and port '3121'.
+Reason: 'connect -url tcp:127.0.0.1:3121' is cancelled.
+09:58:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:58:17 INFO  : Jtag cable 'Xilinx VPK180 FT4232H 382249155078A' is selected.
+09:58:17 INFO  : 'jtag frequency' command is executed.
+09:58:17 INFO  : Context for 'APU' is selected.
+09:58:17 INFO  : Hardware design and registers information is loaded from 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa'.
+09:58:17 INFO  : 'configparams force-mem-access 1' command is executed.
+09:58:17 INFO  : Context for processor 'microblaze_0' is selected.
+09:58:17 INFO  : Processor reset is completed for 'microblaze_0'.
+09:58:17 INFO  : The application 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/Debug/xaxidma_example_simple_poll_1.elf' is downloaded to processor 'microblaze_0'.
+09:58:17 INFO  : 'configparams force-mem-access 0' command is executed.
+09:58:17 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa -mem-ranges [list {0x80000000 0x9fffffff} {0xa4000000 0xafffffff} {0xb0000000 0xbfffffff} {0x20000000000 0x3FFFFFFFFFF}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+rst -processor
+dow C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/Debug/xaxidma_example_simple_poll_1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+09:58:17 INFO  : Context for processor 'microblaze_0' is selected.
+09:58:17 INFO  : 'con' command is executed.
+09:58:17 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+con
+----------------End of Script----------------
+
+09:58:17 INFO  : Launch script is exported to file 'C:\Users\yiann\vivado23\testbench1\processor_project\sw\xaxidma_example_simple_poll_1_system\_ide\scripts\systemdebugger_xaxidma_example_simple_poll_1_system_standalone.tcl'
+09:58:57 INFO  : Disconnected from the channel tcfchan#3.
+09:58:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:58:58 INFO  : Jtag cable 'Xilinx VPK180 FT4232H 382249155078A' is selected.
+09:58:58 INFO  : 'jtag frequency' command is executed.
+09:58:58 INFO  : Context for 'APU' is selected.
+09:58:58 INFO  : Hardware design and registers information is loaded from 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa'.
+09:58:58 INFO  : 'configparams force-mem-access 1' command is executed.
+09:58:58 INFO  : Context for processor 'microblaze_0' is selected.
+09:58:58 INFO  : Processor reset is completed for 'microblaze_0'.
+09:58:58 INFO  : The application 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/Debug/xaxidma_example_simple_poll_1.elf' is downloaded to processor 'microblaze_0'.
+09:58:58 INFO  : 'configparams force-mem-access 0' command is executed.
+09:58:58 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa -mem-ranges [list {0x80000000 0x9fffffff} {0xa4000000 0xafffffff} {0xb0000000 0xbfffffff} {0x20000000000 0x3FFFFFFFFFF}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+rst -processor
+dow C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/Debug/xaxidma_example_simple_poll_1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+09:58:58 INFO  : Context for processor 'microblaze_0' is selected.
+09:58:58 INFO  : 'con' command is executed.
+09:58:58 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+con
+----------------End of Script----------------
+
+09:58:58 INFO  : Launch script is exported to file 'C:\Users\yiann\vivado23\testbench1\processor_project\sw\xaxidma_example_simple_poll_1_system\_ide\scripts\systemdebugger_xaxidma_example_simple_poll_1_system_standalone.tcl'
+09:59:44 INFO  : Disconnected from the channel tcfchan#4.
+09:59:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:59:44 INFO  : Jtag cable 'Xilinx VPK180 FT4232H 382249155078A' is selected.
+09:59:44 INFO  : 'jtag frequency' command is executed.
+09:59:45 INFO  : Context for 'APU' is selected.
+09:59:45 INFO  : Hardware design and registers information is loaded from 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa'.
+09:59:45 INFO  : 'configparams force-mem-access 1' command is executed.
+09:59:45 INFO  : Context for processor 'microblaze_0' is selected.
+09:59:45 INFO  : Processor reset is completed for 'microblaze_0'.
+09:59:45 INFO  : The application 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/Debug/xaxidma_example_simple_poll_1.elf' is downloaded to processor 'microblaze_0'.
+09:59:45 INFO  : 'configparams force-mem-access 0' command is executed.
+09:59:45 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa -mem-ranges [list {0x80000000 0x9fffffff} {0xa4000000 0xafffffff} {0xb0000000 0xbfffffff} {0x20000000000 0x3FFFFFFFFFF}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+rst -processor
+dow C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/Debug/xaxidma_example_simple_poll_1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+09:59:45 INFO  : Context for processor 'microblaze_0' is selected.
+09:59:45 INFO  : 'con' command is executed.
+09:59:45 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+con
+----------------End of Script----------------
+
+09:59:45 INFO  : Launch script is exported to file 'C:\Users\yiann\vivado23\testbench1\processor_project\sw\xaxidma_example_simple_poll_1_system\_ide\scripts\systemdebugger_xaxidma_example_simple_poll_1_system_standalone.tcl'
+10:00:04 INFO  : Checking for BSP changes to sync application flags for project 'xaxidma_example_simple_poll_1'...
+10:00:08 INFO  : Disconnected from the channel tcfchan#5.
+10:00:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:00:09 INFO  : Jtag cable 'Xilinx VPK180 FT4232H 382249155078A' is selected.
+10:00:09 INFO  : 'jtag frequency' command is executed.
+10:00:09 INFO  : Context for 'APU' is selected.
+10:00:09 INFO  : Hardware design and registers information is loaded from 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa'.
+10:00:09 INFO  : 'configparams force-mem-access 1' command is executed.
+10:00:09 INFO  : Context for processor 'microblaze_0' is selected.
+10:00:09 INFO  : Processor reset is completed for 'microblaze_0'.
+10:00:09 INFO  : The application 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/Debug/xaxidma_example_simple_poll_1.elf' is downloaded to processor 'microblaze_0'.
+10:00:09 INFO  : 'configparams force-mem-access 0' command is executed.
+10:00:09 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa -mem-ranges [list {0x80000000 0x9fffffff} {0xa4000000 0xafffffff} {0xb0000000 0xbfffffff} {0x20000000000 0x3FFFFFFFFFF}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+rst -processor
+dow C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/Debug/xaxidma_example_simple_poll_1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:00:09 INFO  : Context for processor 'microblaze_0' is selected.
+10:00:09 INFO  : 'con' command is executed.
+10:00:09 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+con
+----------------End of Script----------------
+
+10:00:09 INFO  : Launch script is exported to file 'C:\Users\yiann\vivado23\testbench1\processor_project\sw\xaxidma_example_simple_poll_1_system\_ide\scripts\systemdebugger_xaxidma_example_simple_poll_1_system_standalone.tcl'
+10:02:06 INFO  : Disconnected from the channel tcfchan#6.
+10:02:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:02:06 INFO  : Jtag cable 'Xilinx VPK180 FT4232H 382249155078A' is selected.
+10:02:06 INFO  : 'jtag frequency' command is executed.
+10:02:06 INFO  : Context for 'APU' is selected.
+10:02:06 INFO  : Hardware design and registers information is loaded from 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa'.
+10:02:06 INFO  : 'configparams force-mem-access 1' command is executed.
+10:02:06 INFO  : Context for processor 'microblaze_0' is selected.
+10:02:06 INFO  : Processor reset is completed for 'microblaze_0'.
+10:02:07 INFO  : The application 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/Debug/xaxidma_example_simple_poll_1.elf' is downloaded to processor 'microblaze_0'.
+10:02:07 INFO  : 'configparams force-mem-access 0' command is executed.
+10:02:07 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa -mem-ranges [list {0x80000000 0x9fffffff} {0xa4000000 0xafffffff} {0xb0000000 0xbfffffff} {0x20000000000 0x3FFFFFFFFFF}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+rst -processor
+dow C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/Debug/xaxidma_example_simple_poll_1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:02:07 INFO  : Context for processor 'microblaze_0' is selected.
+10:02:07 INFO  : 'con' command is executed.
+10:02:07 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+con
+----------------End of Script----------------
+
+10:02:07 INFO  : Launch script is exported to file 'C:\Users\yiann\vivado23\testbench1\processor_project\sw\xaxidma_example_simple_poll_1_system\_ide\scripts\systemdebugger_xaxidma_example_simple_poll_1_system_standalone.tcl'
+10:12:53 INFO  : Checking for BSP changes to sync application flags for project 'xaxidma_example_simple_poll_1'...
+10:13:07 INFO  : Disconnected from the channel tcfchan#7.
+10:13:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:13:08 INFO  : Jtag cable 'Xilinx VPK180 FT4232H 382249155078A' is selected.
+10:13:08 INFO  : 'jtag frequency' command is executed.
+10:13:08 INFO  : Context for 'APU' is selected.
+10:13:08 INFO  : Hardware design and registers information is loaded from 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa'.
+10:13:08 INFO  : 'configparams force-mem-access 1' command is executed.
+10:13:08 INFO  : Context for processor 'microblaze_0' is selected.
+10:13:08 INFO  : Processor reset is completed for 'microblaze_0'.
+10:13:08 INFO  : The application 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/Debug/xaxidma_example_simple_poll_1.elf' is downloaded to processor 'microblaze_0'.
+10:13:08 INFO  : 'configparams force-mem-access 0' command is executed.
+10:13:08 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa -mem-ranges [list {0x80000000 0x9fffffff} {0xa4000000 0xafffffff} {0xb0000000 0xbfffffff} {0x20000000000 0x3FFFFFFFFFF}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+rst -processor
+dow C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/Debug/xaxidma_example_simple_poll_1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:13:08 INFO  : Context for processor 'microblaze_0' is selected.
+10:13:08 INFO  : 'con' command is executed.
+10:13:08 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+con
+----------------End of Script----------------
+
+10:13:08 INFO  : Launch script is exported to file 'C:\Users\yiann\vivado23\testbench1\processor_project\sw\xaxidma_example_simple_poll_1_system\_ide\scripts\systemdebugger_xaxidma_example_simple_poll_1_system_standalone.tcl'
+10:14:12 INFO  : Checking for BSP changes to sync application flags for project 'xaxidma_example_simple_poll_1'...
+10:14:17 INFO  : Disconnected from the channel tcfchan#8.
+10:14:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:14:17 INFO  : Jtag cable 'Xilinx VPK180 FT4232H 382249155078A' is selected.
+10:14:17 INFO  : 'jtag frequency' command is executed.
+10:14:17 INFO  : Context for 'APU' is selected.
+10:14:18 INFO  : Hardware design and registers information is loaded from 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa'.
+10:14:18 INFO  : 'configparams force-mem-access 1' command is executed.
+10:14:18 INFO  : Context for processor 'microblaze_0' is selected.
+10:14:18 INFO  : Processor reset is completed for 'microblaze_0'.
+10:14:18 INFO  : The application 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/Debug/xaxidma_example_simple_poll_1.elf' is downloaded to processor 'microblaze_0'.
+10:14:18 INFO  : 'configparams force-mem-access 0' command is executed.
+10:14:18 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa -mem-ranges [list {0x80000000 0x9fffffff} {0xa4000000 0xafffffff} {0xb0000000 0xbfffffff} {0x20000000000 0x3FFFFFFFFFF}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+rst -processor
+dow C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/Debug/xaxidma_example_simple_poll_1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:14:18 INFO  : Context for processor 'microblaze_0' is selected.
+10:14:18 INFO  : 'con' command is executed.
+10:14:18 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+con
+----------------End of Script----------------
+
+10:14:18 INFO  : Launch script is exported to file 'C:\Users\yiann\vivado23\testbench1\processor_project\sw\xaxidma_example_simple_poll_1_system\_ide\scripts\systemdebugger_xaxidma_example_simple_poll_1_system_standalone.tcl'
+10:14:54 INFO  : Disconnected from the channel tcfchan#9.
+10:14:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:14:54 INFO  : Jtag cable 'Xilinx VPK180 FT4232H 382249155078A' is selected.
+10:14:54 INFO  : 'jtag frequency' command is executed.
+10:14:54 INFO  : Context for 'APU' is selected.
+10:14:54 INFO  : Hardware design and registers information is loaded from 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa'.
+10:14:54 INFO  : 'configparams force-mem-access 1' command is executed.
+10:14:54 INFO  : Context for processor 'microblaze_0' is selected.
+10:14:54 INFO  : Processor reset is completed for 'microblaze_0'.
+10:14:55 INFO  : The application 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/Debug/xaxidma_example_simple_poll_1.elf' is downloaded to processor 'microblaze_0'.
+10:14:55 INFO  : 'configparams force-mem-access 0' command is executed.
+10:14:55 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa -mem-ranges [list {0x80000000 0x9fffffff} {0xa4000000 0xafffffff} {0xb0000000 0xbfffffff} {0x20000000000 0x3FFFFFFFFFF}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+rst -processor
+dow C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/Debug/xaxidma_example_simple_poll_1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:14:55 INFO  : Context for processor 'microblaze_0' is selected.
+10:14:55 INFO  : 'con' command is executed.
+10:14:55 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+con
+----------------End of Script----------------
+
+10:14:55 INFO  : Launch script is exported to file 'C:\Users\yiann\vivado23\testbench1\processor_project\sw\xaxidma_example_simple_poll_1_system\_ide\scripts\systemdebugger_xaxidma_example_simple_poll_1_system_standalone.tcl'
+10:15:14 INFO  : Checking for BSP changes to sync application flags for project 'xaxidma_example_simple_poll_1'...
+10:15:19 INFO  : Disconnected from the channel tcfchan#10.
+10:15:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:15:20 INFO  : Jtag cable 'Xilinx VPK180 FT4232H 382249155078A' is selected.
+10:15:20 INFO  : 'jtag frequency' command is executed.
+10:15:20 INFO  : Context for 'APU' is selected.
+10:15:20 INFO  : Hardware design and registers information is loaded from 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa'.
+10:15:20 INFO  : 'configparams force-mem-access 1' command is executed.
+10:15:20 INFO  : Context for processor 'microblaze_0' is selected.
+10:15:20 INFO  : Processor reset is completed for 'microblaze_0'.
+10:15:20 INFO  : The application 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/Debug/xaxidma_example_simple_poll_1.elf' is downloaded to processor 'microblaze_0'.
+10:15:20 INFO  : 'configparams force-mem-access 0' command is executed.
+10:15:20 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa -mem-ranges [list {0x80000000 0x9fffffff} {0xa4000000 0xafffffff} {0xb0000000 0xbfffffff} {0x20000000000 0x3FFFFFFFFFF}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+rst -processor
+dow C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/Debug/xaxidma_example_simple_poll_1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:15:20 INFO  : Context for processor 'microblaze_0' is selected.
+10:15:21 INFO  : 'con' command is executed.
+10:15:21 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+con
+----------------End of Script----------------
+
+10:15:21 INFO  : Launch script is exported to file 'C:\Users\yiann\vivado23\testbench1\processor_project\sw\xaxidma_example_simple_poll_1_system\_ide\scripts\systemdebugger_xaxidma_example_simple_poll_1_system_standalone.tcl'
+10:20:33 INFO  : Checking for BSP changes to sync application flags for project 'xaxidma_example_simple_poll_1'...
+10:20:44 INFO  : Checking for BSP changes to sync application flags for project 'xaxidma_example_simple_poll_1'...
+10:20:51 INFO  : Disconnected from the channel tcfchan#11.
+10:20:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:20:51 INFO  : Jtag cable 'Xilinx VPK180 FT4232H 382249155078A' is selected.
+10:20:51 INFO  : 'jtag frequency' command is executed.
+10:20:52 INFO  : Context for 'APU' is selected.
+10:20:52 INFO  : Hardware design and registers information is loaded from 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa'.
+10:20:52 INFO  : 'configparams force-mem-access 1' command is executed.
+10:20:52 INFO  : Context for processor 'microblaze_0' is selected.
+10:20:52 INFO  : Processor reset is completed for 'microblaze_0'.
+10:20:52 INFO  : The application 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/Debug/xaxidma_example_simple_poll_1.elf' is downloaded to processor 'microblaze_0'.
+10:20:52 INFO  : 'configparams force-mem-access 0' command is executed.
+10:20:52 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa -mem-ranges [list {0x80000000 0x9fffffff} {0xa4000000 0xafffffff} {0xb0000000 0xbfffffff} {0x20000000000 0x3FFFFFFFFFF}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+rst -processor
+dow C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/Debug/xaxidma_example_simple_poll_1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:20:52 INFO  : Context for processor 'microblaze_0' is selected.
+10:20:52 INFO  : 'con' command is executed.
+10:20:52 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+con
+----------------End of Script----------------
+
+10:20:52 INFO  : Launch script is exported to file 'C:\Users\yiann\vivado23\testbench1\processor_project\sw\xaxidma_example_simple_poll_1_system\_ide\scripts\systemdebugger_xaxidma_example_simple_poll_1_system_standalone.tcl'
+11:30:12 INFO  : Disconnected from the channel tcfchan#12.
+15:38:07 DEBUG : Logs will be stored at 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/IDE.log'.
+15:38:09 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\yiann\vivado23\testbench1\processor_project\sw\temp_xsdb_launch_script.tcl
+15:38:14 INFO  : XSCT server has started successfully.
+15:38:14 INFO  : Successfully done setting XSCT server connection channel  
+15:38:14 INFO  : plnx-install-location is set to ''
+15:38:14 INFO  : Successfully done setting workspace for the tool. 
+15:38:17 INFO  : Platform repository initialization has completed.
+15:38:29 INFO  : Registering command handlers for Vitis TCF services
+15:38:35 INFO  : Successfully done query RDI_DATADIR 
+15:40:16 INFO  : Hardware specification for platform project 'proc_1_wrapper' is updated.
+15:41:05 INFO  : Hardware specification for platform project 'proc_1_wrapper' is updated.
+15:42:16 INFO  : Result from executing command 'getProjects': proc_1_wrapper
+15:42:16 INFO  : Result from executing command 'getPlatforms': proc_1_wrapper|C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/proc_1_wrapper.xpfm;xilinx_vck190_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_vck190_base_202320_1/xilinx_vck190_base_202320_1.xpfm;xilinx_vck190_base_dfx_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_vck190_base_dfx_202320_1/xilinx_vck190_base_dfx_202320_1.xpfm;xilinx_vek280_es1_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_vek280_es1_base_202320_1/xilinx_vek280_es1_base_202320_1.xpfm;xilinx_vmk180_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_vmk180_base_202320_1/xilinx_vmk180_base_202320_1.xpfm;xilinx_zcu102_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu102_base_202320_1/xilinx_zcu102_base_202320_1.xpfm;xilinx_zcu102_base_dfx_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu102_base_dfx_202320_1/xilinx_zcu102_base_dfx_202320_1.xpfm;xilinx_zcu104_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu104_base_202320_1/xilinx_zcu104_base_202320_1.xpfm
+15:42:19 INFO  : Checking for BSP changes to sync application flags for project 'xaxidma_example_simple_poll_1'...
+15:42:56 INFO  : The hardware specification used by project 'xaxidma_example_simple_poll_1' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+15:42:56 INFO  : The file 'C:\Users\yiann\vivado23\testbench1\processor_project\sw\xaxidma_example_simple_poll_1\_ide\bitstream\proc_1_wrapper.mmi' stored in project is removed.
+15:42:56 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\yiann\vivado23\testbench1\processor_project\sw\xaxidma_example_simple_poll_1\_ide\bitstream' in project 'xaxidma_example_simple_poll_1'.
+15:42:57 INFO  : The file 'C:\Users\yiann\vivado23\testbench1\processor_project\sw\xaxidma_example_simple_poll_1\_ide\bootimage\resources\proc_1_wrapper.pdi' stored in project is removed.
+15:42:57 INFO  : The updated PDI file is copied from platform to folder 'C:\Users\yiann\vivado23\testbench1\processor_project\sw\xaxidma_example_simple_poll_1\_ide\bootimage\resources' in project 'xaxidma_example_simple_poll_1'.
+15:44:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:44:18 INFO  : Jtag cable 'Xilinx VPK180 FT4232H 382249155078A' is selected.
+15:44:18 INFO  : 'jtag frequency' command is executed.
+15:44:18 INFO  : Context for 'APU' is selected.
+15:44:19 INFO  : Hardware design and registers information is loaded from 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa'.
+15:44:19 INFO  : 'configparams force-mem-access 1' command is executed.
+15:44:19 INFO  : Context for processor 'microblaze_0' is selected.
+15:44:19 INFO  : Processor reset is completed for 'microblaze_0'.
+15:44:20 INFO  : The application 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/Debug/xaxidma_example_simple_poll_1.elf' is downloaded to processor 'microblaze_0'.
+15:44:20 INFO  : 'configparams force-mem-access 0' command is executed.
+15:44:20 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa -mem-ranges [list {0x80000000 0x9fffffff} {0xa4000000 0xafffffff} {0xb0000000 0xbfffffff} {0x20000000000 0x3FFFFFFFFFF}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+rst -processor
+dow C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/Debug/xaxidma_example_simple_poll_1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:44:20 INFO  : Context for processor 'microblaze_0' is selected.
+15:44:20 INFO  : 'con' command is executed.
+15:44:20 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+con
+----------------End of Script----------------
+
+15:44:20 INFO  : Launch script is exported to file 'C:\Users\yiann\vivado23\testbench1\processor_project\sw\xaxidma_example_simple_poll_1_system\_ide\scripts\systemdebugger_xaxidma_example_simple_poll_1_system_standalone.tcl'
+15:45:14 INFO  : Disconnected from the channel tcfchan#2.
+15:45:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:45:14 INFO  : Jtag cable 'Xilinx VPK180 FT4232H 382249155078A' is selected.
+15:45:14 INFO  : 'jtag frequency' command is executed.
+15:45:14 INFO  : Context for 'APU' is selected.
+15:45:14 INFO  : Hardware design and registers information is loaded from 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa'.
+15:45:14 INFO  : 'configparams force-mem-access 1' command is executed.
+15:45:14 INFO  : Context for processor 'microblaze_0' is selected.
+15:45:14 INFO  : Processor reset is completed for 'microblaze_0'.
+15:45:14 INFO  : The application 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/Debug/xaxidma_example_simple_poll_1.elf' is downloaded to processor 'microblaze_0'.
+15:45:14 INFO  : 'configparams force-mem-access 0' command is executed.
+15:45:14 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa -mem-ranges [list {0x80000000 0x9fffffff} {0xa4000000 0xafffffff} {0xb0000000 0xbfffffff} {0x20000000000 0x3FFFFFFFFFF}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+rst -processor
+dow C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/Debug/xaxidma_example_simple_poll_1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:45:15 INFO  : Context for processor 'microblaze_0' is selected.
+15:45:15 INFO  : 'con' command is executed.
+15:45:15 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+con
+----------------End of Script----------------
+
+15:45:15 INFO  : Launch script is exported to file 'C:\Users\yiann\vivado23\testbench1\processor_project\sw\xaxidma_example_simple_poll_1_system\_ide\scripts\systemdebugger_xaxidma_example_simple_poll_1_system_standalone.tcl'
+15:46:08 INFO  : Disconnected from the channel tcfchan#3.
+15:46:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:46:09 INFO  : Jtag cable 'Xilinx VPK180 FT4232H 382249155078A' is selected.
+15:46:09 INFO  : 'jtag frequency' command is executed.
+15:46:09 INFO  : Context for 'APU' is selected.
+15:46:09 INFO  : Hardware design and registers information is loaded from 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa'.
+15:46:09 INFO  : 'configparams force-mem-access 1' command is executed.
+15:46:09 INFO  : Context for 'Versal' is selected.
+15:46:11 INFO  : System reset is completed.
+15:46:14 INFO  : 'after 3000' command is executed.
+15:46:56 ERROR : 'targets -set -filter {jtag_cable_name =~ "Xilinx VPK180 FT4232H 382249155078A" && name=="PMC" && jtag_device_ctx=="jsn-VPK180 FT4232H-382249155078A-14d14093-0"}' is cancelled.
+15:46:56 ERROR : Exception occured while running Program Device.
+java.lang.RuntimeException: 'targets -set -filter {jtag_cable_name =~ "Xilinx VPK180 FT4232H 382249155078A" && name=="PMC" && jtag_device_ctx=="jsn-VPK180 FT4232H-382249155078A-14d14093-0"}' is cancelled.
+15:46:56 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa -mem-ranges [list {0x80000000 0x9fffffff} {0xa4000000 0xafffffff} {0xb0000000 0xbfffffff} {0x20000000000 0x3FFFFFFFFFF}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"Versal*"}
+rst -system
+after 3000
+----------------End of Script----------------
+
+15:46:56 ERROR : 'targets -set -filter {jtag_cable_name =~ "Xilinx VPK180 FT4232H 382249155078A" && name=="PMC" && jtag_device_ctx=="jsn-VPK180 FT4232H-382249155078A-14d14093-0"}' is cancelled.
+15:47:25 ERROR : Failed to connect to hardware server on host '127.0.0.1' and port '3121'.
+Reason: 'connect -url tcp:127.0.0.1:3121' is cancelled.
+15:47:25 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+15:47:25 ERROR : Failed to connect to hardware server on host '127.0.0.1' and port '3121'.
+Reason: 'connect -url tcp:127.0.0.1:3121' is cancelled.
+15:48:07 INFO  : Checking for BSP changes to sync application flags for project 'xaxidma_example_simple_poll_1'...
+15:48:10 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:48:10 INFO  : Jtag cable 'Xilinx VPK180 FT4232H 382249155078A' is selected.
+15:48:10 INFO  : 'jtag frequency' command is executed.
+15:48:11 INFO  : Context for 'APU' is selected.
+15:48:11 INFO  : Hardware design and registers information is loaded from 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa'.
+15:48:11 INFO  : 'configparams force-mem-access 1' command is executed.
+15:48:11 INFO  : Context for 'Versal' is selected.
+15:48:11 INFO  : System reset is completed.
+15:48:14 INFO  : 'after 3000' command is executed.
+15:48:15 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx VPK180 FT4232H 382249155078A" && name=="PMC" && jtag_device_ctx=="jsn-VPK180 FT4232H-382249155078A-14d14093-0"}' command is executed.
+15:48:19 INFO  : Device configured successfully with "C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/_ide/bootimage/resources/proc_1_wrapper.pdi"
+15:48:19 INFO  : Context for processor 'microblaze_0' is selected.
+15:48:20 INFO  : Processor reset is completed for 'microblaze_0'.
+15:48:20 INFO  : The application 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/Debug/xaxidma_example_simple_poll_1.elf' is downloaded to processor 'microblaze_0'.
+15:48:20 INFO  : 'configparams force-mem-access 0' command is executed.
+15:48:20 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa -mem-ranges [list {0x80000000 0x9fffffff} {0xa4000000 0xafffffff} {0xb0000000 0xbfffffff} {0x20000000000 0x3FFFFFFFFFF}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"Versal*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx VPK180 FT4232H 382249155078A" && name=="PMC" && jtag_device_ctx=="jsn-VPK180 FT4232H-382249155078A-14d14093-0"}
+device program C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/_ide/bootimage/resources/proc_1_wrapper.pdi
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+rst -processor
+dow C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/Debug/xaxidma_example_simple_poll_1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:48:20 INFO  : Context for processor 'microblaze_0' is selected.
+15:48:20 INFO  : 'con' command is executed.
+15:48:20 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+con
+----------------End of Script----------------
+
+15:48:20 INFO  : Launch script is exported to file 'C:\Users\yiann\vivado23\testbench1\processor_project\sw\xaxidma_example_simple_poll_1_system\_ide\scripts\systemdebugger_xaxidma_example_simple_poll_1_system_standalone.tcl'
+15:48:42 INFO  : Disconnected from the channel tcfchan#4.
+15:48:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:48:42 INFO  : Jtag cable 'Xilinx VPK180 FT4232H 382249155078A' is selected.
+15:48:42 INFO  : 'jtag frequency' command is executed.
+15:48:42 INFO  : Context for 'APU' is selected.
+15:48:42 INFO  : Hardware design and registers information is loaded from 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa'.
+15:48:42 INFO  : 'configparams force-mem-access 1' command is executed.
+15:48:42 INFO  : Context for 'Versal' is selected.
+15:48:45 INFO  : System reset is completed.
+15:48:48 INFO  : 'after 3000' command is executed.
+15:48:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx VPK180 FT4232H 382249155078A" && name=="PMC" && jtag_device_ctx=="jsn-VPK180 FT4232H-382249155078A-14d14093-0"}' command is executed.
+15:48:52 INFO  : Device configured successfully with "C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/_ide/bootimage/resources/proc_1_wrapper.pdi"
+15:48:52 INFO  : Context for processor 'microblaze_0' is selected.
+15:48:52 INFO  : Processor reset is completed for 'microblaze_0'.
+15:48:52 INFO  : The application 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/Debug/xaxidma_example_simple_poll_1.elf' is downloaded to processor 'microblaze_0'.
+15:48:52 INFO  : 'configparams force-mem-access 0' command is executed.
+15:48:52 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa -mem-ranges [list {0x80000000 0x9fffffff} {0xa4000000 0xafffffff} {0xb0000000 0xbfffffff} {0x20000000000 0x3FFFFFFFFFF}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"Versal*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx VPK180 FT4232H 382249155078A" && name=="PMC" && jtag_device_ctx=="jsn-VPK180 FT4232H-382249155078A-14d14093-0"}
+device program C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/_ide/bootimage/resources/proc_1_wrapper.pdi
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+rst -processor
+dow C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/Debug/xaxidma_example_simple_poll_1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:48:53 INFO  : Context for processor 'microblaze_0' is selected.
+15:48:53 INFO  : 'con' command is executed.
+15:48:53 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+con
+----------------End of Script----------------
+
+15:48:53 INFO  : Launch script is exported to file 'C:\Users\yiann\vivado23\testbench1\processor_project\sw\xaxidma_example_simple_poll_1_system\_ide\scripts\systemdebugger_xaxidma_example_simple_poll_1_system_standalone.tcl'
+15:50:00 INFO  : Disconnected from the channel tcfchan#5.
+15:50:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:50:01 INFO  : Jtag cable 'Xilinx VPK180 FT4232H 382249155078A' is selected.
+15:50:01 INFO  : 'jtag frequency' command is executed.
+15:50:01 INFO  : Context for 'APU' is selected.
+15:50:01 INFO  : Hardware design and registers information is loaded from 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa'.
+15:50:01 INFO  : 'configparams force-mem-access 1' command is executed.
+15:50:01 INFO  : Context for processor 'microblaze_0' is selected.
+15:50:01 INFO  : Processor reset is completed for 'microblaze_0'.
+15:50:01 INFO  : The application 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/Debug/xaxidma_example_simple_poll_1.elf' is downloaded to processor 'microblaze_0'.
+15:50:01 INFO  : 'configparams force-mem-access 0' command is executed.
+15:50:01 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa -mem-ranges [list {0x80000000 0x9fffffff} {0xa4000000 0xafffffff} {0xb0000000 0xbfffffff} {0x20000000000 0x3FFFFFFFFFF}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+rst -processor
+dow C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/Debug/xaxidma_example_simple_poll_1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:50:01 INFO  : Context for processor 'microblaze_0' is selected.
+15:50:01 INFO  : 'con' command is executed.
+15:50:01 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+con
+----------------End of Script----------------
+
+15:50:01 INFO  : Launch script is exported to file 'C:\Users\yiann\vivado23\testbench1\processor_project\sw\xaxidma_example_simple_poll_1_system\_ide\scripts\systemdebugger_xaxidma_example_simple_poll_1_system_standalone.tcl'
+15:50:48 INFO  : Disconnected from the channel tcfchan#6.
+15:50:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:50:48 INFO  : Jtag cable 'Xilinx VPK180 FT4232H 382249155078A' is selected.
+15:50:48 INFO  : 'jtag frequency' command is executed.
+15:50:48 INFO  : Context for 'APU' is selected.
+15:50:48 INFO  : Hardware design and registers information is loaded from 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa'.
+15:50:48 INFO  : 'configparams force-mem-access 1' command is executed.
+15:50:48 INFO  : Context for processor 'microblaze_0' is selected.
+15:50:48 INFO  : Processor reset is completed for 'microblaze_0'.
+15:50:48 INFO  : The application 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/Debug/xaxidma_example_simple_poll_1.elf' is downloaded to processor 'microblaze_0'.
+15:50:48 INFO  : 'configparams force-mem-access 0' command is executed.
+15:50:48 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa -mem-ranges [list {0x80000000 0x9fffffff} {0xa4000000 0xafffffff} {0xb0000000 0xbfffffff} {0x20000000000 0x3FFFFFFFFFF}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+rst -processor
+dow C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/Debug/xaxidma_example_simple_poll_1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:50:49 INFO  : Context for processor 'microblaze_0' is selected.
+15:50:49 INFO  : 'con' command is executed.
+15:50:49 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+con
+----------------End of Script----------------
+
+15:50:49 INFO  : Launch script is exported to file 'C:\Users\yiann\vivado23\testbench1\processor_project\sw\xaxidma_example_simple_poll_1_system\_ide\scripts\systemdebugger_xaxidma_example_simple_poll_1_system_standalone.tcl'
+16:02:09 INFO  : Disconnected from the channel tcfchan#7.
+16:02:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:02:09 INFO  : Jtag cable 'Xilinx VPK180 FT4232H 382249155078A' is selected.
+16:02:09 INFO  : 'jtag frequency' command is executed.
+16:02:10 INFO  : Context for 'APU' is selected.
+16:02:10 INFO  : Hardware design and registers information is loaded from 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa'.
+16:02:10 INFO  : 'configparams force-mem-access 1' command is executed.
+16:02:10 INFO  : Context for processor 'microblaze_0' is selected.
+16:02:10 INFO  : Processor reset is completed for 'microblaze_0'.
+16:02:10 INFO  : The application 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/Debug/xaxidma_example_simple_poll_1.elf' is downloaded to processor 'microblaze_0'.
+16:02:10 INFO  : 'configparams force-mem-access 0' command is executed.
+16:02:10 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa -mem-ranges [list {0x80000000 0x9fffffff} {0xa4000000 0xafffffff} {0xb0000000 0xbfffffff} {0x20000000000 0x3FFFFFFFFFF}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+rst -processor
+dow C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/Debug/xaxidma_example_simple_poll_1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:02:10 INFO  : Context for processor 'microblaze_0' is selected.
+16:02:10 INFO  : 'con' command is executed.
+16:02:10 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+con
+----------------End of Script----------------
+
+16:02:10 INFO  : Launch script is exported to file 'C:\Users\yiann\vivado23\testbench1\processor_project\sw\xaxidma_example_simple_poll_1_system\_ide\scripts\systemdebugger_xaxidma_example_simple_poll_1_system_standalone.tcl'
+20:01:00 INFO  : Disconnected from the channel tcfchan#8.
+12:14:06 DEBUG : Logs will be stored at 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/IDE.log'.
+12:14:07 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\yiann\vivado23\testbench1\processor_project\sw\temp_xsdb_launch_script.tcl
+12:14:14 INFO  : Registering command handlers for Vitis TCF services
+12:14:15 INFO  : XSCT server has started successfully.
+12:14:15 INFO  : Successfully done setting XSCT server connection channel  
+12:14:17 INFO  : Platform repository initialization has completed.
+12:14:21 INFO  : plnx-install-location is set to ''
+12:14:21 INFO  : Successfully done setting workspace for the tool. 
+12:14:21 INFO  : Successfully done query RDI_DATADIR 
+12:16:05 INFO  : Hardware specification for platform project 'proc_1_wrapper' is updated.
+12:17:28 INFO  : Result from executing command 'getProjects': proc_1_wrapper
+12:17:28 INFO  : Result from executing command 'getPlatforms': proc_1_wrapper|C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/proc_1_wrapper.xpfm;xilinx_vck190_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_vck190_base_202320_1/xilinx_vck190_base_202320_1.xpfm;xilinx_vck190_base_dfx_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_vck190_base_dfx_202320_1/xilinx_vck190_base_dfx_202320_1.xpfm;xilinx_vek280_es1_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_vek280_es1_base_202320_1/xilinx_vek280_es1_base_202320_1.xpfm;xilinx_vmk180_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_vmk180_base_202320_1/xilinx_vmk180_base_202320_1.xpfm;xilinx_zcu102_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu102_base_202320_1/xilinx_zcu102_base_202320_1.xpfm;xilinx_zcu102_base_dfx_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu102_base_dfx_202320_1/xilinx_zcu102_base_dfx_202320_1.xpfm;xilinx_zcu104_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu104_base_202320_1/xilinx_zcu104_base_202320_1.xpfm
+12:17:31 INFO  : Checking for BSP changes to sync application flags for project 'xaxidma_example_simple_poll_1'...
+12:18:04 INFO  : The hardware specification used by project 'xaxidma_example_simple_poll_1' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+12:18:04 INFO  : The file 'C:\Users\yiann\vivado23\testbench1\processor_project\sw\xaxidma_example_simple_poll_1\_ide\bitstream\proc_1_wrapper.mmi' stored in project is removed.
+12:18:04 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\yiann\vivado23\testbench1\processor_project\sw\xaxidma_example_simple_poll_1\_ide\bitstream' in project 'xaxidma_example_simple_poll_1'.
+12:18:05 INFO  : The file 'C:\Users\yiann\vivado23\testbench1\processor_project\sw\xaxidma_example_simple_poll_1\_ide\bootimage\resources\proc_1_wrapper.pdi' stored in project is removed.
+12:18:05 INFO  : The updated PDI file is copied from platform to folder 'C:\Users\yiann\vivado23\testbench1\processor_project\sw\xaxidma_example_simple_poll_1\_ide\bootimage\resources' in project 'xaxidma_example_simple_poll_1'.
+12:19:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:19:28 INFO  : Jtag cable 'Xilinx VPK180 FT4232H 382249155073A' is selected.
+12:19:28 INFO  : 'jtag frequency' command is executed.
+12:19:28 INFO  : Context for 'APU' is selected.
+12:19:29 INFO  : Hardware design and registers information is loaded from 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa'.
+12:19:29 INFO  : 'configparams force-mem-access 1' command is executed.
+12:19:29 INFO  : Context for processor 'microblaze_0' is selected.
+12:19:29 INFO  : Processor reset is completed for 'microblaze_0'.
+12:19:29 INFO  : The application 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/Debug/xaxidma_example_simple_poll_1.elf' is downloaded to processor 'microblaze_0'.
+12:19:29 INFO  : 'configparams force-mem-access 0' command is executed.
+12:19:29 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa -mem-ranges [list {0x80000000 0x9fffffff} {0xa4000000 0xafffffff} {0xb0000000 0xbfffffff} {0x20000000000 0x3FFFFFFFFFF}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+rst -processor
+dow C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/Debug/xaxidma_example_simple_poll_1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+12:19:29 INFO  : Context for processor 'microblaze_0' is selected.
+12:19:29 INFO  : 'con' command is executed.
+12:19:29 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+con
+----------------End of Script----------------
+
+12:19:29 INFO  : Launch script is exported to file 'C:\Users\yiann\vivado23\testbench1\processor_project\sw\xaxidma_example_simple_poll_1_system\_ide\scripts\systemdebugger_xaxidma_example_simple_poll_1_system_standalone.tcl'
+12:45:06 INFO  : Disconnected from the channel tcfchan#2.
+12:45:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:45:06 INFO  : Jtag cable 'Xilinx VPK180 FT4232H 382249155073A' is selected.
+12:45:06 INFO  : 'jtag frequency' command is executed.
+12:45:06 ERROR : more than one targets found with "name =~"APU*"":
+     5  APU (L2 Cache Reset)
+    21  APU (L2 Cache Reset)
+12:45:06 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+----------------End of Script----------------
+
+12:45:06 ERROR : more than one targets found with "name =~"APU*"":
+     5  APU (L2 Cache Reset)
+    21  APU (L2 Cache Reset)
+12:46:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:46:10 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:46:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:46:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:46:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:46:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:46:27 INFO  : Jtag cable 'Xilinx VPK180 FT4232H 382249155073A' is selected.
+12:46:27 INFO  : 'jtag frequency' command is executed.
+12:46:27 INFO  : Context for 'APU' is selected.
+12:46:27 INFO  : Hardware design and registers information is loaded from 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa'.
+12:46:27 INFO  : 'configparams force-mem-access 1' command is executed.
+12:46:30 ERROR : no targets found with "name =~ "*microblaze*#0" && jtag_cable_name =~ "Xilinx VPK180 FT4232H 382249155073A" && jtag_device_ctx=="jsn-VPK180 FT4232H-382249155073A-6ba00477-0"". available targets:
+  1  Versal xcvp1802
+     2  RPU (Reset)
+        3  Cortex-R5 #0 (RPU Reset)
+        4  Cortex-R5 #1 (RPU Reset)
+     5* APU (L2 Cache Reset)
+        6  Cortex-A72 #0 (APU Reset)
+        7  Cortex-A72 #1 (APU Reset)
+     8  PPU
+        9  MicroBlaze PPU (Sleeping)
+    10  PSM
+       11  MicroBlaze PSM (Sleeping)
+    12  PMC
+    13  PL
+       14  MicroBlaze Debug Module at USER2
+          15  MicroBlaze #0 (Running)
+ 16  DPC
+ 17  Versal xcvp1802
+    18  RPU (Reset)
+       19  Cortex-R5 #0 (RPU Reset)
+       20  Cortex-R5 #1 (RPU Reset)
+    21  APU (L2 Cache Reset)
+       22  Cortex-A72 #0 (APU Reset)
+       23  Cortex-A72 #1 (APU Reset)
+    24  PPU
+       25  MicroBlaze PPU (Sleeping)
+    26  PSM
+       27  MicroBlaze PSM (Sleeping)
+    28  PMC
+    29  PL
+       30  MicroBlaze Debug Module at USER2
+          31  MicroBlaze #0 (Running)
+ 32  DPC
+12:46:30 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx VPK180 FT4232H 382249155073A" && jtag_device_ctx=="jsn-VPK180 FT4232H-382249155073A-6ba00477-0"}
+loadhw -hw C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa -mem-ranges [list {0x80000000 0x9fffffff} {0xa4000000 0xafffffff} {0xb0000000 0xbfffffff} {0x20000000000 0x3FFFFFFFFFF}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~ "*microblaze*#0" && jtag_cable_name =~ "Xilinx VPK180 FT4232H 382249155073A" && jtag_device_ctx=="jsn-VPK180 FT4232H-382249155073A-6ba00477-0"}
+----------------End of Script----------------
+
+12:46:30 ERROR : no targets found with "name =~ "*microblaze*#0" && jtag_cable_name =~ "Xilinx VPK180 FT4232H 382249155073A" && jtag_device_ctx=="jsn-VPK180 FT4232H-382249155073A-6ba00477-0"". available targets:
+  1  Versal xcvp1802
+     2  RPU (Reset)
+        3  Cortex-R5 #0 (RPU Reset)
+        4  Cortex-R5 #1 (RPU Reset)
+     5* APU (L2 Cache Reset)
+        6  Cortex-A72 #0 (APU Reset)
+        7  Cortex-A72 #1 (APU Reset)
+     8  PPU
+        9  MicroBlaze PPU (Sleeping)
+    10  PSM
+       11  MicroBlaze PSM (Sleeping)
+    12  PMC
+    13  PL
+       14  MicroBlaze Debug Module at USER2
+          15  MicroBlaze #0 (Running)
+ 16  DPC
+ 17  Versal xcvp1802
+    18  RPU (Reset)
+       19  Cortex-R5 #0 (RPU Reset)
+       20  Cortex-R5 #1 (RPU Reset)
+    21  APU (L2 Cache Reset)
+       22  Cortex-A72 #0 (APU Reset)
+       23  Cortex-A72 #1 (APU Reset)
+    24  PPU
+       25  MicroBlaze PPU (Sleeping)
+    26  PSM
+       27  MicroBlaze PSM (Sleeping)
+    28  PMC
+    29  PL
+       30  MicroBlaze Debug Module at USER2
+          31  MicroBlaze #0 (Running)
+ 32  DPC
+12:46:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:46:37 INFO  : Jtag cable 'Xilinx VPK180 FT4232H 382249155073A' is selected.
+12:46:37 INFO  : 'jtag frequency' command is executed.
+12:46:37 INFO  : Context for 'APU' is selected.
+12:46:37 INFO  : Hardware design and registers information is loaded from 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa'.
+12:46:38 INFO  : 'configparams force-mem-access 1' command is executed.
+12:46:41 ERROR : no targets found with "name =~ "*microblaze*#0" && jtag_cable_name =~ "Xilinx VPK180 FT4232H 382249155073A" && jtag_device_ctx=="jsn-VPK180 FT4232H-382249155073A-6ba00477-0"". available targets:
+  1  Versal xcvp1802
+     2  RPU (Reset)
+        3  Cortex-R5 #0 (RPU Reset)
+        4  Cortex-R5 #1 (RPU Reset)
+     5* APU (L2 Cache Reset)
+        6  Cortex-A72 #0 (APU Reset)
+        7  Cortex-A72 #1 (APU Reset)
+     8  PPU
+        9  MicroBlaze PPU (Sleeping)
+    10  PSM
+       11  MicroBlaze PSM (Sleeping)
+    12  PMC
+    13  PL
+       14  MicroBlaze Debug Module at USER2
+          15  MicroBlaze #0 (Running)
+ 16  DPC
+ 17  Versal xcvp1802
+    18  RPU (Reset)
+       19  Cortex-R5 #0 (RPU Reset)
+       20  Cortex-R5 #1 (RPU Reset)
+    21  APU (L2 Cache Reset)
+       22  Cortex-A72 #0 (APU Reset)
+       23  Cortex-A72 #1 (APU Reset)
+    24  PPU
+       25  MicroBlaze PPU (Sleeping)
+    26  PSM
+       27  MicroBlaze PSM (Sleeping)
+    28  PMC
+    29  PL
+       30  MicroBlaze Debug Module at USER2
+          31  MicroBlaze #0 (Running)
+ 32  DPC
+12:46:41 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx VPK180 FT4232H 382249155073A" && jtag_device_ctx=="jsn-VPK180 FT4232H-382249155073A-6ba00477-0"}
+loadhw -hw C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa -mem-ranges [list {0x80000000 0x9fffffff} {0xa4000000 0xafffffff} {0xb0000000 0xbfffffff} {0x20000000000 0x3FFFFFFFFFF}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~ "*microblaze*#0" && jtag_cable_name =~ "Xilinx VPK180 FT4232H 382249155073A" && jtag_device_ctx=="jsn-VPK180 FT4232H-382249155073A-6ba00477-0"}
+----------------End of Script----------------
+
+12:46:41 ERROR : no targets found with "name =~ "*microblaze*#0" && jtag_cable_name =~ "Xilinx VPK180 FT4232H 382249155073A" && jtag_device_ctx=="jsn-VPK180 FT4232H-382249155073A-6ba00477-0"". available targets:
+  1  Versal xcvp1802
+     2  RPU (Reset)
+        3  Cortex-R5 #0 (RPU Reset)
+        4  Cortex-R5 #1 (RPU Reset)
+     5* APU (L2 Cache Reset)
+        6  Cortex-A72 #0 (APU Reset)
+        7  Cortex-A72 #1 (APU Reset)
+     8  PPU
+        9  MicroBlaze PPU (Sleeping)
+    10  PSM
+       11  MicroBlaze PSM (Sleeping)
+    12  PMC
+    13  PL
+       14  MicroBlaze Debug Module at USER2
+          15  MicroBlaze #0 (Running)
+ 16  DPC
+ 17  Versal xcvp1802
+    18  RPU (Reset)
+       19  Cortex-R5 #0 (RPU Reset)
+       20  Cortex-R5 #1 (RPU Reset)
+    21  APU (L2 Cache Reset)
+       22  Cortex-A72 #0 (APU Reset)
+       23  Cortex-A72 #1 (APU Reset)
+    24  PPU
+       25  MicroBlaze PPU (Sleeping)
+    26  PSM
+       27  MicroBlaze PSM (Sleeping)
+    28  PMC
+    29  PL
+       30  MicroBlaze Debug Module at USER2
+          31  MicroBlaze #0 (Running)
+ 32  DPC
+12:47:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:47:26 INFO  : Jtag cable 'Xilinx VPK180 FT4232H 382249155073A' is selected.
+12:47:26 INFO  : 'jtag frequency' command is executed.
+12:47:26 INFO  : Context for 'APU' is selected.
+12:47:26 INFO  : Hardware design and registers information is loaded from 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa'.
+12:47:26 INFO  : 'configparams force-mem-access 1' command is executed.
+12:47:29 ERROR : no targets found with "name =~ "*microblaze*#0" && jtag_cable_name =~ "Xilinx VPK180 FT4232H 382249155073A" && jtag_device_ctx=="jsn-VPK180 FT4232H-382249155073A-6ba00477-0"". available targets:
+  1  Versal xcvp1802
+     2  RPU (Reset)
+        3  Cortex-R5 #0 (RPU Reset)
+        4  Cortex-R5 #1 (RPU Reset)
+     5* APU (L2 Cache Reset)
+        6  Cortex-A72 #0 (APU Reset)
+        7  Cortex-A72 #1 (APU Reset)
+     8  PPU
+        9  MicroBlaze PPU (Sleeping)
+    10  PSM
+       11  MicroBlaze PSM (Sleeping)
+    12  PMC
+    13  PL
+       14  MicroBlaze Debug Module at USER2
+          15  MicroBlaze #0 (Running)
+ 16  DPC
+ 17  Versal xcvp1802
+    18  RPU (Reset)
+       19  Cortex-R5 #0 (RPU Reset)
+       20  Cortex-R5 #1 (RPU Reset)
+    21  APU (L2 Cache Reset)
+       22  Cortex-A72 #0 (APU Reset)
+       23  Cortex-A72 #1 (APU Reset)
+    24  PPU
+       25  MicroBlaze PPU (Sleeping)
+    26  PSM
+       27  MicroBlaze PSM (Sleeping)
+    28  PMC
+    29  PL
+       30  MicroBlaze Debug Module at USER2
+          31  MicroBlaze #0 (Running)
+ 32  DPC
+12:47:29 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx VPK180 FT4232H 382249155073A" && jtag_device_ctx=="jsn-VPK180 FT4232H-382249155073A-6ba00477-0"}
+loadhw -hw C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa -mem-ranges [list {0x80000000 0x9fffffff} {0xa4000000 0xafffffff} {0xb0000000 0xbfffffff} {0x20000000000 0x3FFFFFFFFFF}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~ "*microblaze*#0" && jtag_cable_name =~ "Xilinx VPK180 FT4232H 382249155073A" && jtag_device_ctx=="jsn-VPK180 FT4232H-382249155073A-6ba00477-0"}
+----------------End of Script----------------
+
+12:47:29 ERROR : no targets found with "name =~ "*microblaze*#0" && jtag_cable_name =~ "Xilinx VPK180 FT4232H 382249155073A" && jtag_device_ctx=="jsn-VPK180 FT4232H-382249155073A-6ba00477-0"". available targets:
+  1  Versal xcvp1802
+     2  RPU (Reset)
+        3  Cortex-R5 #0 (RPU Reset)
+        4  Cortex-R5 #1 (RPU Reset)
+     5* APU (L2 Cache Reset)
+        6  Cortex-A72 #0 (APU Reset)
+        7  Cortex-A72 #1 (APU Reset)
+     8  PPU
+        9  MicroBlaze PPU (Sleeping)
+    10  PSM
+       11  MicroBlaze PSM (Sleeping)
+    12  PMC
+    13  PL
+       14  MicroBlaze Debug Module at USER2
+          15  MicroBlaze #0 (Running)
+ 16  DPC
+ 17  Versal xcvp1802
+    18  RPU (Reset)
+       19  Cortex-R5 #0 (RPU Reset)
+       20  Cortex-R5 #1 (RPU Reset)
+    21  APU (L2 Cache Reset)
+       22  Cortex-A72 #0 (APU Reset)
+       23  Cortex-A72 #1 (APU Reset)
+    24  PPU
+       25  MicroBlaze PPU (Sleeping)
+    26  PSM
+       27  MicroBlaze PSM (Sleeping)
+    28  PMC
+    29  PL
+       30  MicroBlaze Debug Module at USER2
+          31  MicroBlaze #0 (Running)
+ 32  DPC
+12:48:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:48:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:49:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:49:01 INFO  : Jtag cable 'Xilinx VPK180 FT4232H 382249155073A' is selected.
+12:49:01 INFO  : 'jtag frequency' command is executed.
+12:49:01 INFO  : Context for 'APU' is selected.
+12:49:01 INFO  : Hardware design and registers information is loaded from 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa'.
+12:49:01 INFO  : 'configparams force-mem-access 1' command is executed.
+12:49:01 INFO  : Context for processor 'microblaze_0' is selected.
+12:49:01 INFO  : Processor reset is completed for 'microblaze_0'.
+12:49:01 INFO  : The application 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/Debug/xaxidma_example_simple_poll_1.elf' is downloaded to processor 'microblaze_0'.
+12:49:01 INFO  : 'configparams force-mem-access 0' command is executed.
+12:49:01 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa -mem-ranges [list {0x80000000 0x9fffffff} {0xa4000000 0xafffffff} {0xb0000000 0xbfffffff} {0x20000000000 0x3FFFFFFFFFF}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+rst -processor
+dow C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/Debug/xaxidma_example_simple_poll_1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+12:49:02 INFO  : Context for processor 'microblaze_0' is selected.
+12:49:02 INFO  : 'con' command is executed.
+12:49:02 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+con
+----------------End of Script----------------
+
+12:49:02 INFO  : Launch script is exported to file 'C:\Users\yiann\vivado23\testbench1\processor_project\sw\xaxidma_example_simple_poll_1_system\_ide\scripts\systemdebugger_xaxidma_example_simple_poll_1_system_standalone.tcl'
+12:51:30 INFO  : Disconnected from the channel tcfchan#3.
+12:51:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:51:30 INFO  : Jtag cable 'Xilinx VPK180 FT4232H 382249155078A' is selected.
+12:51:31 INFO  : 'jtag frequency' command is executed.
+12:51:31 INFO  : Context for 'APU' is selected.
+12:51:31 INFO  : Hardware design and registers information is loaded from 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa'.
+12:51:31 INFO  : 'configparams force-mem-access 1' command is executed.
+12:51:31 INFO  : Context for processor 'microblaze_0' is selected.
+12:51:31 INFO  : Processor reset is completed for 'microblaze_0'.
+12:51:31 INFO  : The application 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/Debug/xaxidma_example_simple_poll_1.elf' is downloaded to processor 'microblaze_0'.
+12:51:31 INFO  : 'configparams force-mem-access 0' command is executed.
+12:51:31 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa -mem-ranges [list {0x80000000 0x9fffffff} {0xa4000000 0xafffffff} {0xb0000000 0xbfffffff} {0x20000000000 0x3FFFFFFFFFF}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+rst -processor
+dow C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/Debug/xaxidma_example_simple_poll_1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+12:51:31 INFO  : Context for processor 'microblaze_0' is selected.
+12:51:31 INFO  : 'con' command is executed.
+12:51:31 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+con
+----------------End of Script----------------
+
+12:51:31 INFO  : Launch script is exported to file 'C:\Users\yiann\vivado23\testbench1\processor_project\sw\xaxidma_example_simple_poll_1_system\_ide\scripts\systemdebugger_xaxidma_example_simple_poll_1_system_standalone.tcl'
+12:52:24 INFO  : Disconnected from the channel tcfchan#4.
+12:52:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:52:24 INFO  : Jtag cable 'Xilinx VPK180 FT4232H 382249155078A' is selected.
+12:52:24 INFO  : 'jtag frequency' command is executed.
+12:52:24 INFO  : Context for 'APU' is selected.
+12:52:24 INFO  : Hardware design and registers information is loaded from 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa'.
+12:52:24 INFO  : 'configparams force-mem-access 1' command is executed.
+12:52:24 INFO  : Context for processor 'microblaze_0' is selected.
+12:52:24 INFO  : Processor reset is completed for 'microblaze_0'.
+12:52:25 INFO  : The application 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/Debug/xaxidma_example_simple_poll_1.elf' is downloaded to processor 'microblaze_0'.
+12:52:25 INFO  : 'configparams force-mem-access 0' command is executed.
+12:52:25 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa -mem-ranges [list {0x80000000 0x9fffffff} {0xa4000000 0xafffffff} {0xb0000000 0xbfffffff} {0x20000000000 0x3FFFFFFFFFF}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+rst -processor
+dow C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/Debug/xaxidma_example_simple_poll_1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+12:52:25 INFO  : Context for processor 'microblaze_0' is selected.
+12:52:25 INFO  : 'con' command is executed.
+12:52:25 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+con
+----------------End of Script----------------
+
+12:52:25 INFO  : Launch script is exported to file 'C:\Users\yiann\vivado23\testbench1\processor_project\sw\xaxidma_example_simple_poll_1_system\_ide\scripts\systemdebugger_xaxidma_example_simple_poll_1_system_standalone.tcl'
+12:52:48 INFO  : Disconnected from the channel tcfchan#5.
+12:52:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:52:48 INFO  : Jtag cable 'Xilinx VPK180 FT4232H 382249155078A' is selected.
+12:52:48 INFO  : 'jtag frequency' command is executed.
+12:52:48 INFO  : Context for 'APU' is selected.
+12:52:48 INFO  : Hardware design and registers information is loaded from 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa'.
+12:52:49 INFO  : 'configparams force-mem-access 1' command is executed.
+12:52:49 INFO  : Context for processor 'microblaze_0' is selected.
+12:52:49 INFO  : Processor reset is completed for 'microblaze_0'.
+12:52:49 INFO  : The application 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/Debug/xaxidma_example_simple_poll_1.elf' is downloaded to processor 'microblaze_0'.
+12:52:49 INFO  : 'configparams force-mem-access 0' command is executed.
+12:52:49 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa -mem-ranges [list {0x80000000 0x9fffffff} {0xa4000000 0xafffffff} {0xb0000000 0xbfffffff} {0x20000000000 0x3FFFFFFFFFF}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+rst -processor
+dow C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/Debug/xaxidma_example_simple_poll_1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+12:52:49 INFO  : Context for processor 'microblaze_0' is selected.
+12:52:49 INFO  : 'con' command is executed.
+12:52:49 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+con
+----------------End of Script----------------
+
+12:52:49 INFO  : Launch script is exported to file 'C:\Users\yiann\vivado23\testbench1\processor_project\sw\xaxidma_example_simple_poll_1_system\_ide\scripts\systemdebugger_xaxidma_example_simple_poll_1_system_standalone.tcl'
+12:54:36 INFO  : Disconnected from the channel tcfchan#6.
+12:54:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:54:36 INFO  : Jtag cable 'Xilinx VPK180 FT4232H 382249155078A' is selected.
+12:54:36 INFO  : 'jtag frequency' command is executed.
+12:54:36 INFO  : Context for 'APU' is selected.
+12:54:36 INFO  : Hardware design and registers information is loaded from 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa'.
+12:54:36 INFO  : 'configparams force-mem-access 1' command is executed.
+12:54:36 INFO  : Context for processor 'microblaze_0' is selected.
+12:54:36 INFO  : Processor reset is completed for 'microblaze_0'.
+12:54:37 INFO  : The application 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/Debug/xaxidma_example_simple_poll_1.elf' is downloaded to processor 'microblaze_0'.
+12:54:37 INFO  : 'configparams force-mem-access 0' command is executed.
+12:54:37 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa -mem-ranges [list {0x80000000 0x9fffffff} {0xa4000000 0xafffffff} {0xb0000000 0xbfffffff} {0x20000000000 0x3FFFFFFFFFF}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+rst -processor
+dow C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/Debug/xaxidma_example_simple_poll_1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+12:54:37 INFO  : Context for processor 'microblaze_0' is selected.
+12:54:37 INFO  : 'con' command is executed.
+12:54:37 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+con
+----------------End of Script----------------
+
+12:54:37 INFO  : Launch script is exported to file 'C:\Users\yiann\vivado23\testbench1\processor_project\sw\xaxidma_example_simple_poll_1_system\_ide\scripts\systemdebugger_xaxidma_example_simple_poll_1_system_standalone.tcl'
+13:02:24 INFO  : Disconnected from the channel tcfchan#7.
+13:02:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:02:25 INFO  : Jtag cable 'Xilinx VPK180 FT4232H 382249155073A' is selected.
+13:02:25 INFO  : 'jtag frequency' command is executed.
+13:02:25 INFO  : Context for 'APU' is selected.
+13:02:25 INFO  : Hardware design and registers information is loaded from 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa'.
+13:02:25 INFO  : 'configparams force-mem-access 1' command is executed.
+13:02:25 INFO  : Context for processor 'microblaze_0' is selected.
+13:02:25 INFO  : Processor reset is completed for 'microblaze_0'.
+13:02:25 INFO  : The application 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/Debug/xaxidma_example_simple_poll_1.elf' is downloaded to processor 'microblaze_0'.
+13:02:25 INFO  : 'configparams force-mem-access 0' command is executed.
+13:02:25 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa -mem-ranges [list {0x80000000 0x9fffffff} {0xa4000000 0xafffffff} {0xb0000000 0xbfffffff} {0x20000000000 0x3FFFFFFFFFF}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+rst -processor
+dow C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/Debug/xaxidma_example_simple_poll_1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:02:25 INFO  : Context for processor 'microblaze_0' is selected.
+13:02:25 INFO  : 'con' command is executed.
+13:02:25 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+con
+----------------End of Script----------------
+
+13:02:25 INFO  : Launch script is exported to file 'C:\Users\yiann\vivado23\testbench1\processor_project\sw\xaxidma_example_simple_poll_1_system\_ide\scripts\systemdebugger_xaxidma_example_simple_poll_1_system_standalone.tcl'
+13:03:03 INFO  : Disconnected from the channel tcfchan#8.
+13:03:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:03:03 INFO  : Jtag cable 'Xilinx VPK180 FT4232H 382249155073A' is selected.
+13:03:03 INFO  : 'jtag frequency' command is executed.
+13:03:03 INFO  : Context for 'APU' is selected.
+13:03:03 INFO  : Hardware design and registers information is loaded from 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa'.
+13:03:03 INFO  : 'configparams force-mem-access 1' command is executed.
+13:03:03 INFO  : Context for processor 'microblaze_0' is selected.
+13:03:03 INFO  : Processor reset is completed for 'microblaze_0'.
+13:03:03 INFO  : The application 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/Debug/xaxidma_example_simple_poll_1.elf' is downloaded to processor 'microblaze_0'.
+13:03:03 INFO  : 'configparams force-mem-access 0' command is executed.
+13:03:03 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa -mem-ranges [list {0x80000000 0x9fffffff} {0xa4000000 0xafffffff} {0xb0000000 0xbfffffff} {0x20000000000 0x3FFFFFFFFFF}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+rst -processor
+dow C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/Debug/xaxidma_example_simple_poll_1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:03:03 INFO  : Context for processor 'microblaze_0' is selected.
+13:03:03 INFO  : 'con' command is executed.
+13:03:03 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+con
+----------------End of Script----------------
+
+13:03:03 INFO  : Launch script is exported to file 'C:\Users\yiann\vivado23\testbench1\processor_project\sw\xaxidma_example_simple_poll_1_system\_ide\scripts\systemdebugger_xaxidma_example_simple_poll_1_system_standalone.tcl'
+13:04:50 INFO  : Disconnected from the channel tcfchan#9.
+13:04:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:04:51 INFO  : Jtag cable 'Xilinx VPK180 FT4232H 382249155078A' is selected.
+13:04:51 INFO  : 'jtag frequency' command is executed.
+13:04:51 INFO  : Context for 'APU' is selected.
+13:04:51 INFO  : Hardware design and registers information is loaded from 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa'.
+13:04:51 INFO  : 'configparams force-mem-access 1' command is executed.
+13:04:51 INFO  : Context for processor 'microblaze_0' is selected.
+13:04:51 INFO  : Processor reset is completed for 'microblaze_0'.
+13:04:51 INFO  : The application 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/Debug/xaxidma_example_simple_poll_1.elf' is downloaded to processor 'microblaze_0'.
+13:04:51 INFO  : 'configparams force-mem-access 0' command is executed.
+13:04:51 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa -mem-ranges [list {0x80000000 0x9fffffff} {0xa4000000 0xafffffff} {0xb0000000 0xbfffffff} {0x20000000000 0x3FFFFFFFFFF}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+rst -processor
+dow C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/Debug/xaxidma_example_simple_poll_1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:04:51 INFO  : Context for processor 'microblaze_0' is selected.
+13:04:51 INFO  : 'con' command is executed.
+13:04:51 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+con
+----------------End of Script----------------
+
+13:04:51 INFO  : Launch script is exported to file 'C:\Users\yiann\vivado23\testbench1\processor_project\sw\xaxidma_example_simple_poll_1_system\_ide\scripts\systemdebugger_xaxidma_example_simple_poll_1_system_standalone.tcl'
+13:13:54 INFO  : Disconnected from the channel tcfchan#10.
+13:13:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:13:54 INFO  : Jtag cable 'Xilinx VPK180 FT4232H 382249155073A' is selected.
+13:13:54 INFO  : 'jtag frequency' command is executed.
+13:13:54 INFO  : Context for 'APU' is selected.
+13:13:55 INFO  : Hardware design and registers information is loaded from 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa'.
+13:13:55 INFO  : 'configparams force-mem-access 1' command is executed.
+13:13:55 INFO  : Context for processor 'microblaze_0' is selected.
+13:13:55 INFO  : Processor reset is completed for 'microblaze_0'.
+13:13:55 INFO  : The application 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/Debug/xaxidma_example_simple_poll_1.elf' is downloaded to processor 'microblaze_0'.
+13:13:55 INFO  : 'configparams force-mem-access 0' command is executed.
+13:13:55 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa -mem-ranges [list {0x80000000 0x9fffffff} {0xa4000000 0xafffffff} {0xb0000000 0xbfffffff} {0x20000000000 0x3FFFFFFFFFF}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+rst -processor
+dow C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/Debug/xaxidma_example_simple_poll_1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:13:55 INFO  : Context for processor 'microblaze_0' is selected.
+13:13:55 INFO  : 'con' command is executed.
+13:13:55 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+con
+----------------End of Script----------------
+
+13:13:55 INFO  : Launch script is exported to file 'C:\Users\yiann\vivado23\testbench1\processor_project\sw\xaxidma_example_simple_poll_1_system\_ide\scripts\systemdebugger_xaxidma_example_simple_poll_1_system_standalone.tcl'
+10:05:17 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\yiann\vivado23\testbench1\processor_project\sw\temp_xsdb_launch_script.tcl
+15:50:33 DEBUG : Logs will be stored at 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/IDE.log'.
+15:50:34 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\yiann\vivado23\testbench1\processor_project\sw\temp_xsdb_launch_script.tcl
+15:50:42 INFO  : XSCT server has started successfully.
+15:50:42 INFO  : Successfully done setting XSCT server connection channel  
+15:50:42 INFO  : plnx-install-location is set to ''
+15:50:45 INFO  : Registering command handlers for Vitis TCF services
+15:50:49 INFO  : Platform repository initialization has completed.
+15:50:51 INFO  : Successfully done setting workspace for the tool. 
+15:50:51 INFO  : Successfully done query RDI_DATADIR 
+15:52:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:52:48 INFO  : Jtag cable 'Xilinx VPK180 FT4232H 382249155073A' is selected.
+15:52:48 INFO  : 'jtag frequency' command is executed.
+15:52:48 INFO  : Context for 'APU' is selected.
+15:52:49 INFO  : Hardware design and registers information is loaded from 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa'.
+15:52:49 INFO  : 'configparams force-mem-access 1' command is executed.
+15:52:49 INFO  : Context for processor 'microblaze_0' is selected.
+15:52:49 INFO  : Processor reset is completed for 'microblaze_0'.
+15:52:49 INFO  : The application 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/Debug/xaxidma_example_simple_poll_1.elf' is downloaded to processor 'microblaze_0'.
+15:52:49 INFO  : 'configparams force-mem-access 0' command is executed.
+15:52:49 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa -mem-ranges [list {0x80000000 0x9fffffff} {0xa4000000 0xafffffff} {0xb0000000 0xbfffffff} {0x20000000000 0x3FFFFFFFFFF}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+rst -processor
+dow C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/Debug/xaxidma_example_simple_poll_1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:52:49 INFO  : Context for processor 'microblaze_0' is selected.
+15:52:49 INFO  : 'con' command is executed.
+15:52:49 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+con
+----------------End of Script----------------
+
+15:52:49 INFO  : Launch script is exported to file 'C:\Users\yiann\vivado23\testbench1\processor_project\sw\xaxidma_example_simple_poll_1_system\_ide\scripts\systemdebugger_xaxidma_example_simple_poll_1_system_standalone.tcl'
+15:53:17 INFO  : Disconnected from the channel tcfchan#1.
+15:53:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:53:17 INFO  : Jtag cable 'Xilinx VPK180 FT4232H 382249155073A' is selected.
+15:53:17 INFO  : 'jtag frequency' command is executed.
+15:53:17 INFO  : Context for 'APU' is selected.
+15:53:18 INFO  : Hardware design and registers information is loaded from 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa'.
+15:53:18 INFO  : 'configparams force-mem-access 1' command is executed.
+15:53:18 INFO  : Context for processor 'microblaze_0' is selected.
+15:53:18 INFO  : Processor reset is completed for 'microblaze_0'.
+15:53:18 INFO  : The application 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/Debug/xaxidma_example_simple_poll_1.elf' is downloaded to processor 'microblaze_0'.
+15:53:18 INFO  : 'configparams force-mem-access 0' command is executed.
+15:53:18 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa -mem-ranges [list {0x80000000 0x9fffffff} {0xa4000000 0xafffffff} {0xb0000000 0xbfffffff} {0x20000000000 0x3FFFFFFFFFF}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+rst -processor
+dow C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/Debug/xaxidma_example_simple_poll_1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:53:18 INFO  : Context for processor 'microblaze_0' is selected.
+15:53:18 INFO  : 'con' command is executed.
+15:53:18 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+con
+----------------End of Script----------------
+
+15:53:18 INFO  : Launch script is exported to file 'C:\Users\yiann\vivado23\testbench1\processor_project\sw\xaxidma_example_simple_poll_1_system\_ide\scripts\systemdebugger_xaxidma_example_simple_poll_1_system_standalone.tcl'
+15:54:15 INFO  : Result from executing command 'getProjects': proc_1_wrapper
+15:54:15 INFO  : Result from executing command 'getPlatforms': proc_1_wrapper|C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/proc_1_wrapper.xpfm;xilinx_vck190_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_vck190_base_202320_1/xilinx_vck190_base_202320_1.xpfm;xilinx_vck190_base_dfx_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_vck190_base_dfx_202320_1/xilinx_vck190_base_dfx_202320_1.xpfm;xilinx_vek280_es1_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_vek280_es1_base_202320_1/xilinx_vek280_es1_base_202320_1.xpfm;xilinx_vmk180_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_vmk180_base_202320_1/xilinx_vmk180_base_202320_1.xpfm;xilinx_zcu102_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu102_base_202320_1/xilinx_zcu102_base_202320_1.xpfm;xilinx_zcu102_base_dfx_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu102_base_dfx_202320_1/xilinx_zcu102_base_dfx_202320_1.xpfm;xilinx_zcu104_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu104_base_202320_1/xilinx_zcu104_base_202320_1.xpfm
+15:54:19 INFO  : Checking for BSP changes to sync application flags for project 'hello_world'...
+15:54:23 INFO  : The hardware specification used by project 'hello_world' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+15:54:23 INFO  : The file 'C:\Users\yiann\vivado23\testbench1\processor_project\sw\hello_world\_ide\bitstream\proc_1_wrapper.mmi' stored in project is removed.
+15:54:23 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\yiann\vivado23\testbench1\processor_project\sw\hello_world\_ide\bitstream' in project 'hello_world'.
+15:54:23 INFO  : The file 'C:\Users\yiann\vivado23\testbench1\processor_project\sw\hello_world\_ide\bootimage\resources\proc_1_wrapper.pdi' stored in project is removed.
+15:54:23 INFO  : The updated PDI file is copied from platform to folder 'C:\Users\yiann\vivado23\testbench1\processor_project\sw\hello_world\_ide\bootimage\resources' in project 'hello_world'.
+15:54:28 INFO  : Disconnected from the channel tcfchan#2.
+15:54:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:54:29 INFO  : Jtag cable 'Xilinx VPK180 FT4232H 382249155073A' is selected.
+15:54:29 INFO  : 'jtag frequency' command is executed.
+15:54:29 INFO  : Context for 'APU' is selected.
+15:54:30 INFO  : Hardware design and registers information is loaded from 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa'.
+15:54:30 INFO  : 'configparams force-mem-access 1' command is executed.
+15:54:30 INFO  : Context for 'Versal' is selected.
+15:54:30 INFO  : System reset is completed.
+15:54:33 INFO  : 'after 3000' command is executed.
+15:54:54 ERROR : 'targets -set -filter {jtag_cable_name =~ "Xilinx VPK180 FT4232H 382249155073A" && name=="PMC" && jtag_device_ctx=="jsn-VPK180 FT4232H-382249155073A-14d14093-0"}' is cancelled.
+15:54:55 ERROR : Exception occured while running Program Device.
+java.lang.RuntimeException: 'targets -set -filter {jtag_cable_name =~ "Xilinx VPK180 FT4232H 382249155073A" && name=="PMC" && jtag_device_ctx=="jsn-VPK180 FT4232H-382249155073A-14d14093-0"}' is cancelled.
+15:54:55 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa -mem-ranges [list {0x80000000 0x9fffffff} {0xa4000000 0xafffffff} {0xb0000000 0xbfffffff} {0x20000000000 0x3FFFFFFFFFF}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"Versal*"}
+rst -system
+after 3000
+----------------End of Script----------------
+
+15:54:55 ERROR : 'targets -set -filter {jtag_cable_name =~ "Xilinx VPK180 FT4232H 382249155073A" && name=="PMC" && jtag_device_ctx=="jsn-VPK180 FT4232H-382249155073A-14d14093-0"}' is cancelled.
+15:56:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:56:46 INFO  : Jtag cable 'Xilinx VPK180 FT4232H 382249155073A' is selected.
+15:56:47 INFO  : 'jtag frequency' command is executed.
+15:56:47 INFO  : Context for 'APU' is selected.
+15:56:47 INFO  : Hardware design and registers information is loaded from 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa'.
+15:56:47 INFO  : 'configparams force-mem-access 1' command is executed.
+15:56:47 INFO  : Context for 'Versal' is selected.
+15:56:47 INFO  : System reset is completed.
+15:56:50 INFO  : 'after 3000' command is executed.
+15:56:50 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx VPK180 FT4232H 382249155073A" && name=="PMC" && jtag_device_ctx=="jsn-VPK180 FT4232H-382249155073A-14d14093-0"}' command is executed.
+15:56:54 INFO  : Device configured successfully with "C:/Users/yiann/vivado23/testbench1/processor_project/sw/hello_world/_ide/bootimage/resources/proc_1_wrapper.pdi"
+15:56:54 INFO  : Context for processor 'microblaze_0' is selected.
+15:56:54 INFO  : Processor reset is completed for 'microblaze_0'.
+15:56:54 INFO  : The application 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/hello_world/Debug/hello_world.elf' is downloaded to processor 'microblaze_0'.
+15:56:54 INFO  : 'configparams force-mem-access 0' command is executed.
+15:56:54 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa -mem-ranges [list {0x80000000 0x9fffffff} {0xa4000000 0xafffffff} {0xb0000000 0xbfffffff} {0x20000000000 0x3FFFFFFFFFF}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"Versal*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx VPK180 FT4232H 382249155073A" && name=="PMC" && jtag_device_ctx=="jsn-VPK180 FT4232H-382249155073A-14d14093-0"}
+device program C:/Users/yiann/vivado23/testbench1/processor_project/sw/hello_world/_ide/bootimage/resources/proc_1_wrapper.pdi
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+rst -processor
+dow C:/Users/yiann/vivado23/testbench1/processor_project/sw/hello_world/Debug/hello_world.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:56:55 INFO  : Context for processor 'microblaze_0' is selected.
+15:56:55 INFO  : 'con' command is executed.
+15:56:55 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+con
+----------------End of Script----------------
+
+15:56:55 INFO  : Launch script is exported to file 'C:\Users\yiann\vivado23\testbench1\processor_project\sw\hello_world_system\_ide\scripts\systemdebugger_hello_world_system_standalone.tcl'
+15:57:15 INFO  : Disconnected from the channel tcfchan#4.
+15:57:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:57:15 INFO  : Jtag cable 'Xilinx VPK180 FT4232H 382249155073A' is selected.
+15:57:15 INFO  : 'jtag frequency' command is executed.
+15:57:15 INFO  : Context for 'APU' is selected.
+15:57:15 INFO  : Hardware design and registers information is loaded from 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa'.
+15:57:15 INFO  : 'configparams force-mem-access 1' command is executed.
+15:57:15 INFO  : Context for 'Versal' is selected.
+15:57:15 INFO  : System reset is completed.
+15:57:18 INFO  : 'after 3000' command is executed.
+15:57:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx VPK180 FT4232H 382249155073A" && name=="PMC" && jtag_device_ctx=="jsn-VPK180 FT4232H-382249155073A-14d14093-0"}' command is executed.
+15:57:23 INFO  : Device configured successfully with "C:/Users/yiann/vivado23/testbench1/processor_project/sw/hello_world/_ide/bootimage/resources/proc_1_wrapper.pdi"
+15:57:23 INFO  : Context for processor 'microblaze_0' is selected.
+15:57:23 INFO  : Processor reset is completed for 'microblaze_0'.
+15:57:23 INFO  : The application 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/hello_world/Debug/hello_world.elf' is downloaded to processor 'microblaze_0'.
+15:57:23 INFO  : 'configparams force-mem-access 0' command is executed.
+15:57:23 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa -mem-ranges [list {0x80000000 0x9fffffff} {0xa4000000 0xafffffff} {0xb0000000 0xbfffffff} {0x20000000000 0x3FFFFFFFFFF}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"Versal*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx VPK180 FT4232H 382249155073A" && name=="PMC" && jtag_device_ctx=="jsn-VPK180 FT4232H-382249155073A-14d14093-0"}
+device program C:/Users/yiann/vivado23/testbench1/processor_project/sw/hello_world/_ide/bootimage/resources/proc_1_wrapper.pdi
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+rst -processor
+dow C:/Users/yiann/vivado23/testbench1/processor_project/sw/hello_world/Debug/hello_world.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:57:23 INFO  : Context for processor 'microblaze_0' is selected.
+15:57:23 INFO  : 'con' command is executed.
+15:57:23 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+con
+----------------End of Script----------------
+
+15:57:23 INFO  : Launch script is exported to file 'C:\Users\yiann\vivado23\testbench1\processor_project\sw\hello_world_system\_ide\scripts\systemdebugger_hello_world_system_standalone.tcl'
+15:58:25 INFO  : Disconnected from the channel tcfchan#5.
+15:58:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:58:26 INFO  : Jtag cable 'Xilinx VPK180 FT4232H 382249155073A' is selected.
+15:58:26 INFO  : 'jtag frequency' command is executed.
+15:58:26 INFO  : Context for 'APU' is selected.
+15:58:27 INFO  : Hardware design and registers information is loaded from 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa'.
+15:58:27 INFO  : 'configparams force-mem-access 1' command is executed.
+15:58:27 INFO  : Context for processor 'microblaze_0' is selected.
+15:58:27 INFO  : Processor reset is completed for 'microblaze_0'.
+15:58:27 INFO  : The application 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/Debug/xaxidma_example_simple_poll_1.elf' is downloaded to processor 'microblaze_0'.
+15:58:27 INFO  : 'configparams force-mem-access 0' command is executed.
+15:58:27 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa -mem-ranges [list {0x80000000 0x9fffffff} {0xa4000000 0xafffffff} {0xb0000000 0xbfffffff} {0x20000000000 0x3FFFFFFFFFF}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+rst -processor
+dow C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/Debug/xaxidma_example_simple_poll_1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:58:27 INFO  : Context for processor 'microblaze_0' is selected.
+15:58:27 INFO  : 'con' command is executed.
+15:58:27 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+con
+----------------End of Script----------------
+
+15:58:27 INFO  : Launch script is exported to file 'C:\Users\yiann\vivado23\testbench1\processor_project\sw\xaxidma_example_simple_poll_1_system\_ide\scripts\systemdebugger_xaxidma_example_simple_poll_1_system_standalone.tcl'
+17:05:33 INFO  : Disconnected from the channel tcfchan#6.
+17:05:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:05:33 INFO  : Jtag cable 'Xilinx VPK180 FT4232H 382249155078A' is selected.
+17:05:34 INFO  : 'jtag frequency' command is executed.
+17:05:34 INFO  : Context for 'APU' is selected.
+17:05:34 INFO  : Hardware design and registers information is loaded from 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa'.
+17:05:34 INFO  : 'configparams force-mem-access 1' command is executed.
+17:05:34 INFO  : Context for processor 'microblaze_0' is selected.
+17:05:34 INFO  : Processor reset is completed for 'microblaze_0'.
+17:05:34 INFO  : The application 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/Debug/xaxidma_example_simple_poll_1.elf' is downloaded to processor 'microblaze_0'.
+17:05:34 INFO  : 'configparams force-mem-access 0' command is executed.
+17:05:34 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa -mem-ranges [list {0x80000000 0x9fffffff} {0xa4000000 0xafffffff} {0xb0000000 0xbfffffff} {0x20000000000 0x3FFFFFFFFFF}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+rst -processor
+dow C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/Debug/xaxidma_example_simple_poll_1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:05:34 INFO  : Context for processor 'microblaze_0' is selected.
+17:05:34 INFO  : 'con' command is executed.
+17:05:34 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+con
+----------------End of Script----------------
+
+17:05:34 INFO  : Launch script is exported to file 'C:\Users\yiann\vivado23\testbench1\processor_project\sw\xaxidma_example_simple_poll_1_system\_ide\scripts\systemdebugger_xaxidma_example_simple_poll_1_system_standalone.tcl'
+17:06:02 INFO  : Disconnected from the channel tcfchan#7.
+17:06:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:06:02 INFO  : Jtag cable 'Xilinx VPK180 FT4232H 382249155078A' is selected.
+17:06:02 INFO  : 'jtag frequency' command is executed.
+17:06:02 INFO  : Context for 'APU' is selected.
+17:06:02 INFO  : Hardware design and registers information is loaded from 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa'.
+17:06:02 INFO  : 'configparams force-mem-access 1' command is executed.
+17:06:02 INFO  : Context for processor 'microblaze_0' is selected.
+17:06:02 INFO  : Processor reset is completed for 'microblaze_0'.
+17:06:02 INFO  : The application 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/Debug/xaxidma_example_simple_poll_1.elf' is downloaded to processor 'microblaze_0'.
+17:06:02 INFO  : 'configparams force-mem-access 0' command is executed.
+17:06:02 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa -mem-ranges [list {0x80000000 0x9fffffff} {0xa4000000 0xafffffff} {0xb0000000 0xbfffffff} {0x20000000000 0x3FFFFFFFFFF}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+rst -processor
+dow C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/Debug/xaxidma_example_simple_poll_1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:06:02 INFO  : Context for processor 'microblaze_0' is selected.
+17:06:02 INFO  : 'con' command is executed.
+17:06:02 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+con
+----------------End of Script----------------
+
+17:06:02 INFO  : Launch script is exported to file 'C:\Users\yiann\vivado23\testbench1\processor_project\sw\xaxidma_example_simple_poll_1_system\_ide\scripts\systemdebugger_xaxidma_example_simple_poll_1_system_standalone.tcl'
+17:09:27 INFO  : Disconnected from the channel tcfchan#8.
+17:09:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:09:27 INFO  : Jtag cable 'Xilinx VPK180 FT4232H 382249155078A' is selected.
+17:09:27 INFO  : 'jtag frequency' command is executed.
+17:09:27 INFO  : Context for 'APU' is selected.
+17:09:27 INFO  : Hardware design and registers information is loaded from 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa'.
+17:09:27 INFO  : 'configparams force-mem-access 1' command is executed.
+17:09:27 INFO  : Context for processor 'microblaze_0' is selected.
+17:09:27 INFO  : Processor reset is completed for 'microblaze_0'.
+17:09:27 INFO  : The application 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/Debug/xaxidma_example_simple_poll_1.elf' is downloaded to processor 'microblaze_0'.
+17:09:27 INFO  : 'configparams force-mem-access 0' command is executed.
+17:09:27 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa -mem-ranges [list {0x80000000 0x9fffffff} {0xa4000000 0xafffffff} {0xb0000000 0xbfffffff} {0x20000000000 0x3FFFFFFFFFF}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+rst -processor
+dow C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/Debug/xaxidma_example_simple_poll_1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:09:28 INFO  : Context for processor 'microblaze_0' is selected.
+17:09:28 INFO  : 'con' command is executed.
+17:09:28 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+con
+----------------End of Script----------------
+
+17:09:28 INFO  : Launch script is exported to file 'C:\Users\yiann\vivado23\testbench1\processor_project\sw\xaxidma_example_simple_poll_1_system\_ide\scripts\systemdebugger_xaxidma_example_simple_poll_1_system_standalone.tcl'
+17:10:01 INFO  : Disconnected from the channel tcfchan#9.
+17:10:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:10:01 INFO  : Jtag cable 'Xilinx VPK180 FT4232H 382249155078A' is selected.
+17:10:01 INFO  : 'jtag frequency' command is executed.
+17:10:01 INFO  : Context for 'APU' is selected.
+17:10:01 INFO  : Hardware design and registers information is loaded from 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa'.
+17:10:01 INFO  : 'configparams force-mem-access 1' command is executed.
+17:10:01 INFO  : Context for processor 'microblaze_0' is selected.
+17:10:01 INFO  : Processor reset is completed for 'microblaze_0'.
+17:10:02 INFO  : The application 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/Debug/xaxidma_example_simple_poll_1.elf' is downloaded to processor 'microblaze_0'.
+17:10:02 INFO  : 'configparams force-mem-access 0' command is executed.
+17:10:02 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa -mem-ranges [list {0x80000000 0x9fffffff} {0xa4000000 0xafffffff} {0xb0000000 0xbfffffff} {0x20000000000 0x3FFFFFFFFFF}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+rst -processor
+dow C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/Debug/xaxidma_example_simple_poll_1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:10:02 INFO  : Context for processor 'microblaze_0' is selected.
+17:10:02 INFO  : 'con' command is executed.
+17:10:02 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+con
+----------------End of Script----------------
+
+17:10:02 INFO  : Launch script is exported to file 'C:\Users\yiann\vivado23\testbench1\processor_project\sw\xaxidma_example_simple_poll_1_system\_ide\scripts\systemdebugger_xaxidma_example_simple_poll_1_system_standalone.tcl'
+17:12:14 INFO  : Disconnected from the channel tcfchan#10.
+17:12:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:12:14 INFO  : Jtag cable 'Xilinx VPK180 FT4232H 382249155078A' is selected.
+17:12:14 INFO  : 'jtag frequency' command is executed.
+17:12:14 INFO  : Context for 'APU' is selected.
+17:12:14 INFO  : Hardware design and registers information is loaded from 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa'.
+17:12:14 INFO  : 'configparams force-mem-access 1' command is executed.
+17:12:14 INFO  : Context for processor 'microblaze_0' is selected.
+17:12:15 INFO  : Processor reset is completed for 'microblaze_0'.
+17:12:15 INFO  : The application 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/Debug/xaxidma_example_simple_poll_1.elf' is downloaded to processor 'microblaze_0'.
+17:12:15 INFO  : 'configparams force-mem-access 0' command is executed.
+17:12:15 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa -mem-ranges [list {0x80000000 0x9fffffff} {0xa4000000 0xafffffff} {0xb0000000 0xbfffffff} {0x20000000000 0x3FFFFFFFFFF}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+rst -processor
+dow C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/Debug/xaxidma_example_simple_poll_1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:12:15 INFO  : Context for processor 'microblaze_0' is selected.
+17:12:15 INFO  : 'con' command is executed.
+17:12:15 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+con
+----------------End of Script----------------
+
+17:12:15 INFO  : Launch script is exported to file 'C:\Users\yiann\vivado23\testbench1\processor_project\sw\xaxidma_example_simple_poll_1_system\_ide\scripts\systemdebugger_xaxidma_example_simple_poll_1_system_standalone.tcl'
+17:17:26 INFO  : Disconnected from the channel tcfchan#11.
+17:17:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:17:27 INFO  : Jtag cable 'Xilinx VPK180 FT4232H 382249155078A' is selected.
+17:17:27 INFO  : 'jtag frequency' command is executed.
+17:17:27 INFO  : Context for 'APU' is selected.
+17:17:27 INFO  : Hardware design and registers information is loaded from 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa'.
+17:17:27 INFO  : 'configparams force-mem-access 1' command is executed.
+17:17:27 INFO  : Context for processor 'microblaze_0' is selected.
+17:17:27 INFO  : Processor reset is completed for 'microblaze_0'.
+17:17:27 INFO  : The application 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/Debug/xaxidma_example_simple_poll_1.elf' is downloaded to processor 'microblaze_0'.
+17:17:27 INFO  : 'configparams force-mem-access 0' command is executed.
+17:17:27 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa -mem-ranges [list {0x80000000 0x9fffffff} {0xa4000000 0xafffffff} {0xb0000000 0xbfffffff} {0x20000000000 0x3FFFFFFFFFF}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+rst -processor
+dow C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/Debug/xaxidma_example_simple_poll_1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:17:27 INFO  : Context for processor 'microblaze_0' is selected.
+17:17:27 INFO  : 'con' command is executed.
+17:17:27 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+con
+----------------End of Script----------------
+
+17:17:27 INFO  : Launch script is exported to file 'C:\Users\yiann\vivado23\testbench1\processor_project\sw\xaxidma_example_simple_poll_1_system\_ide\scripts\systemdebugger_xaxidma_example_simple_poll_1_system_standalone.tcl'
+17:18:58 INFO  : Disconnected from the channel tcfchan#12.
+17:18:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:18:58 INFO  : Jtag cable 'Xilinx VPK180 FT4232H 382249155073A' is selected.
+17:18:58 INFO  : 'jtag frequency' command is executed.
+17:18:58 INFO  : Context for 'APU' is selected.
+17:18:58 INFO  : Hardware design and registers information is loaded from 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa'.
+17:18:58 INFO  : 'configparams force-mem-access 1' command is executed.
+17:18:58 INFO  : Context for processor 'microblaze_0' is selected.
+17:18:58 INFO  : Processor reset is completed for 'microblaze_0'.
+17:18:58 INFO  : The application 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/Debug/xaxidma_example_simple_poll_1.elf' is downloaded to processor 'microblaze_0'.
+17:18:58 INFO  : 'configparams force-mem-access 0' command is executed.
+17:18:58 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa -mem-ranges [list {0x80000000 0x9fffffff} {0xa4000000 0xafffffff} {0xb0000000 0xbfffffff} {0x20000000000 0x3FFFFFFFFFF}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+rst -processor
+dow C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/Debug/xaxidma_example_simple_poll_1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:18:58 INFO  : Context for processor 'microblaze_0' is selected.
+17:18:58 INFO  : 'con' command is executed.
+17:18:58 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+con
+----------------End of Script----------------
+
+17:18:58 INFO  : Launch script is exported to file 'C:\Users\yiann\vivado23\testbench1\processor_project\sw\xaxidma_example_simple_poll_1_system\_ide\scripts\systemdebugger_xaxidma_example_simple_poll_1_system_standalone.tcl'
+17:28:56 INFO  : Disconnected from the channel tcfchan#13.
+17:28:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:28:56 INFO  : Jtag cable 'Xilinx VPK180 FT4232H 382249155073A' is selected.
+17:28:56 INFO  : 'jtag frequency' command is executed.
+17:28:56 INFO  : Context for 'APU' is selected.
+17:28:56 INFO  : Hardware design and registers information is loaded from 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa'.
+17:28:56 INFO  : 'configparams force-mem-access 1' command is executed.
+17:28:56 INFO  : Context for processor 'microblaze_0' is selected.
+17:28:56 INFO  : Processor reset is completed for 'microblaze_0'.
+17:28:56 INFO  : The application 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/Debug/xaxidma_example_simple_poll_1.elf' is downloaded to processor 'microblaze_0'.
+17:28:56 INFO  : 'configparams force-mem-access 0' command is executed.
+17:28:56 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa -mem-ranges [list {0x80000000 0x9fffffff} {0xa4000000 0xafffffff} {0xb0000000 0xbfffffff} {0x20000000000 0x3FFFFFFFFFF}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+rst -processor
+dow C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/Debug/xaxidma_example_simple_poll_1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:28:57 INFO  : Context for processor 'microblaze_0' is selected.
+17:28:57 INFO  : 'con' command is executed.
+17:28:57 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+con
+----------------End of Script----------------
+
+17:28:57 INFO  : Launch script is exported to file 'C:\Users\yiann\vivado23\testbench1\processor_project\sw\xaxidma_example_simple_poll_1_system\_ide\scripts\systemdebugger_xaxidma_example_simple_poll_1_system_standalone.tcl'
+17:31:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:32:04 INFO  : Disconnected from the channel tcfchan#14.
+17:32:04 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:32:04 INFO  : Jtag cable 'Xilinx VPK180 FT4232H 382249155073A' is selected.
+17:32:04 INFO  : 'jtag frequency' command is executed.
+17:32:04 ERROR : more than one targets found with "name =~"APU*"":
+     5  APU (L2 Cache Reset)
+    21  APU (L2 Cache Reset)
+17:32:04 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+----------------End of Script----------------
+
+17:32:04 ERROR : more than one targets found with "name =~"APU*"":
+     5  APU (L2 Cache Reset)
+    21  APU (L2 Cache Reset)
+17:32:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:32:23 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:32:23 INFO  : Jtag cable 'Xilinx VPK180 FT4232H 382249155073A' is selected.
+17:32:23 INFO  : 'jtag frequency' command is executed.
+17:32:23 INFO  : Context for 'APU' is selected.
+17:32:23 INFO  : Hardware design and registers information is loaded from 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa'.
+17:32:23 INFO  : 'configparams force-mem-access 1' command is executed.
+17:32:26 ERROR : no targets found with "name =~ "*microblaze*#0" && jtag_cable_name =~ "Xilinx VPK180 FT4232H 382249155073A" && jtag_device_ctx=="jsn-VPK180 FT4232H-382249155073A-6ba00477-0"". available targets:
+  1  Versal xcvp1802
+     2  RPU (Reset)
+        3  Cortex-R5 #0 (RPU Reset)
+        4  Cortex-R5 #1 (RPU Reset)
+     5* APU (L2 Cache Reset)
+        6  Cortex-A72 #0 (APU Reset)
+        7  Cortex-A72 #1 (APU Reset)
+     8  PPU
+        9  MicroBlaze PPU (Sleeping)
+    10  PSM
+       11  MicroBlaze PSM (Sleeping)
+    12  PMC
+    13  PL
+       14  MicroBlaze Debug Module at USER2
+          15  MicroBlaze #0 (Running)
+ 16  DPC
+ 17  Versal xcvp1802
+    18  RPU (Reset)
+       19  Cortex-R5 #0 (RPU Reset)
+       20  Cortex-R5 #1 (RPU Reset)
+    21  APU (L2 Cache Reset)
+       22  Cortex-A72 #0 (APU Reset)
+       23  Cortex-A72 #1 (APU Reset)
+    24  PPU
+       25  MicroBlaze PPU (Sleeping)
+    26  PSM
+       27  MicroBlaze PSM (Sleeping)
+    28  PMC
+    29  PL
+       30  MicroBlaze Debug Module at USER2
+          31  MicroBlaze #0 (Running)
+ 32  DPC
+17:32:26 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx VPK180 FT4232H 382249155073A" && jtag_device_ctx=="jsn-VPK180 FT4232H-382249155073A-6ba00477-0"}
+loadhw -hw C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa -mem-ranges [list {0x80000000 0x9fffffff} {0xa4000000 0xafffffff} {0xb0000000 0xbfffffff} {0x20000000000 0x3FFFFFFFFFF}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~ "*microblaze*#0" && jtag_cable_name =~ "Xilinx VPK180 FT4232H 382249155073A" && jtag_device_ctx=="jsn-VPK180 FT4232H-382249155073A-6ba00477-0"}
+----------------End of Script----------------
+
+17:32:26 ERROR : no targets found with "name =~ "*microblaze*#0" && jtag_cable_name =~ "Xilinx VPK180 FT4232H 382249155073A" && jtag_device_ctx=="jsn-VPK180 FT4232H-382249155073A-6ba00477-0"". available targets:
+  1  Versal xcvp1802
+     2  RPU (Reset)
+        3  Cortex-R5 #0 (RPU Reset)
+        4  Cortex-R5 #1 (RPU Reset)
+     5* APU (L2 Cache Reset)
+        6  Cortex-A72 #0 (APU Reset)
+        7  Cortex-A72 #1 (APU Reset)
+     8  PPU
+        9  MicroBlaze PPU (Sleeping)
+    10  PSM
+       11  MicroBlaze PSM (Sleeping)
+    12  PMC
+    13  PL
+       14  MicroBlaze Debug Module at USER2
+          15  MicroBlaze #0 (Running)
+ 16  DPC
+ 17  Versal xcvp1802
+    18  RPU (Reset)
+       19  Cortex-R5 #0 (RPU Reset)
+       20  Cortex-R5 #1 (RPU Reset)
+    21  APU (L2 Cache Reset)
+       22  Cortex-A72 #0 (APU Reset)
+       23  Cortex-A72 #1 (APU Reset)
+    24  PPU
+       25  MicroBlaze PPU (Sleeping)
+    26  PSM
+       27  MicroBlaze PSM (Sleeping)
+    28  PMC
+    29  PL
+       30  MicroBlaze Debug Module at USER2
+          31  MicroBlaze #0 (Running)
+ 32  DPC
+17:33:12 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:33:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:33:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:33:30 INFO  : Jtag cable 'Xilinx VPK180 FT4232H 382249155073A' is selected.
+17:33:30 INFO  : 'jtag frequency' command is executed.
+17:33:30 INFO  : Context for 'APU' is selected.
+17:33:30 INFO  : Hardware design and registers information is loaded from 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa'.
+17:33:30 INFO  : 'configparams force-mem-access 1' command is executed.
+17:33:30 INFO  : Context for processor 'microblaze_0' is selected.
+17:33:30 INFO  : Processor reset is completed for 'microblaze_0'.
+17:33:30 INFO  : The application 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/Debug/xaxidma_example_simple_poll_1.elf' is downloaded to processor 'microblaze_0'.
+17:33:30 INFO  : 'configparams force-mem-access 0' command is executed.
+17:33:30 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa -mem-ranges [list {0x80000000 0x9fffffff} {0xa4000000 0xafffffff} {0xb0000000 0xbfffffff} {0x20000000000 0x3FFFFFFFFFF}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+rst -processor
+dow C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/Debug/xaxidma_example_simple_poll_1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:33:30 INFO  : Context for processor 'microblaze_0' is selected.
+17:33:30 INFO  : 'con' command is executed.
+17:33:30 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+con
+----------------End of Script----------------
+
+17:33:30 INFO  : Launch script is exported to file 'C:\Users\yiann\vivado23\testbench1\processor_project\sw\xaxidma_example_simple_poll_1_system\_ide\scripts\systemdebugger_xaxidma_example_simple_poll_1_system_standalone.tcl'
+17:34:30 INFO  : Disconnected from the channel tcfchan#15.
+17:34:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:34:30 INFO  : Jtag cable 'Xilinx VPK180 FT4232H 382249155078A' is selected.
+17:34:30 INFO  : 'jtag frequency' command is executed.
+17:34:30 INFO  : Context for 'APU' is selected.
+17:34:30 INFO  : Hardware design and registers information is loaded from 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa'.
+17:34:30 INFO  : 'configparams force-mem-access 1' command is executed.
+17:34:30 INFO  : Context for processor 'microblaze_0' is selected.
+17:34:30 INFO  : Processor reset is completed for 'microblaze_0'.
+17:34:30 INFO  : The application 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/Debug/xaxidma_example_simple_poll_1.elf' is downloaded to processor 'microblaze_0'.
+17:34:30 INFO  : 'configparams force-mem-access 0' command is executed.
+17:34:30 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa -mem-ranges [list {0x80000000 0x9fffffff} {0xa4000000 0xafffffff} {0xb0000000 0xbfffffff} {0x20000000000 0x3FFFFFFFFFF}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+rst -processor
+dow C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/Debug/xaxidma_example_simple_poll_1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:34:30 INFO  : Context for processor 'microblaze_0' is selected.
+17:34:30 INFO  : 'con' command is executed.
+17:34:30 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+con
+----------------End of Script----------------
+
+17:34:30 INFO  : Launch script is exported to file 'C:\Users\yiann\vivado23\testbench1\processor_project\sw\xaxidma_example_simple_poll_1_system\_ide\scripts\systemdebugger_xaxidma_example_simple_poll_1_system_standalone.tcl'
+17:38:32 INFO  : Disconnected from the channel tcfchan#16.
+17:38:32 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:38:41 INFO  : Jtag cable 'Xilinx VPK180 FT4232H 382249155078A' is selected.
+17:38:41 INFO  : 'jtag frequency' command is executed.
+17:38:42 INFO  : Context for 'APU' is selected.
+17:38:42 INFO  : Hardware design and registers information is loaded from 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa'.
+17:38:42 INFO  : 'configparams force-mem-access 1' command is executed.
+17:38:42 INFO  : Context for processor 'microblaze_0' is selected.
+17:38:42 INFO  : Processor reset is completed for 'microblaze_0'.
+17:38:42 INFO  : The application 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/Debug/xaxidma_example_simple_poll_1.elf' is downloaded to processor 'microblaze_0'.
+17:38:42 INFO  : 'configparams force-mem-access 0' command is executed.
+17:38:42 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa -mem-ranges [list {0x80000000 0x9fffffff} {0xa4000000 0xafffffff} {0xb0000000 0xbfffffff} {0x20000000000 0x3FFFFFFFFFF}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+rst -processor
+dow C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/Debug/xaxidma_example_simple_poll_1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:38:42 INFO  : Context for processor 'microblaze_0' is selected.
+17:38:42 INFO  : 'con' command is executed.
+17:38:42 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+con
+----------------End of Script----------------
+
+17:38:42 INFO  : Launch script is exported to file 'C:\Users\yiann\vivado23\testbench1\processor_project\sw\xaxidma_example_simple_poll_1_system\_ide\scripts\systemdebugger_xaxidma_example_simple_poll_1_system_standalone.tcl'
+17:38:56 INFO  : Disconnected from the channel tcfchan#17.
+17:38:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:38:59 INFO  : Jtag cable 'Xilinx VPK180 FT4232H 382249155073A' is selected.
+17:38:59 INFO  : 'jtag frequency' command is executed.
+17:39:00 INFO  : Context for 'APU' is selected.
+17:39:00 INFO  : Hardware design and registers information is loaded from 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa'.
+17:39:00 INFO  : 'configparams force-mem-access 1' command is executed.
+17:39:00 INFO  : Context for processor 'microblaze_0' is selected.
+17:39:00 INFO  : Processor reset is completed for 'microblaze_0'.
+17:39:00 INFO  : The application 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/Debug/xaxidma_example_simple_poll_1.elf' is downloaded to processor 'microblaze_0'.
+17:39:00 INFO  : 'configparams force-mem-access 0' command is executed.
+17:39:00 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa -mem-ranges [list {0x80000000 0x9fffffff} {0xa4000000 0xafffffff} {0xb0000000 0xbfffffff} {0x20000000000 0x3FFFFFFFFFF}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+rst -processor
+dow C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/Debug/xaxidma_example_simple_poll_1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:39:00 INFO  : Context for processor 'microblaze_0' is selected.
+17:39:00 INFO  : 'con' command is executed.
+17:39:00 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+con
+----------------End of Script----------------
+
+17:39:00 INFO  : Launch script is exported to file 'C:\Users\yiann\vivado23\testbench1\processor_project\sw\xaxidma_example_simple_poll_1_system\_ide\scripts\systemdebugger_xaxidma_example_simple_poll_1_system_standalone.tcl'
+17:43:46 INFO  : Disconnected from the channel tcfchan#18.
+17:43:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:44:13 INFO  : Jtag cable 'Xilinx VPK180 FT4232H 382249155078A' is selected.
+17:44:13 INFO  : 'jtag frequency' command is executed.
+17:44:13 INFO  : Context for 'APU' is selected.
+17:44:13 INFO  : Hardware design and registers information is loaded from 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa'.
+17:44:13 INFO  : 'configparams force-mem-access 1' command is executed.
+17:44:16 ERROR : no targets found with "name =~ "*microblaze*#0"". available targets:
+  2  Versal xcvp1802
+     3  RPU (Reset)
+        4  Cortex-R5 #0 (RPU Reset)
+        5  Cortex-R5 #1 (RPU Reset)
+     6* APU (L2 Cache Reset)
+        7  Cortex-A72 #0 (APU Reset)
+        8  Cortex-A72 #1 (APU Reset)
+     9  PPU
+       10  MicroBlaze PPU (Sleeping)
+    11  PSM
+       12  MicroBlaze PSM (Sleeping)
+    13  PMC
+    14  PL
+ 15  DPC
+17:44:16 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa -mem-ranges [list {0x80000000 0x9fffffff} {0xa4000000 0xafffffff} {0xb0000000 0xbfffffff} {0x20000000000 0x3FFFFFFFFFF}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+----------------End of Script----------------
+
+17:44:16 ERROR : no targets found with "name =~ "*microblaze*#0"". available targets:
+  2  Versal xcvp1802
+     3  RPU (Reset)
+        4  Cortex-R5 #0 (RPU Reset)
+        5  Cortex-R5 #1 (RPU Reset)
+     6* APU (L2 Cache Reset)
+        7  Cortex-A72 #0 (APU Reset)
+        8  Cortex-A72 #1 (APU Reset)
+     9  PPU
+       10  MicroBlaze PPU (Sleeping)
+    11  PSM
+       12  MicroBlaze PSM (Sleeping)
+    13  PMC
+    14  PL
+ 15  DPC
+17:44:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:44:19 INFO  : Jtag cable 'Xilinx VPK180 FT4232H 382249155078A' is selected.
+17:44:19 INFO  : 'jtag frequency' command is executed.
+17:44:19 INFO  : Context for 'APU' is selected.
+17:44:19 INFO  : Hardware design and registers information is loaded from 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa'.
+17:44:19 INFO  : 'configparams force-mem-access 1' command is executed.
+17:44:22 ERROR : no targets found with "name =~ "*microblaze*#0"". available targets:
+  2  Versal xcvp1802
+     3  RPU (Reset)
+        4  Cortex-R5 #0 (RPU Reset)
+        5  Cortex-R5 #1 (RPU Reset)
+     6* APU (L2 Cache Reset)
+        7  Cortex-A72 #0 (APU Reset)
+        8  Cortex-A72 #1 (APU Reset)
+     9  PPU
+       10  MicroBlaze PPU (Sleeping)
+    11  PSM
+       12  MicroBlaze PSM (Sleeping)
+    13  PMC
+    14  PL
+ 15  DPC
+17:44:22 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa -mem-ranges [list {0x80000000 0x9fffffff} {0xa4000000 0xafffffff} {0xb0000000 0xbfffffff} {0x20000000000 0x3FFFFFFFFFF}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+----------------End of Script----------------
+
+17:44:22 ERROR : no targets found with "name =~ "*microblaze*#0"". available targets:
+  2  Versal xcvp1802
+     3  RPU (Reset)
+        4  Cortex-R5 #0 (RPU Reset)
+        5  Cortex-R5 #1 (RPU Reset)
+     6* APU (L2 Cache Reset)
+        7  Cortex-A72 #0 (APU Reset)
+        8  Cortex-A72 #1 (APU Reset)
+     9  PPU
+       10  MicroBlaze PPU (Sleeping)
+    11  PSM
+       12  MicroBlaze PSM (Sleeping)
+    13  PMC
+    14  PL
+ 15  DPC
+17:45:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:45:37 INFO  : Jtag cable 'Xilinx VPK180 FT4232H 382249155078A' is selected.
+17:45:37 INFO  : 'jtag frequency' command is executed.
+17:45:37 INFO  : Context for 'APU' is selected.
+17:45:37 INFO  : Hardware design and registers information is loaded from 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa'.
+17:45:37 INFO  : 'configparams force-mem-access 1' command is executed.
+17:45:37 INFO  : Context for processor 'microblaze_0' is selected.
+17:45:38 INFO  : Processor reset is completed for 'microblaze_0'.
+17:45:38 INFO  : The application 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/Debug/xaxidma_example_simple_poll_1.elf' is downloaded to processor 'microblaze_0'.
+17:45:38 INFO  : 'configparams force-mem-access 0' command is executed.
+17:45:38 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/yiann/vivado23/testbench1/processor_project/sw/proc_1_wrapper/export/proc_1_wrapper/hw/proc_1_wrapper.xsa -mem-ranges [list {0x80000000 0x9fffffff} {0xa4000000 0xafffffff} {0xb0000000 0xbfffffff} {0x20000000000 0x3FFFFFFFFFF}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+rst -processor
+dow C:/Users/yiann/vivado23/testbench1/processor_project/sw/xaxidma_example_simple_poll_1/Debug/xaxidma_example_simple_poll_1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:45:38 INFO  : Context for processor 'microblaze_0' is selected.
+17:45:38 INFO  : 'con' command is executed.
+17:45:38 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0"}
+con
+----------------End of Script----------------
+
+17:45:38 INFO  : Launch script is exported to file 'C:\Users\yiann\vivado23\testbench1\processor_project\sw\xaxidma_example_simple_poll_1_system\_ide\scripts\systemdebugger_xaxidma_example_simple_poll_1_system_standalone.tcl'
+18:09:04 INFO  : Disconnected from the channel tcfchan#19.
+10:21:46 DEBUG : Logs will be stored at 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/IDE.log'.
+10:21:48 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\yiann\vivado23\testbench1\processor_project\sw\temp_xsdb_launch_script.tcl
+10:21:55 INFO  : Registering command handlers for Vitis TCF services
+10:21:56 INFO  : XSCT server has started successfully.
+10:21:56 INFO  : Successfully done setting XSCT server connection channel  
+10:21:56 INFO  : plnx-install-location is set to ''
+10:21:58 INFO  : Platform repository initialization has completed.
+10:22:04 INFO  : Successfully done setting workspace for the tool. 
+10:22:04 INFO  : Successfully done query RDI_DATADIR 
+13:58:01 DEBUG : Logs will be stored at 'C:/Users/yiann/vivado23/testbench1/processor_project/sw/IDE.log'.
+13:58:02 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\yiann\vivado23\testbench1\processor_project\sw\temp_xsdb_launch_script.tcl
+13:58:06 INFO  : XSCT server has started successfully.
+13:58:06 INFO  : Successfully done setting XSCT server connection channel  
+13:58:06 INFO  : plnx-install-location is set to ''
+13:58:06 INFO  : Successfully done setting workspace for the tool. 
+13:58:08 INFO  : Platform repository initialization has completed.
+13:58:15 INFO  : Successfully done query RDI_DATADIR 
+13:58:15 INFO  : Restoring global repository preferences: 
+		 C:\Users\yiann\vivado23\nexys_video\diligent_ips\vivado-library-master
+13:58:15 INFO  : Registering command handlers for Vitis TCF services

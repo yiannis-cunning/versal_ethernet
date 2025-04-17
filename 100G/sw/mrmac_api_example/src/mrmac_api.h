@@ -1,0 +1,19 @@
+
+
+
+int init_dma();
+
+void init_mrmac();
+
+void start_mrmac_stats();
+
+void end_mrmac_stats();
+
+// Receive a packet, src/dest/data placed at pointers
+int get_packet(u64 *srcaddr_p, u64 *dstaddr_p, u8 *data);
+
+// returns -1 for no packets and N bytes for if there is a packet
+int check_packet_waiting();
+
+// Send a packet with src/dest address and from data buffer
+void send_packet(u64 srcaddr, u64 dstaddr, int len, u8 *data);

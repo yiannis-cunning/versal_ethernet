@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="mrmac_api_example" location="C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/mrmac_api_example" platform="C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/export/control_wrapper/control_wrapper.xpfm" platformUID="xilinx:vpk180::0.0(custom)" systemProject="mrmac_api_example_system" sysConfig="control_wrapper" runtime="C/C++" cpu="standalone_psv_cortexa72_0" cpuInstance="versal_cips_0_pspmc_0_psv_cortexa72_0" os="standalone" mssSignature="8e1914e0246dd8d20b68fa5f32ef79ae">
+  <configuration name="Debug" id="xilinx.gnu.arm.a53.exe.debug.1293004799">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.arm.a53.exe.release.492407386" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="hello_world"/>
+</sdkproject:SdkProject>

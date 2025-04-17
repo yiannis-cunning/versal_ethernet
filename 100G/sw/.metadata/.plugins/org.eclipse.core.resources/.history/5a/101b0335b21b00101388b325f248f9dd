@@ -1,0 +1,13 @@
+
+
+
+int init_dma();
+
+void init_mrmac();
+
+void start_mrmac_stats();
+
+void end_mrmac_stats();
+
+
+int get_packet(u64 *srcaddr_p, u64 *dstaddr_p, u8 *data);

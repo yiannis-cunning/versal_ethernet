@@ -1,0 +1,6 @@
+13:53:23 **** Incremental Build of configuration Debug for project mrmac_api_example_system ****
+make all 
+Generating BOOT.BIN in system project is not supported for versal devices. Use the bootgen utility to create a bootable image.
+
+13:53:23 Build Finished (took 125ms)
+

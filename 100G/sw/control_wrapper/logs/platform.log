@@ -1,0 +1,1215 @@
+TRACE::2025-04-10.23:25:16::SCWPlatform::Trying to open the hw design at C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:16::SCWPlatform::DSA given C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:16::SCWPlatform::DSA absoulate path C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:16::SCWPlatform::DSA directory C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw
+TRACE::2025-04-10.23:25:16::SCWPlatform:: Platform Path C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:16::SCWPlatform:: Unique name xilinx:vpk180::0.0
+TRACE::2025-04-10.23:25:16::SCWPlatform::Do not have an existing db opened. 
+TRACE::2025-04-10.23:25:35::SCWPlatform::Opened new HwDB with name control_wrapper_2
+TRACE::2025-04-10.23:25:35::SCWWriter::formatted JSON is {
+	"platformName":	"control_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"control_wrapper",
+	"platHandOff":	"C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/control_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/control_wrapper.xsa",
+	"deviceType":	"versal",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	""
+}
+TRACE::2025-04-10.23:25:35::SCWWriter::formatted JSON is {
+	"platformName":	"control_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"control_wrapper",
+	"platHandOff":	"C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/control_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/control_wrapper.xsa",
+	"deviceType":	"versal",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"control_wrapper",
+	"systems":	[{
+			"systemName":	"control_wrapper",
+			"systemDesc":	"control_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"control_wrapper"
+		}]
+}
+TRACE::2025-04-10.23:25:35::SCWPlatform::Boot application domains not present, creating them
+TRACE::2025-04-10.23:25:35::SCWWriter::formatted JSON is {
+	"platformName":	"control_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"control_wrapper",
+	"platHandOff":	"C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/control_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/control_wrapper.xsa",
+	"deviceType":	"versal",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"control_wrapper",
+	"systems":	[{
+			"systemName":	"control_wrapper",
+			"systemDesc":	"control_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"control_wrapper"
+		}]
+}
+TRACE::2025-04-10.23:25:35::SCWWriter::formatted JSON is {
+	"platformName":	"control_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"control_wrapper",
+	"platHandOff":	"C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/control_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/control_wrapper.xsa",
+	"deviceType":	"versal",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"control_wrapper",
+	"systems":	[{
+			"systemName":	"control_wrapper",
+			"systemDesc":	"control_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"control_wrapper"
+		}]
+}
+TRACE::2025-04-10.23:25:35::SCWPlatform::Trying to open the hw design at C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:35::SCWPlatform::DSA given C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:35::SCWPlatform::DSA absoulate path C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:35::SCWPlatform::DSA directory C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw
+TRACE::2025-04-10.23:25:35::SCWPlatform:: Platform Path C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:35::SCWPlatform:: Unique name xilinx:vpk180::0.0
+TRACE::2025-04-10.23:25:35::SCWPlatform::Trying to set the existing hwdb with name control_wrapper_2
+TRACE::2025-04-10.23:25:35::SCWPlatform::Opened existing hwdb control_wrapper_2
+TRACE::2025-04-10.23:25:35::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-10.23:25:36::SCWPlatform::Trying to open the hw design at C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:36::SCWPlatform::DSA given C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:36::SCWPlatform::DSA absoulate path C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:36::SCWPlatform::DSA directory C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw
+TRACE::2025-04-10.23:25:36::SCWPlatform:: Platform Path C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:36::SCWPlatform:: Unique name xilinx:vpk180::0.0
+TRACE::2025-04-10.23:25:36::SCWPlatform::Trying to set the existing hwdb with name control_wrapper_2
+TRACE::2025-04-10.23:25:36::SCWPlatform::Opened existing hwdb control_wrapper_2
+TRACE::2025-04-10.23:25:36::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-10.23:25:36::SCWDomain::checking for install qemu data   : 
+TRACE::2025-04-10.23:25:36::SCWDomain:: Using the QEMU Data from install at  : C:/Xilinx/Vitis/2023.2/data/emulation/platforms/versal/sw/a72_standalone/qemu/
+TRACE::2025-04-10.23:25:36::SCWDomain:: Using the QEMU args  from install at  : C:/Xilinx/Vitis/2023.2/data/emulation/platforms/versal/sw/a72_standalone/qemu/qemu_args.txt
+TRACE::2025-04-10.23:25:36::SCWDomain:: Using the PMCQEMU args from install at  : C:/Xilinx/Vitis/2023.2/data/emulation/platforms/versal/sw/a72_standalone/qemu/pmc_args.txt
+TRACE::2025-04-10.23:25:36::SCWPlatform::Trying to open the hw design at C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:36::SCWPlatform::DSA given C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:36::SCWPlatform::DSA absoulate path C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:36::SCWPlatform::DSA directory C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw
+TRACE::2025-04-10.23:25:36::SCWPlatform:: Platform Path C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:36::SCWPlatform:: Unique name xilinx:vpk180::0.0
+TRACE::2025-04-10.23:25:36::SCWPlatform::Trying to set the existing hwdb with name control_wrapper_2
+TRACE::2025-04-10.23:25:36::SCWPlatform::Opened existing hwdb control_wrapper_2
+TRACE::2025-04-10.23:25:36::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-10.23:25:36::SCWPlatform::Trying to open the hw design at C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:36::SCWPlatform::DSA given C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:36::SCWPlatform::DSA absoulate path C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:36::SCWPlatform::DSA directory C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw
+TRACE::2025-04-10.23:25:36::SCWPlatform:: Platform Path C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:36::SCWPlatform:: Unique name xilinx:vpk180::0.0
+TRACE::2025-04-10.23:25:36::SCWPlatform::Trying to set the existing hwdb with name control_wrapper_2
+TRACE::2025-04-10.23:25:36::SCWPlatform::Opened existing hwdb control_wrapper_2
+TRACE::2025-04-10.23:25:36::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-10.23:25:36::SCWDomain::Qemu Directory name is changed from "" to "qemu"
+TRACE::2025-04-10.23:25:36::SCWPlatform::Trying to open the hw design at C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:36::SCWPlatform::DSA given C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:36::SCWPlatform::DSA absoulate path C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:36::SCWPlatform::DSA directory C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw
+TRACE::2025-04-10.23:25:36::SCWPlatform:: Platform Path C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:36::SCWPlatform:: Unique name xilinx:vpk180::0.0
+TRACE::2025-04-10.23:25:36::SCWPlatform::Trying to set the existing hwdb with name control_wrapper_2
+TRACE::2025-04-10.23:25:36::SCWPlatform::Opened existing hwdb control_wrapper_2
+TRACE::2025-04-10.23:25:36::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-10.23:25:36::SCWMssOS::Checking the sw design at  C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss
+TRACE::2025-04-10.23:25:36::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2025-04-10.23:25:36::SCWMssOS::No sw design opened at  C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss
+TRACE::2025-04-10.23:25:36::SCWMssOS::mss does not exists at C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss
+TRACE::2025-04-10.23:25:36::SCWMssOS::Creating sw design at  C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss
+TRACE::2025-04-10.23:25:36::SCWMssOS::Adding the swdes entry, created swdb C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss with des name C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss
+TRACE::2025-04-10.23:25:36::SCWMssOS::updating the scw layer changes to swdes at   C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss
+TRACE::2025-04-10.23:25:36::SCWMssOS::Writing mss at C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss
+TRACE::2025-04-10.23:25:36::SCWMssOS::Completed writing the mss file at C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp
+TRACE::2025-04-10.23:25:36::SCWMssOS::Picking up changes from newly written mss file into SCW Layer. 
+TRACE::2025-04-10.23:25:36::SCWMssOS::Updated the changes from newly written mss file into SCW Layer. 
+TRACE::2025-04-10.23:25:36::SCWMssOS::Completed writing the mss file at C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp
+TRACE::2025-04-10.23:25:36::SCWMssOS::Forcing BSP Sources regeneration.
+TRACE::2025-04-10.23:25:43::SCWMssOS::Saving the mss changes C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss
+TRACE::2025-04-10.23:25:43::SCWMssOS::Adding the swdes entry, mss present, able to open swdb C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss with des name system
+TRACE::2025-04-10.23:25:43::SCWMssOS::Writing the mss file completed C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss
+TRACE::2025-04-10.23:25:43::SCWMssOS::Commit changes completed.
+TRACE::2025-04-10.23:25:43::SCWPlatform::Trying to open the hw design at C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:43::SCWPlatform::DSA given C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:43::SCWPlatform::DSA absoulate path C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:43::SCWPlatform::DSA directory C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw
+TRACE::2025-04-10.23:25:43::SCWPlatform:: Platform Path C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:43::SCWPlatform:: Unique name xilinx:vpk180::0.0
+TRACE::2025-04-10.23:25:43::SCWPlatform::Trying to set the existing hwdb with name control_wrapper_2
+TRACE::2025-04-10.23:25:43::SCWPlatform::Opened existing hwdb control_wrapper_2
+TRACE::2025-04-10.23:25:43::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-10.23:25:43::SCWMssOS::Checking the sw design at  C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss
+TRACE::2025-04-10.23:25:43::SCWMssOS::DEBUG:  swdes dump  C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss|system||
+
+TRACE::2025-04-10.23:25:43::SCWMssOS::Sw design exists and opened at  C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss
+TRACE::2025-04-10.23:25:43::SCWPlatform::Trying to open the hw design at C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:43::SCWPlatform::DSA given C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:43::SCWPlatform::DSA absoulate path C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:43::SCWPlatform::DSA directory C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw
+TRACE::2025-04-10.23:25:43::SCWPlatform:: Platform Path C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:43::SCWPlatform:: Unique name xilinx:vpk180::0.0
+TRACE::2025-04-10.23:25:43::SCWPlatform::Trying to set the existing hwdb with name control_wrapper_2
+TRACE::2025-04-10.23:25:43::SCWPlatform::Opened existing hwdb control_wrapper_2
+TRACE::2025-04-10.23:25:43::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-10.23:25:43::SCWMssOS::Checking the sw design at  C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss
+TRACE::2025-04-10.23:25:43::SCWMssOS::DEBUG:  swdes dump  C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss|system||
+
+TRACE::2025-04-10.23:25:43::SCWMssOS::Sw design exists and opened at  C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss
+TRACE::2025-04-10.23:25:43::SCWPlatform::Trying to open the hw design at C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:43::SCWPlatform::DSA given C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:43::SCWPlatform::DSA absoulate path C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:43::SCWPlatform::DSA directory C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw
+TRACE::2025-04-10.23:25:43::SCWPlatform:: Platform Path C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:43::SCWPlatform:: Unique name xilinx:vpk180::0.0
+TRACE::2025-04-10.23:25:43::SCWPlatform::Trying to set the existing hwdb with name control_wrapper_2
+TRACE::2025-04-10.23:25:43::SCWPlatform::Opened existing hwdb control_wrapper_2
+TRACE::2025-04-10.23:25:43::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-10.23:25:43::SCWMssOS::Checking the sw design at  C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss
+TRACE::2025-04-10.23:25:43::SCWMssOS::DEBUG:  swdes dump  C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss|system||
+
+TRACE::2025-04-10.23:25:43::SCWMssOS::Sw design exists and opened at  C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss
+TRACE::2025-04-10.23:25:43::SCWWriter::formatted JSON is {
+	"platformName":	"control_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"control_wrapper",
+	"platHandOff":	"C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/control_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/control_wrapper.xsa",
+	"deviceType":	"versal",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"control_wrapper",
+	"systems":	[{
+			"systemName":	"control_wrapper",
+			"systemDesc":	"control_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"control_wrapper",
+			"sysActiveDom":	"standalone_psv_cortexa72_0",
+			"sysDefaultDom":	"standalone_psv_cortexa72_0",
+			"domains":	[{
+					"domainName":	"standalone_psv_cortexa72_0",
+					"domainDispName":	"standalone_psv_cortexa72_0",
+					"domainDesc":	"standalone_psv_cortexa72_0",
+					"processors":	"versal_cips_0_pspmc_0_psv_cortexa72_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"<platformDir>/resources/control_wrapper/standalone_psv_cortexa72_0/qemu_args.txt",
+					"qemuData":	"<platformDir>/resources/control_wrapper/standalone_psv_cortexa72_0/qemu",
+					"pmuQemuArgs":	"<platformDir>/resources/control_wrapper/standalone_psv_cortexa72_0/pmc_args.txt",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"9.0",
+					"mssFile":	"",
+					"md5Digest":	"f224e9fa3fc443399fbe0d9bfb061e5e",
+					"compatibleApp":	"hello_world",
+					"domType":	"mssDomain",
+					"arch":	"64-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+LOG::2025-04-10.23:25:43::SCWPlatform::Started generating the artifacts platform control_wrapper
+TRACE::2025-04-10.23:25:43::SCWPlatform::Sanity checking of platform is completed
+LOG::2025-04-10.23:25:43::SCWPlatform::Started generating the artifacts for system configuration control_wrapper
+LOG::2025-04-10.23:25:43::SCWSystem::Checking the domain standalone_psv_cortexa72_0
+LOG::2025-04-10.23:25:43::SCWSystem::Not a boot domain 
+LOG::2025-04-10.23:25:43::SCWSystem::Started Processing the domain standalone_psv_cortexa72_0
+TRACE::2025-04-10.23:25:43::SCWDomain::Generating domain artifcats
+TRACE::2025-04-10.23:25:43::SCWMssOS::Generating standalone artifcats
+TRACE::2025-04-10.23:25:43::SCWMssOS::Copying the qemu file from  C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/resources/control_wrapper/standalone_psv_cortexa72_0/qemu_args.txt To C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/export/control_wrapper/sw/control_wrapper/qemu/
+TRACE::2025-04-10.23:25:43::SCWMssOS::Copying the qemu file from  C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/resources/control_wrapper/standalone_psv_cortexa72_0/qemu_args.txt To C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/export/control_wrapper/sw/control_wrapper/qemu/
+TRACE::2025-04-10.23:25:43::SCWMssOS::Copying the qemu file from  C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/resources/control_wrapper/standalone_psv_cortexa72_0/qemu_args.txt To C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/export/control_wrapper/sw/control_wrapper/standalone_psv_cortexa72_0/qemu/
+TRACE::2025-04-10.23:25:43::SCWMssOS::Copying the qemu file from  C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/resources/control_wrapper/standalone_psv_cortexa72_0/qemu_args.txt To C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/export/control_wrapper/sw/control_wrapper/standalone_psv_cortexa72_0/qemu/
+TRACE::2025-04-10.23:25:43::SCWMssOS:: Copying the user libraries. 
+TRACE::2025-04-10.23:25:43::SCWPlatform::Trying to open the hw design at C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:43::SCWPlatform::DSA given C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:43::SCWPlatform::DSA absoulate path C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:43::SCWPlatform::DSA directory C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw
+TRACE::2025-04-10.23:25:43::SCWPlatform:: Platform Path C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:43::SCWPlatform:: Unique name xilinx:vpk180::0.0
+TRACE::2025-04-10.23:25:43::SCWPlatform::Trying to set the existing hwdb with name control_wrapper_2
+TRACE::2025-04-10.23:25:43::SCWPlatform::Opened existing hwdb control_wrapper_2
+TRACE::2025-04-10.23:25:43::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-10.23:25:43::SCWMssOS::Checking the sw design at  C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss
+TRACE::2025-04-10.23:25:43::SCWMssOS::DEBUG:  swdes dump  C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss|system||
+
+TRACE::2025-04-10.23:25:43::SCWMssOS::Sw design exists and opened at  C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss
+TRACE::2025-04-10.23:25:43::SCWMssOS::Completed writing the mss file at C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp
+TRACE::2025-04-10.23:25:43::SCWMssOS::Mss edits present, copying mssfile into export location C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss
+TRACE::2025-04-10.23:25:43::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2025-04-10.23:25:43::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2025-04-10.23:25:43::SCWDomain::Skipping the build for domain :  standalone_psv_cortexa72_0
+TRACE::2025-04-10.23:25:43::SCWMssOS::skipping the bsp build ... 
+TRACE::2025-04-10.23:25:43::SCWMssOS::Copying to export directory.
+TRACE::2025-04-10.23:25:43::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2025-04-10.23:25:43::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+TRACE::2025-04-10.23:25:43::SCWMssOS:: Completed Standalone Artifacts creation 
+LOG::2025-04-10.23:25:43::SCWSystem::Completed Processing the domain standalone_psv_cortexa72_0
+LOG::2025-04-10.23:25:43::SCWSystem::Completed Processing the sysconfig control_wrapper
+LOG::2025-04-10.23:25:43::SCWPlatform::Completed generating the artifacts for system configuration control_wrapper
+TRACE::2025-04-10.23:25:43::SCWPlatform::Started preparing the platform 
+TRACE::2025-04-10.23:25:43::SCWSystem::Writing the bif file for system config control_wrapper
+TRACE::2025-04-10.23:25:43::SCWSystem::dir created 
+TRACE::2025-04-10.23:25:43::SCWSystem::Writing the bif 
+TRACE::2025-04-10.23:25:43::SCWPlatform::Started writing the spfm file 
+TRACE::2025-04-10.23:25:43::SCWPlatform::Started writing the xpfm file 
+TRACE::2025-04-10.23:25:43::SCWPlatform::Completed generating the platform
+TRACE::2025-04-10.23:25:43::SCWMssOS::Saving the mss changes C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss
+TRACE::2025-04-10.23:25:43::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2025-04-10.23:25:43::SCWMssOS::Completed writemss as part of save.
+TRACE::2025-04-10.23:25:43::SCWMssOS::Commit changes completed.
+TRACE::2025-04-10.23:25:43::SCWPlatform::Trying to open the hw design at C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:43::SCWPlatform::DSA given C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:43::SCWPlatform::DSA absoulate path C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:43::SCWPlatform::DSA directory C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw
+TRACE::2025-04-10.23:25:43::SCWPlatform:: Platform Path C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:43::SCWPlatform:: Unique name xilinx:vpk180::0.0
+TRACE::2025-04-10.23:25:43::SCWPlatform::Trying to set the existing hwdb with name control_wrapper_2
+TRACE::2025-04-10.23:25:43::SCWPlatform::Opened existing hwdb control_wrapper_2
+TRACE::2025-04-10.23:25:43::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-10.23:25:43::SCWMssOS::Checking the sw design at  C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss
+TRACE::2025-04-10.23:25:43::SCWMssOS::DEBUG:  swdes dump  C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss|system||
+
+TRACE::2025-04-10.23:25:43::SCWMssOS::Sw design exists and opened at  C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss
+TRACE::2025-04-10.23:25:43::SCWPlatform::Trying to open the hw design at C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:43::SCWPlatform::DSA given C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:43::SCWPlatform::DSA absoulate path C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:43::SCWPlatform::DSA directory C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw
+TRACE::2025-04-10.23:25:43::SCWPlatform:: Platform Path C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:43::SCWPlatform:: Unique name xilinx:vpk180::0.0
+TRACE::2025-04-10.23:25:43::SCWPlatform::Trying to set the existing hwdb with name control_wrapper_2
+TRACE::2025-04-10.23:25:43::SCWPlatform::Opened existing hwdb control_wrapper_2
+TRACE::2025-04-10.23:25:43::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-10.23:25:43::SCWMssOS::Checking the sw design at  C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss
+TRACE::2025-04-10.23:25:43::SCWMssOS::DEBUG:  swdes dump  C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss|system||
+
+TRACE::2025-04-10.23:25:43::SCWMssOS::Sw design exists and opened at  C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss
+TRACE::2025-04-10.23:25:43::SCWPlatform::Trying to open the hw design at C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:43::SCWPlatform::DSA given C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:43::SCWPlatform::DSA absoulate path C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:43::SCWPlatform::DSA directory C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw
+TRACE::2025-04-10.23:25:43::SCWPlatform:: Platform Path C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:43::SCWPlatform:: Unique name xilinx:vpk180::0.0
+TRACE::2025-04-10.23:25:43::SCWPlatform::Trying to set the existing hwdb with name control_wrapper_2
+TRACE::2025-04-10.23:25:43::SCWPlatform::Opened existing hwdb control_wrapper_2
+TRACE::2025-04-10.23:25:43::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-10.23:25:43::SCWMssOS::Checking the sw design at  C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss
+TRACE::2025-04-10.23:25:43::SCWMssOS::DEBUG:  swdes dump  C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss|system||
+
+TRACE::2025-04-10.23:25:43::SCWMssOS::Sw design exists and opened at  C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss
+TRACE::2025-04-10.23:25:43::SCWWriter::formatted JSON is {
+	"platformName":	"control_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"control_wrapper",
+	"platHandOff":	"C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/control_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/control_wrapper.xsa",
+	"deviceType":	"versal",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"control_wrapper",
+	"systems":	[{
+			"systemName":	"control_wrapper",
+			"systemDesc":	"control_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"control_wrapper",
+			"sysActiveDom":	"standalone_psv_cortexa72_0",
+			"sysDefaultDom":	"standalone_psv_cortexa72_0",
+			"domains":	[{
+					"domainName":	"standalone_psv_cortexa72_0",
+					"domainDispName":	"standalone_psv_cortexa72_0",
+					"domainDesc":	"standalone_psv_cortexa72_0",
+					"processors":	"versal_cips_0_pspmc_0_psv_cortexa72_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"<platformDir>/resources/control_wrapper/standalone_psv_cortexa72_0/qemu_args.txt",
+					"qemuData":	"<platformDir>/resources/control_wrapper/standalone_psv_cortexa72_0/qemu",
+					"pmuQemuArgs":	"<platformDir>/resources/control_wrapper/standalone_psv_cortexa72_0/pmc_args.txt",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"9.0",
+					"mssFile":	"",
+					"md5Digest":	"f224e9fa3fc443399fbe0d9bfb061e5e",
+					"compatibleApp":	"hello_world",
+					"domType":	"mssDomain",
+					"arch":	"64-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2025-04-10.23:25:43::SCWPlatform::updated the xpfm file.
+TRACE::2025-04-10.23:25:45::SCWPlatform::Trying to open the hw design at C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:45::SCWPlatform::DSA given C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:45::SCWPlatform::DSA absoulate path C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:45::SCWPlatform::DSA directory C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw
+TRACE::2025-04-10.23:25:45::SCWPlatform:: Platform Path C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:45::SCWPlatform:: Unique name xilinx:vpk180::0.0
+TRACE::2025-04-10.23:25:45::SCWPlatform::Trying to set the existing hwdb with name control_wrapper_2
+TRACE::2025-04-10.23:25:45::SCWPlatform::Opened existing hwdb control_wrapper_2
+TRACE::2025-04-10.23:25:45::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-10.23:25:45::SCWMssOS::Checking the sw design at  C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss
+TRACE::2025-04-10.23:25:45::SCWMssOS::DEBUG:  swdes dump  C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss|system||
+
+TRACE::2025-04-10.23:25:45::SCWMssOS::Sw design exists and opened at  C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss
+TRACE::2025-04-10.23:25:45::SCWMssOS::Saving the mss changes C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss
+TRACE::2025-04-10.23:25:45::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2025-04-10.23:25:45::SCWMssOS::Completed writemss as part of save.
+TRACE::2025-04-10.23:25:45::SCWMssOS::Commit changes completed.
+TRACE::2025-04-10.23:25:45::SCWPlatform::Trying to open the hw design at C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:45::SCWPlatform::DSA given C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:45::SCWPlatform::DSA absoulate path C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:45::SCWPlatform::DSA directory C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw
+TRACE::2025-04-10.23:25:45::SCWPlatform:: Platform Path C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:45::SCWPlatform:: Unique name xilinx:vpk180::0.0
+TRACE::2025-04-10.23:25:45::SCWPlatform::Trying to set the existing hwdb with name control_wrapper_2
+TRACE::2025-04-10.23:25:45::SCWPlatform::Opened existing hwdb control_wrapper_2
+TRACE::2025-04-10.23:25:45::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-10.23:25:45::SCWMssOS::Checking the sw design at  C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss
+TRACE::2025-04-10.23:25:45::SCWMssOS::DEBUG:  swdes dump  C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss|system||
+
+TRACE::2025-04-10.23:25:45::SCWMssOS::Sw design exists and opened at  C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss
+TRACE::2025-04-10.23:25:45::SCWPlatform::Trying to open the hw design at C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:45::SCWPlatform::DSA given C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:45::SCWPlatform::DSA absoulate path C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:45::SCWPlatform::DSA directory C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw
+TRACE::2025-04-10.23:25:45::SCWPlatform:: Platform Path C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:45::SCWPlatform:: Unique name xilinx:vpk180::0.0
+TRACE::2025-04-10.23:25:45::SCWPlatform::Trying to set the existing hwdb with name control_wrapper_2
+TRACE::2025-04-10.23:25:45::SCWPlatform::Opened existing hwdb control_wrapper_2
+TRACE::2025-04-10.23:25:45::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-10.23:25:45::SCWMssOS::Checking the sw design at  C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss
+TRACE::2025-04-10.23:25:45::SCWMssOS::DEBUG:  swdes dump  C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss|system||
+
+TRACE::2025-04-10.23:25:45::SCWMssOS::Sw design exists and opened at  C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss
+TRACE::2025-04-10.23:25:45::SCWPlatform::Trying to open the hw design at C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:45::SCWPlatform::DSA given C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:45::SCWPlatform::DSA absoulate path C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:45::SCWPlatform::DSA directory C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw
+TRACE::2025-04-10.23:25:45::SCWPlatform:: Platform Path C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:45::SCWPlatform:: Unique name xilinx:vpk180::0.0
+TRACE::2025-04-10.23:25:45::SCWPlatform::Trying to set the existing hwdb with name control_wrapper_2
+TRACE::2025-04-10.23:25:45::SCWPlatform::Opened existing hwdb control_wrapper_2
+TRACE::2025-04-10.23:25:45::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-10.23:25:45::SCWMssOS::Checking the sw design at  C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss
+TRACE::2025-04-10.23:25:45::SCWMssOS::DEBUG:  swdes dump  C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss|system||
+
+TRACE::2025-04-10.23:25:45::SCWMssOS::Sw design exists and opened at  C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss
+TRACE::2025-04-10.23:25:45::SCWWriter::formatted JSON is {
+	"platformName":	"control_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"control_wrapper",
+	"platHandOff":	"C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/control_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/control_wrapper.xsa",
+	"deviceType":	"versal",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"control_wrapper",
+	"systems":	[{
+			"systemName":	"control_wrapper",
+			"systemDesc":	"control_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"control_wrapper",
+			"sysActiveDom":	"standalone_psv_cortexa72_0",
+			"sysDefaultDom":	"standalone_psv_cortexa72_0",
+			"domains":	[{
+					"domainName":	"standalone_psv_cortexa72_0",
+					"domainDispName":	"standalone_psv_cortexa72_0",
+					"domainDesc":	"standalone_psv_cortexa72_0",
+					"processors":	"versal_cips_0_pspmc_0_psv_cortexa72_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"<platformDir>/resources/control_wrapper/standalone_psv_cortexa72_0/qemu_args.txt",
+					"qemuData":	"<platformDir>/resources/control_wrapper/standalone_psv_cortexa72_0/qemu",
+					"pmuQemuArgs":	"<platformDir>/resources/control_wrapper/standalone_psv_cortexa72_0/pmc_args.txt",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"9.0",
+					"mssFile":	"",
+					"md5Digest":	"f224e9fa3fc443399fbe0d9bfb061e5e",
+					"compatibleApp":	"hello_world",
+					"domType":	"mssDomain",
+					"arch":	"64-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2025-04-10.23:25:45::SCWPlatform::Trying to open the hw design at C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:45::SCWPlatform::DSA given C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:45::SCWPlatform::DSA absoulate path C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:45::SCWPlatform::DSA directory C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw
+TRACE::2025-04-10.23:25:45::SCWPlatform:: Platform Path C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:45::SCWPlatform:: Unique name xilinx:vpk180::0.0
+TRACE::2025-04-10.23:25:45::SCWPlatform::Trying to set the existing hwdb with name control_wrapper_2
+TRACE::2025-04-10.23:25:45::SCWPlatform::Opened existing hwdb control_wrapper_2
+TRACE::2025-04-10.23:25:45::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-10.23:25:45::SCWMssOS::Checking the sw design at  C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss
+TRACE::2025-04-10.23:25:45::SCWMssOS::DEBUG:  swdes dump  C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss|system||
+
+TRACE::2025-04-10.23:25:45::SCWMssOS::Sw design exists and opened at  C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss
+TRACE::2025-04-10.23:25:45::SCWPlatform::Trying to open the hw design at C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:45::SCWPlatform::DSA given C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:45::SCWPlatform::DSA absoulate path C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:45::SCWPlatform::DSA directory C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw
+TRACE::2025-04-10.23:25:45::SCWPlatform:: Platform Path C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:45::SCWPlatform:: Unique name xilinx:vpk180::0.0
+TRACE::2025-04-10.23:25:45::SCWPlatform::Trying to set the existing hwdb with name control_wrapper_2
+TRACE::2025-04-10.23:25:45::SCWPlatform::Opened existing hwdb control_wrapper_2
+TRACE::2025-04-10.23:25:45::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-10.23:25:45::SCWMssOS::Checking the sw design at  C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss
+TRACE::2025-04-10.23:25:45::SCWMssOS::DEBUG:  swdes dump  C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss|system||
+
+TRACE::2025-04-10.23:25:45::SCWMssOS::Sw design exists and opened at  C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss
+TRACE::2025-04-10.23:25:45::SCWMssOS::Saving the mss changes C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss
+TRACE::2025-04-10.23:25:45::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2025-04-10.23:25:45::SCWMssOS::Completed writemss as part of save.
+TRACE::2025-04-10.23:25:45::SCWMssOS::Commit changes completed.
+TRACE::2025-04-10.23:25:45::SCWPlatform::Trying to open the hw design at C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:45::SCWPlatform::DSA given C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:45::SCWPlatform::DSA absoulate path C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:45::SCWPlatform::DSA directory C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw
+TRACE::2025-04-10.23:25:45::SCWPlatform:: Platform Path C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:45::SCWPlatform:: Unique name xilinx:vpk180::0.0
+TRACE::2025-04-10.23:25:45::SCWPlatform::Trying to set the existing hwdb with name control_wrapper_2
+TRACE::2025-04-10.23:25:45::SCWPlatform::Opened existing hwdb control_wrapper_2
+TRACE::2025-04-10.23:25:45::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-10.23:25:45::SCWMssOS::Checking the sw design at  C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss
+TRACE::2025-04-10.23:25:45::SCWMssOS::DEBUG:  swdes dump  C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss|system||
+
+TRACE::2025-04-10.23:25:45::SCWMssOS::Sw design exists and opened at  C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss
+TRACE::2025-04-10.23:25:45::SCWPlatform::Trying to open the hw design at C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:45::SCWPlatform::DSA given C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:45::SCWPlatform::DSA absoulate path C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:45::SCWPlatform::DSA directory C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw
+TRACE::2025-04-10.23:25:45::SCWPlatform:: Platform Path C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:45::SCWPlatform:: Unique name xilinx:vpk180::0.0
+TRACE::2025-04-10.23:25:45::SCWPlatform::Trying to set the existing hwdb with name control_wrapper_2
+TRACE::2025-04-10.23:25:45::SCWPlatform::Opened existing hwdb control_wrapper_2
+TRACE::2025-04-10.23:25:45::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-10.23:25:45::SCWMssOS::Checking the sw design at  C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss
+TRACE::2025-04-10.23:25:45::SCWMssOS::DEBUG:  swdes dump  C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss|system||
+
+TRACE::2025-04-10.23:25:45::SCWMssOS::Sw design exists and opened at  C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss
+TRACE::2025-04-10.23:25:45::SCWPlatform::Trying to open the hw design at C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:45::SCWPlatform::DSA given C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:45::SCWPlatform::DSA absoulate path C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:45::SCWPlatform::DSA directory C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw
+TRACE::2025-04-10.23:25:45::SCWPlatform:: Platform Path C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:45::SCWPlatform:: Unique name xilinx:vpk180::0.0
+TRACE::2025-04-10.23:25:45::SCWPlatform::Trying to set the existing hwdb with name control_wrapper_2
+TRACE::2025-04-10.23:25:45::SCWPlatform::Opened existing hwdb control_wrapper_2
+TRACE::2025-04-10.23:25:45::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-10.23:25:45::SCWMssOS::Checking the sw design at  C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss
+TRACE::2025-04-10.23:25:45::SCWMssOS::DEBUG:  swdes dump  C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss|system||
+
+TRACE::2025-04-10.23:25:45::SCWMssOS::Sw design exists and opened at  C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss
+TRACE::2025-04-10.23:25:45::SCWWriter::formatted JSON is {
+	"platformName":	"control_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"control_wrapper",
+	"platHandOff":	"C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/control_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/control_wrapper.xsa",
+	"deviceType":	"versal",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"control_wrapper",
+	"systems":	[{
+			"systemName":	"control_wrapper",
+			"systemDesc":	"control_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"control_wrapper",
+			"sysActiveDom":	"standalone_psv_cortexa72_0",
+			"sysDefaultDom":	"standalone_psv_cortexa72_0",
+			"domains":	[{
+					"domainName":	"standalone_psv_cortexa72_0",
+					"domainDispName":	"standalone_psv_cortexa72_0",
+					"domainDesc":	"standalone_psv_cortexa72_0",
+					"processors":	"versal_cips_0_pspmc_0_psv_cortexa72_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"<platformDir>/resources/control_wrapper/standalone_psv_cortexa72_0/qemu_args.txt",
+					"qemuData":	"<platformDir>/resources/control_wrapper/standalone_psv_cortexa72_0/qemu",
+					"pmuQemuArgs":	"<platformDir>/resources/control_wrapper/standalone_psv_cortexa72_0/pmc_args.txt",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"9.0",
+					"mssFile":	"",
+					"md5Digest":	"f224e9fa3fc443399fbe0d9bfb061e5e",
+					"compatibleApp":	"hello_world",
+					"domType":	"mssDomain",
+					"arch":	"64-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+LOG::2025-04-10.23:25:45::SCWPlatform::Started generating the artifacts platform control_wrapper
+TRACE::2025-04-10.23:25:45::SCWPlatform::Sanity checking of platform is completed
+LOG::2025-04-10.23:25:45::SCWPlatform::Started generating the artifacts for system configuration control_wrapper
+LOG::2025-04-10.23:25:45::SCWSystem::Started Processing the domain standalone_psv_cortexa72_0
+TRACE::2025-04-10.23:25:45::SCWDomain::Generating domain artifcats
+TRACE::2025-04-10.23:25:45::SCWMssOS::Generating standalone artifcats
+TRACE::2025-04-10.23:25:45::SCWMssOS::Copying the qemu file from  C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/resources/control_wrapper/standalone_psv_cortexa72_0/qemu_args.txt To C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/export/control_wrapper/sw/control_wrapper/qemu/
+TRACE::2025-04-10.23:25:45::SCWMssOS::Copying the qemu file from  C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/resources/control_wrapper/standalone_psv_cortexa72_0/qemu_args.txt To C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/export/control_wrapper/sw/control_wrapper/qemu/
+TRACE::2025-04-10.23:25:45::SCWMssOS::Copying the qemu file from  C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/resources/control_wrapper/standalone_psv_cortexa72_0/qemu_args.txt To C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/export/control_wrapper/sw/control_wrapper/standalone_psv_cortexa72_0/qemu/
+TRACE::2025-04-10.23:25:45::SCWMssOS::Copying the qemu file from  C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/resources/control_wrapper/standalone_psv_cortexa72_0/qemu_args.txt To C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/export/control_wrapper/sw/control_wrapper/standalone_psv_cortexa72_0/qemu/
+TRACE::2025-04-10.23:25:45::SCWMssOS:: Copying the user libraries. 
+TRACE::2025-04-10.23:25:45::SCWPlatform::Trying to open the hw design at C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:45::SCWPlatform::DSA given C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:45::SCWPlatform::DSA absoulate path C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:45::SCWPlatform::DSA directory C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw
+TRACE::2025-04-10.23:25:45::SCWPlatform:: Platform Path C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:45::SCWPlatform:: Unique name xilinx:vpk180::0.0
+TRACE::2025-04-10.23:25:45::SCWPlatform::Trying to set the existing hwdb with name control_wrapper_2
+TRACE::2025-04-10.23:25:45::SCWPlatform::Opened existing hwdb control_wrapper_2
+TRACE::2025-04-10.23:25:45::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-10.23:25:45::SCWMssOS::Checking the sw design at  C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss
+TRACE::2025-04-10.23:25:45::SCWMssOS::DEBUG:  swdes dump  C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss|system||
+
+TRACE::2025-04-10.23:25:45::SCWMssOS::Sw design exists and opened at  C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss
+TRACE::2025-04-10.23:25:45::SCWMssOS::Completed writing the mss file at C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp
+TRACE::2025-04-10.23:25:45::SCWMssOS::Mss edits present, copying mssfile into export location C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss
+TRACE::2025-04-10.23:25:45::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2025-04-10.23:25:45::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2025-04-10.23:25:45::SCWDomain::Building the domain as part of full build :  standalone_psv_cortexa72_0
+TRACE::2025-04-10.23:25:45::SCWMssOS::skipping the bsp build ... 
+TRACE::2025-04-10.23:25:45::SCWMssOS::Copying to export directory.
+TRACE::2025-04-10.23:25:45::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2025-04-10.23:25:45::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+TRACE::2025-04-10.23:25:45::SCWMssOS:: Completed Standalone Artifacts creation 
+LOG::2025-04-10.23:25:45::SCWSystem::Completed Processing the domain standalone_psv_cortexa72_0
+LOG::2025-04-10.23:25:45::SCWSystem::Completed Processing the sysconfig control_wrapper
+LOG::2025-04-10.23:25:45::SCWPlatform::Completed generating the artifacts for system configuration control_wrapper
+TRACE::2025-04-10.23:25:45::SCWPlatform::Started preparing the platform 
+TRACE::2025-04-10.23:25:45::SCWSystem::Writing the bif file for system config control_wrapper
+TRACE::2025-04-10.23:25:45::SCWSystem::dir created 
+TRACE::2025-04-10.23:25:45::SCWSystem::Writing the bif 
+TRACE::2025-04-10.23:25:45::SCWPlatform::Started writing the spfm file 
+TRACE::2025-04-10.23:25:45::SCWPlatform::Started writing the xpfm file 
+TRACE::2025-04-10.23:25:45::SCWPlatform::Completed generating the platform
+TRACE::2025-04-10.23:25:45::SCWMssOS::Saving the mss changes C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss
+TRACE::2025-04-10.23:25:45::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2025-04-10.23:25:45::SCWMssOS::Completed writemss as part of save.
+TRACE::2025-04-10.23:25:45::SCWMssOS::Commit changes completed.
+TRACE::2025-04-10.23:25:45::SCWPlatform::Trying to open the hw design at C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:45::SCWPlatform::DSA given C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:45::SCWPlatform::DSA absoulate path C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:45::SCWPlatform::DSA directory C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw
+TRACE::2025-04-10.23:25:45::SCWPlatform:: Platform Path C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:45::SCWPlatform:: Unique name xilinx:vpk180::0.0
+TRACE::2025-04-10.23:25:45::SCWPlatform::Trying to set the existing hwdb with name control_wrapper_2
+TRACE::2025-04-10.23:25:45::SCWPlatform::Opened existing hwdb control_wrapper_2
+TRACE::2025-04-10.23:25:45::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-10.23:25:45::SCWMssOS::Checking the sw design at  C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss
+TRACE::2025-04-10.23:25:45::SCWMssOS::DEBUG:  swdes dump  C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss|system||
+
+TRACE::2025-04-10.23:25:45::SCWMssOS::Sw design exists and opened at  C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss
+TRACE::2025-04-10.23:25:45::SCWPlatform::Trying to open the hw design at C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:45::SCWPlatform::DSA given C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:45::SCWPlatform::DSA absoulate path C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:45::SCWPlatform::DSA directory C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw
+TRACE::2025-04-10.23:25:45::SCWPlatform:: Platform Path C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:45::SCWPlatform:: Unique name xilinx:vpk180::0.0
+TRACE::2025-04-10.23:25:45::SCWPlatform::Trying to set the existing hwdb with name control_wrapper_2
+TRACE::2025-04-10.23:25:45::SCWPlatform::Opened existing hwdb control_wrapper_2
+TRACE::2025-04-10.23:25:45::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-10.23:25:45::SCWMssOS::Checking the sw design at  C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss
+TRACE::2025-04-10.23:25:45::SCWMssOS::DEBUG:  swdes dump  C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss|system||
+
+TRACE::2025-04-10.23:25:45::SCWMssOS::Sw design exists and opened at  C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss
+TRACE::2025-04-10.23:25:45::SCWPlatform::Trying to open the hw design at C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:45::SCWPlatform::DSA given C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:45::SCWPlatform::DSA absoulate path C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:45::SCWPlatform::DSA directory C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw
+TRACE::2025-04-10.23:25:45::SCWPlatform:: Platform Path C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:25:45::SCWPlatform:: Unique name xilinx:vpk180::0.0
+TRACE::2025-04-10.23:25:45::SCWPlatform::Trying to set the existing hwdb with name control_wrapper_2
+TRACE::2025-04-10.23:25:45::SCWPlatform::Opened existing hwdb control_wrapper_2
+TRACE::2025-04-10.23:25:45::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-10.23:25:45::SCWMssOS::Checking the sw design at  C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss
+TRACE::2025-04-10.23:25:45::SCWMssOS::DEBUG:  swdes dump  C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss|system||
+
+TRACE::2025-04-10.23:25:45::SCWMssOS::Sw design exists and opened at  C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss
+TRACE::2025-04-10.23:25:45::SCWWriter::formatted JSON is {
+	"platformName":	"control_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"control_wrapper",
+	"platHandOff":	"C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/control_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/control_wrapper.xsa",
+	"deviceType":	"versal",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"control_wrapper",
+	"systems":	[{
+			"systemName":	"control_wrapper",
+			"systemDesc":	"control_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"control_wrapper",
+			"sysActiveDom":	"standalone_psv_cortexa72_0",
+			"sysDefaultDom":	"standalone_psv_cortexa72_0",
+			"domains":	[{
+					"domainName":	"standalone_psv_cortexa72_0",
+					"domainDispName":	"standalone_psv_cortexa72_0",
+					"domainDesc":	"standalone_psv_cortexa72_0",
+					"processors":	"versal_cips_0_pspmc_0_psv_cortexa72_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"<platformDir>/resources/control_wrapper/standalone_psv_cortexa72_0/qemu_args.txt",
+					"qemuData":	"<platformDir>/resources/control_wrapper/standalone_psv_cortexa72_0/qemu",
+					"pmuQemuArgs":	"<platformDir>/resources/control_wrapper/standalone_psv_cortexa72_0/pmc_args.txt",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"9.0",
+					"mssFile":	"",
+					"md5Digest":	"f224e9fa3fc443399fbe0d9bfb061e5e",
+					"compatibleApp":	"hello_world",
+					"domType":	"mssDomain",
+					"arch":	"64-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2025-04-10.23:25:45::SCWPlatform::updated the xpfm file.
+LOG::2025-04-10.23:49:54::SCWPlatform::Started generating the artifacts platform control_wrapper
+TRACE::2025-04-10.23:49:54::SCWPlatform::Sanity checking of platform is completed
+LOG::2025-04-10.23:49:54::SCWPlatform::Started generating the artifacts for system configuration control_wrapper
+LOG::2025-04-10.23:49:54::SCWSystem::Checking the domain standalone_psv_cortexa72_0
+LOG::2025-04-10.23:49:54::SCWSystem::Not a boot domain 
+LOG::2025-04-10.23:49:54::SCWSystem::Started Processing the domain standalone_psv_cortexa72_0
+TRACE::2025-04-10.23:49:54::SCWDomain::Generating domain artifcats
+TRACE::2025-04-10.23:49:54::SCWMssOS::Generating standalone artifcats
+TRACE::2025-04-10.23:49:54::SCWMssOS::Copying the qemu file from  C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/resources/control_wrapper/standalone_psv_cortexa72_0/qemu_args.txt To C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/export/control_wrapper/sw/control_wrapper/qemu/
+TRACE::2025-04-10.23:49:54::SCWMssOS::Copying the qemu file from  C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/resources/control_wrapper/standalone_psv_cortexa72_0/qemu_args.txt To C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/export/control_wrapper/sw/control_wrapper/qemu/
+TRACE::2025-04-10.23:49:54::SCWMssOS::Copying the qemu file from  C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/resources/control_wrapper/standalone_psv_cortexa72_0/qemu_args.txt To C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/export/control_wrapper/sw/control_wrapper/standalone_psv_cortexa72_0/qemu/
+TRACE::2025-04-10.23:49:54::SCWMssOS::Copying the qemu file from  C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/resources/control_wrapper/standalone_psv_cortexa72_0/qemu_args.txt To C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/export/control_wrapper/sw/control_wrapper/standalone_psv_cortexa72_0/qemu/
+TRACE::2025-04-10.23:49:54::SCWMssOS:: Copying the user libraries. 
+TRACE::2025-04-10.23:49:54::SCWPlatform::Trying to open the hw design at C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:49:54::SCWPlatform::DSA given C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:49:54::SCWPlatform::DSA absoulate path C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:49:54::SCWPlatform::DSA directory C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw
+TRACE::2025-04-10.23:49:54::SCWPlatform:: Platform Path C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:49:54::SCWPlatform:: Unique name xilinx:vpk180::0.0
+TRACE::2025-04-10.23:49:54::SCWPlatform::Trying to set the existing hwdb with name control_wrapper_2
+TRACE::2025-04-10.23:49:54::SCWPlatform::Opened existing hwdb control_wrapper_2
+TRACE::2025-04-10.23:49:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-10.23:49:54::SCWMssOS::Checking the sw design at  C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss
+TRACE::2025-04-10.23:49:54::SCWMssOS::DEBUG:  swdes dump  C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss|system||
+
+TRACE::2025-04-10.23:49:54::SCWMssOS::Sw design exists and opened at  C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss
+TRACE::2025-04-10.23:49:54::SCWMssOS::Completed writing the mss file at C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp
+TRACE::2025-04-10.23:49:54::SCWMssOS::Mss edits present, copying mssfile into export location C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss
+TRACE::2025-04-10.23:49:54::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2025-04-10.23:49:54::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2025-04-10.23:49:54::SCWDomain::Building the domain as part of full build :  standalone_psv_cortexa72_0
+TRACE::2025-04-10.23:49:54::SCWMssOS::doing bsp build ... 
+TRACE::2025-04-10.23:49:54::SCWMssOS::System Command Ran  C: & cd  C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp & make 
+TRACE::2025-04-10.23:49:54::SCWMssOS::make --no-print-directory seq_libs
+
+TRACE::2025-04-10.23:49:54::SCWMssOS::'Finished building libraries sequentially.'
+
+TRACE::2025-04-10.23:49:54::SCWMssOS::make -j 10 --no-print-directory par_libs
+
+TRACE::2025-04-10.23:49:54::SCWMssOS::"Running Make include in psv_cortexa72_0/libsrc/axidma_v9_17/src"
+
+TRACE::2025-04-10.23:49:54::SCWMssOS::make -C psv_cortexa72_0/libsrc/axidma_v9_17/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none
+TRACE::2025-04-10.23:49:54::SCWMssOS::-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Dversal -DARMA72_EL3 
+TRACE::2025-04-10.23:49:54::SCWMssOS::-fno-tree-loop-distribute-patterns"
+
+TRACE::2025-04-10.23:49:54::SCWMssOS::"Running Make include in psv_cortexa72_0/libsrc/cframe_v1_5/src"
+
+TRACE::2025-04-10.23:49:54::SCWMssOS::make -C psv_cortexa72_0/libsrc/cframe_v1_5/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-
+TRACE::2025-04-10.23:49:54::SCWMssOS::elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Dversal -DARMA72_EL3 -
+TRACE::2025-04-10.23:49:54::SCWMssOS::fno-tree-loop-distribute-patterns"
+
+TRACE::2025-04-10.23:49:54::SCWMssOS::"Running Make include in psv_cortexa72_0/libsrc/cfupmc_v1_6/src"
+
+TRACE::2025-04-10.23:49:54::SCWMssOS::make -C psv_cortexa72_0/libsrc/cfupmc_v1_6/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-
+TRACE::2025-04-10.23:49:54::SCWMssOS::elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Dversal -DARMA72_EL3 -
+TRACE::2025-04-10.23:49:54::SCWMssOS::fno-tree-loop-distribute-patterns"
+
+TRACE::2025-04-10.23:49:54::SCWMssOS::"Running Make include in psv_cortexa72_0/libsrc/coresightps_dcc_v1_9/src"
+
+TRACE::2025-04-10.23:49:54::SCWMssOS::make -C psv_cortexa72_0/libsrc/coresightps_dcc_v1_9/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarc
+TRACE::2025-04-10.23:49:54::SCWMssOS::h64-none-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Dversal -DARM
+TRACE::2025-04-10.23:49:54::SCWMssOS::A72_EL3 -fno-tree-loop-distribute-patterns"
+
+TRACE::2025-04-10.23:49:54::SCWMssOS::"Running Make include in psv_cortexa72_0/libsrc/cpu_cortexa72_v1_4/src"
+
+TRACE::2025-04-10.23:49:54::SCWMssOS::make -C psv_cortexa72_0/libsrc/cpu_cortexa72_v1_4/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch6
+TRACE::2025-04-10.23:49:54::SCWMssOS::4-none-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Dversal -DARMA7
+TRACE::2025-04-10.23:49:54::SCWMssOS::2_EL3 -fno-tree-loop-distribute-patterns"
+
+TRACE::2025-04-10.23:49:54::SCWMssOS::"Running Make include in psv_cortexa72_0/libsrc/csudma_v1_14/src"
+
+TRACE::2025-04-10.23:49:55::SCWMssOS::make -C psv_cortexa72_0/libsrc/csudma_v1_14/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none
+TRACE::2025-04-10.23:49:55::SCWMssOS::-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Dversal -DARMA72_EL3 
+TRACE::2025-04-10.23:49:55::SCWMssOS::-fno-tree-loop-distribute-patterns"
+
+TRACE::2025-04-10.23:49:55::SCWMssOS::"Running Make include in psv_cortexa72_0/libsrc/gpio_v4_10/src"
+
+TRACE::2025-04-10.23:49:55::SCWMssOS::make -C psv_cortexa72_0/libsrc/gpio_v4_10/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-e
+TRACE::2025-04-10.23:49:55::SCWMssOS::lf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Dversal -DARMA72_EL3 -f
+TRACE::2025-04-10.23:49:55::SCWMssOS::no-tree-loop-distribute-patterns"
+
+TRACE::2025-04-10.23:49:55::SCWMssOS::"Running Make include in psv_cortexa72_0/libsrc/ipipsu_v2_14/src"
+
+TRACE::2025-04-10.23:49:55::SCWMssOS::make -C psv_cortexa72_0/libsrc/ipipsu_v2_14/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none
+TRACE::2025-04-10.23:49:55::SCWMssOS::-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Dversal -DARMA72_EL3 
+TRACE::2025-04-10.23:49:55::SCWMssOS::-fno-tree-loop-distribute-patterns"
+
+TRACE::2025-04-10.23:49:55::SCWMssOS::"Running Make include in psv_cortexa72_0/libsrc/pmonpsv_v2_3/src"
+
+TRACE::2025-04-10.23:49:55::SCWMssOS::make -C psv_cortexa72_0/libsrc/pmonpsv_v2_3/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none
+TRACE::2025-04-10.23:49:55::SCWMssOS::-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Dversal -DARMA72_EL3 
+TRACE::2025-04-10.23:49:55::SCWMssOS::-fno-tree-loop-distribute-patterns"
+
+TRACE::2025-04-10.23:49:55::SCWMssOS::"Running Make include in psv_cortexa72_0/libsrc/rtcpsu_v1_13/src"
+
+TRACE::2025-04-10.23:49:55::SCWMssOS::make -C psv_cortexa72_0/libsrc/rtcpsu_v1_13/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none
+TRACE::2025-04-10.23:49:55::SCWMssOS::-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Dversal -DARMA72_EL3 
+TRACE::2025-04-10.23:49:55::SCWMssOS::-fno-tree-loop-distribute-patterns"
+
+TRACE::2025-04-10.23:49:55::SCWMssOS::"Running Make include in psv_cortexa72_0/libsrc/scugic_v5_2/src"
+
+TRACE::2025-04-10.23:49:55::SCWMssOS::make -C psv_cortexa72_0/libsrc/scugic_v5_2/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-
+TRACE::2025-04-10.23:49:55::SCWMssOS::elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Dversal -DARMA72_EL3 -
+TRACE::2025-04-10.23:49:55::SCWMssOS::fno-tree-loop-distribute-patterns"
+
+TRACE::2025-04-10.23:49:55::SCWMssOS::"Running Make include in psv_cortexa72_0/libsrc/standalone_v9_0/src"
+
+TRACE::2025-04-10.23:49:55::SCWMssOS::make -C psv_cortexa72_0/libsrc/standalone_v9_0/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-n
+TRACE::2025-04-10.23:49:55::SCWMssOS::one-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Dversal -DARMA72_E
+TRACE::2025-04-10.23:49:55::SCWMssOS::L3 -fno-tree-loop-distribute-patterns"
+
+TRACE::2025-04-10.23:49:55::SCWMssOS::"Running Make include in psv_cortexa72_0/libsrc/sysmonpsv_v4_1/src"
+
+TRACE::2025-04-10.23:49:55::SCWMssOS::make -C psv_cortexa72_0/libsrc/sysmonpsv_v4_1/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-no
+TRACE::2025-04-10.23:49:55::SCWMssOS::ne-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Dversal -DARMA72_EL
+TRACE::2025-04-10.23:49:55::SCWMssOS::3 -fno-tree-loop-distribute-patterns"
+
+TRACE::2025-04-10.23:49:55::SCWMssOS::"Running Make include in psv_cortexa72_0/libsrc/trngpsv_v1_4/src"
+
+TRACE::2025-04-10.23:49:55::SCWMssOS::make -C psv_cortexa72_0/libsrc/trngpsv_v1_4/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none
+TRACE::2025-04-10.23:49:55::SCWMssOS::-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Dversal -DARMA72_EL3 
+TRACE::2025-04-10.23:49:55::SCWMssOS::-fno-tree-loop-distribute-patterns"
+
+TRACE::2025-04-10.23:49:55::SCWMssOS::"Running Make include in psv_cortexa72_0/libsrc/uartlite_v3_9/src"
+
+TRACE::2025-04-10.23:49:55::SCWMssOS::make -C psv_cortexa72_0/libsrc/uartlite_v3_9/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-non
+TRACE::2025-04-10.23:49:55::SCWMssOS::e-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Dversal -DARMA72_EL3
+TRACE::2025-04-10.23:49:55::SCWMssOS:: -fno-tree-loop-distribute-patterns"
+
+TRACE::2025-04-10.23:49:55::SCWMssOS::"Running Make include in psv_cortexa72_0/libsrc/uartpsv_v1_9/src"
+
+TRACE::2025-04-10.23:49:55::SCWMssOS::make -C psv_cortexa72_0/libsrc/uartpsv_v1_9/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none
+TRACE::2025-04-10.23:49:55::SCWMssOS::-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Dversal -DARMA72_EL3 
+TRACE::2025-04-10.23:49:55::SCWMssOS::-fno-tree-loop-distribute-patterns"
+
+TRACE::2025-04-10.23:49:55::SCWMssOS::"Running Make include in psv_cortexa72_0/libsrc/zdma_v1_17/src"
+
+TRACE::2025-04-10.23:49:55::SCWMssOS::make -C psv_cortexa72_0/libsrc/zdma_v1_17/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-e
+TRACE::2025-04-10.23:49:55::SCWMssOS::lf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Dversal -DARMA72_EL3 -f
+TRACE::2025-04-10.23:49:55::SCWMssOS::no-tree-loop-distribute-patterns"
+
+TRACE::2025-04-10.23:49:56::SCWMssOS::"Running Make libs in psv_cortexa72_0/libsrc/axidma_v9_17/src"
+
+TRACE::2025-04-10.23:49:56::SCWMssOS::make -C psv_cortexa72_0/libsrc/axidma_v9_17/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-el
+TRACE::2025-04-10.23:49:56::SCWMssOS::f-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Dversal -DARMA72_EL3 -fn
+TRACE::2025-04-10.23:49:56::SCWMssOS::o-tree-loop-distribute-patterns"
+
+TRACE::2025-04-10.23:49:56::SCWMssOS::"Running Make libs in psv_cortexa72_0/libsrc/cframe_v1_5/src"
+
+TRACE::2025-04-10.23:49:56::SCWMssOS::make -C psv_cortexa72_0/libsrc/cframe_v1_5/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-elf
+TRACE::2025-04-10.23:49:56::SCWMssOS::-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Dversal -DARMA72_EL3 -fno
+TRACE::2025-04-10.23:49:56::SCWMssOS::-tree-loop-distribute-patterns"
+
+TRACE::2025-04-10.23:49:56::SCWMssOS::"Running Make libs in psv_cortexa72_0/libsrc/cfupmc_v1_6/src"
+
+TRACE::2025-04-10.23:49:56::SCWMssOS::make -C psv_cortexa72_0/libsrc/cfupmc_v1_6/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-elf
+TRACE::2025-04-10.23:49:56::SCWMssOS::-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Dversal -DARMA72_EL3 -fno
+TRACE::2025-04-10.23:49:56::SCWMssOS::-tree-loop-distribute-patterns"
+
+TRACE::2025-04-10.23:49:56::SCWMssOS::"Running Make libs in psv_cortexa72_0/libsrc/coresightps_dcc_v1_9/src"
+
+TRACE::2025-04-10.23:49:56::SCWMssOS::make -C psv_cortexa72_0/libsrc/coresightps_dcc_v1_9/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64
+TRACE::2025-04-10.23:49:56::SCWMssOS::-none-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Dversal -DARMA72
+TRACE::2025-04-10.23:49:56::SCWMssOS::_EL3 -fno-tree-loop-distribute-patterns"
+
+TRACE::2025-04-10.23:49:56::SCWMssOS::"Running Make libs in psv_cortexa72_0/libsrc/cpu_cortexa72_v1_4/src"
+
+TRACE::2025-04-10.23:49:56::SCWMssOS::make -C psv_cortexa72_0/libsrc/cpu_cortexa72_v1_4/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-n
+TRACE::2025-04-10.23:49:56::SCWMssOS::one-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Dversal -DARMA72_E
+TRACE::2025-04-10.23:49:56::SCWMssOS::L3 -fno-tree-loop-distribute-patterns"
+
+TRACE::2025-04-10.23:49:56::SCWMssOS::"Running Make libs in psv_cortexa72_0/libsrc/csudma_v1_14/src"
+
+TRACE::2025-04-10.23:49:56::SCWMssOS::make -C psv_cortexa72_0/libsrc/csudma_v1_14/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-el
+TRACE::2025-04-10.23:49:56::SCWMssOS::f-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Dversal -DARMA72_EL3 -fn
+TRACE::2025-04-10.23:49:56::SCWMssOS::o-tree-loop-distribute-patterns"
+
+TRACE::2025-04-10.23:49:56::SCWMssOS::"Running Make libs in psv_cortexa72_0/libsrc/gpio_v4_10/src"
+
+TRACE::2025-04-10.23:49:56::SCWMssOS::make -C psv_cortexa72_0/libsrc/gpio_v4_10/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-elf-
+TRACE::2025-04-10.23:49:56::SCWMssOS::as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Dversal -DARMA72_EL3 -fno-
+TRACE::2025-04-10.23:49:56::SCWMssOS::tree-loop-distribute-patterns"
+
+TRACE::2025-04-10.23:49:56::SCWMssOS::"Running Make libs in psv_cortexa72_0/libsrc/ipipsu_v2_14/src"
+
+TRACE::2025-04-10.23:49:57::SCWMssOS::make -C psv_cortexa72_0/libsrc/ipipsu_v2_14/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-el
+TRACE::2025-04-10.23:49:57::SCWMssOS::f-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Dversal -DARMA72_EL3 -fn
+TRACE::2025-04-10.23:49:57::SCWMssOS::o-tree-loop-distribute-patterns"
+
+TRACE::2025-04-10.23:49:57::SCWMssOS::"Running Make libs in psv_cortexa72_0/libsrc/pmonpsv_v2_3/src"
+
+TRACE::2025-04-10.23:49:57::SCWMssOS::make -C psv_cortexa72_0/libsrc/pmonpsv_v2_3/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-el
+TRACE::2025-04-10.23:49:57::SCWMssOS::f-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Dversal -DARMA72_EL3 -fn
+TRACE::2025-04-10.23:49:57::SCWMssOS::o-tree-loop-distribute-patterns"
+
+TRACE::2025-04-10.23:49:57::SCWMssOS::"Running Make libs in psv_cortexa72_0/libsrc/rtcpsu_v1_13/src"
+
+TRACE::2025-04-10.23:49:57::SCWMssOS::make -C psv_cortexa72_0/libsrc/rtcpsu_v1_13/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-el
+TRACE::2025-04-10.23:49:57::SCWMssOS::f-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Dversal -DARMA72_EL3 -fn
+TRACE::2025-04-10.23:49:57::SCWMssOS::o-tree-loop-distribute-patterns"
+
+TRACE::2025-04-10.23:49:57::SCWMssOS::"Running Make libs in psv_cortexa72_0/libsrc/scugic_v5_2/src"
+
+TRACE::2025-04-10.23:49:57::SCWMssOS::make -C psv_cortexa72_0/libsrc/scugic_v5_2/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-elf
+TRACE::2025-04-10.23:49:57::SCWMssOS::-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Dversal -DARMA72_EL3 -fno
+TRACE::2025-04-10.23:49:57::SCWMssOS::-tree-loop-distribute-patterns"
+
+TRACE::2025-04-10.23:49:57::SCWMssOS::"Running Make libs in psv_cortexa72_0/libsrc/standalone_v9_0/src"
+
+TRACE::2025-04-10.23:49:57::SCWMssOS::make -C psv_cortexa72_0/libsrc/standalone_v9_0/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none
+TRACE::2025-04-10.23:49:57::SCWMssOS::-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Dversal -DARMA72_EL3 
+TRACE::2025-04-10.23:49:57::SCWMssOS::-fno-tree-loop-distribute-patterns"
+
+TRACE::2025-04-10.23:49:57::SCWMssOS::"Running Make libs in psv_cortexa72_0/libsrc/sysmonpsv_v4_1/src"
+
+TRACE::2025-04-10.23:49:57::SCWMssOS::make -C psv_cortexa72_0/libsrc/sysmonpsv_v4_1/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-
+TRACE::2025-04-10.23:49:57::SCWMssOS::elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Dversal -DARMA72_EL3 -
+TRACE::2025-04-10.23:49:57::SCWMssOS::fno-tree-loop-distribute-patterns"
+
+TRACE::2025-04-10.23:49:57::SCWMssOS::"Compiling xsysmonpsv"
+
+TRACE::2025-04-10.23:49:58::SCWMssOS::"Running Make libs in psv_cortexa72_0/libsrc/trngpsv_v1_4/src"
+
+TRACE::2025-04-10.23:49:58::SCWMssOS::make -C psv_cortexa72_0/libsrc/trngpsv_v1_4/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-el
+TRACE::2025-04-10.23:49:58::SCWMssOS::f-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Dversal -DARMA72_EL3 -fn
+TRACE::2025-04-10.23:49:58::SCWMssOS::o-tree-loop-distribute-patterns"
+
+TRACE::2025-04-10.23:49:58::SCWMssOS::"Running Make libs in psv_cortexa72_0/libsrc/uartlite_v3_9/src"
+
+TRACE::2025-04-10.23:49:58::SCWMssOS::make -C psv_cortexa72_0/libsrc/uartlite_v3_9/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-e
+TRACE::2025-04-10.23:49:58::SCWMssOS::lf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Dversal -DARMA72_EL3 -f
+TRACE::2025-04-10.23:49:58::SCWMssOS::no-tree-loop-distribute-patterns"
+
+TRACE::2025-04-10.23:49:58::SCWMssOS::"Running Make libs in psv_cortexa72_0/libsrc/uartpsv_v1_9/src"
+
+TRACE::2025-04-10.23:49:58::SCWMssOS::make -C psv_cortexa72_0/libsrc/uartpsv_v1_9/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-el
+TRACE::2025-04-10.23:49:58::SCWMssOS::f-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Dversal -DARMA72_EL3 -fn
+TRACE::2025-04-10.23:49:58::SCWMssOS::o-tree-loop-distribute-patterns"
+
+TRACE::2025-04-10.23:49:58::SCWMssOS::"Running Make libs in psv_cortexa72_0/libsrc/zdma_v1_17/src"
+
+TRACE::2025-04-10.23:49:58::SCWMssOS::make -C psv_cortexa72_0/libsrc/zdma_v1_17/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-elf-
+TRACE::2025-04-10.23:49:58::SCWMssOS::as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Dversal -DARMA72_EL3 -fno-
+TRACE::2025-04-10.23:49:58::SCWMssOS::tree-loop-distribute-patterns"
+
+TRACE::2025-04-10.23:50:01::SCWMssOS::'Finished building libraries parallelly.'
+
+TRACE::2025-04-10.23:50:01::SCWMssOS::make --no-print-directory archive
+
+TRACE::2025-04-10.23:50:01::SCWMssOS::aarch64-none-elf-ar -r  psv_cortexa72_0/lib/libxil.a psv_cortexa72_0/lib/CompactAES.o psv_cortexa72_0/lib/_exit.o psv_cortexa72
+TRACE::2025-04-10.23:50:01::SCWMssOS::_0/lib/_open.o psv_cortexa72_0/lib/_sbrk.o psv_cortexa72_0/lib/abort.o psv_cortexa72_0/lib/asm_vectors.o psv_cortexa72_0/lib/bo
+TRACE::2025-04-10.23:50:01::SCWMssOS::ot.o psv_cortexa72_0/lib/close.o psv_cortexa72_0/lib/cpputest_time.o psv_cortexa72_0/lib/errno.o psv_cortexa72_0/lib/fcntl.o ps
+TRACE::2025-04-10.23:50:01::SCWMssOS::v_cortexa72_0/lib/fstat.o psv_cortexa72_0/lib/getentropy.o psv_cortexa72_0/lib/getpid.o psv_cortexa72_0/lib/inbyte.o psv_cortex
+TRACE::2025-04-10.23:50:01::SCWMssOS::a72_0/lib/initialise_monitor_handles.o psv_cortexa72_0/lib/isatty.o psv_cortexa72_0/lib/kill.o psv_cortexa72_0/lib/lseek.o psv_
+TRACE::2025-04-10.23:50:01::SCWMssOS::cortexa72_0/lib/open.o psv_cortexa72_0/lib/outbyte.o psv_cortexa72_0/lib/print.o psv_cortexa72_0/lib/putnum.o psv_cortexa72_0/l
+TRACE::2025-04-10.23:50:01::SCWMssOS::ib/read.o psv_cortexa72_0/lib/sbrk.o psv_cortexa72_0/lib/sleep.o psv_cortexa72_0/lib/time.o psv_cortexa72_0/lib/translation_tab
+TRACE::2025-04-10.23:50:01::SCWMssOS::le.o psv_cortexa72_0/lib/unlink.o psv_cortexa72_0/lib/vectors.o psv_cortexa72_0/lib/write.o psv_cortexa72_0/lib/xaxidma.o psv_c
+TRACE::2025-04-10.23:50:01::SCWMssOS::ortexa72_0/lib/xaxidma_bd.o psv_cortexa72_0/lib/xaxidma_bdring.o psv_cortexa72_0/lib/xaxidma_g.o psv_cortexa72_0/lib/xaxidma_se
+TRACE::2025-04-10.23:50:01::SCWMssOS::lftest.o psv_cortexa72_0/lib/xaxidma_sinit.o psv_cortexa72_0/lib/xcframe.o psv_cortexa72_0/lib/xcframe_g.o psv_cortexa72_0/lib/
+TRACE::2025-04-10.23:50:01::SCWMssOS::xcframe_selftest.o psv_cortexa72_0/lib/xcframe_sinit.o psv_cortexa72_0/lib/xcfupmc.o psv_cortexa72_0/lib/xcfupmc_g.o psv_cortex
+TRACE::2025-04-10.23:50:01::SCWMssOS::a72_0/lib/xcfupmc_selftest.o psv_cortexa72_0/lib/xcfupmc_sinit.o psv_cortexa72_0/lib/xcoresightpsdcc.o psv_cortexa72_0/lib/xcsu
+TRACE::2025-04-10.23:50:01::SCWMssOS::dma.o psv_cortexa72_0/lib/xcsudma_g.o psv_cortexa72_0/lib/xcsudma_intr.o psv_cortexa72_0/lib/xcsudma_selftest.o psv_cortexa72_0
+TRACE::2025-04-10.23:50:01::SCWMssOS::/lib/xcsudma_sinit.o psv_cortexa72_0/lib/xgpio.o psv_cortexa72_0/lib/xgpio_extra.o psv_cortexa72_0/lib/xgpio_g.o psv_cortexa72_
+TRACE::2025-04-10.23:50:01::SCWMssOS::0/lib/xgpio_intr.o psv_cortexa72_0/lib/xgpio_selftest.o psv_cortexa72_0/lib/xgpio_sinit.o psv_cortexa72_0/lib/xil-crt0.o psv_co
+TRACE::2025-04-10.23:50:01::SCWMssOS::rtexa72_0/lib/xil_assert.o psv_cortexa72_0/lib/xil_cache.o psv_cortexa72_0/lib/xil_clocking.o psv_cortexa72_0/lib/xil_exception
+TRACE::2025-04-10.23:50:01::SCWMssOS::.o psv_cortexa72_0/lib/xil_mem.o psv_cortexa72_0/lib/xil_mmu.o psv_cortexa72_0/lib/xil_printf.o psv_cortexa72_0/lib/xil_sleepco
+TRACE::2025-04-10.23:50:01::SCWMssOS::mmon.o psv_cortexa72_0/lib/xil_sleeptimer.o psv_cortexa72_0/lib/xil_smc.o psv_cortexa72_0/lib/xil_spinlock.o psv_cortexa72_0/li
+TRACE::2025-04-10.23:50:01::SCWMssOS::b/xil_testcache.o psv_cortexa72_0/lib/xil_testio.o psv_cortexa72_0/lib/xil_testmem.o psv_cortexa72_0/lib/xil_util.o psv_cortexa
+TRACE::2025-04-10.23:50:01::SCWMssOS::72_0/lib/xinterrupt_wrap.o psv_cortexa72_0/lib/xipipsu.o psv_cortexa72_0/lib/xipipsu_buf.o psv_cortexa72_0/lib/xipipsu_g.o psv_
+TRACE::2025-04-10.23:50:01::SCWMssOS::cortexa72_0/lib/xipipsu_helper.o psv_cortexa72_0/lib/xipipsu_sinit.o psv_cortexa72_0/lib/xplatform_info.o psv_cortexa72_0/lib/x
+TRACE::2025-04-10.23:50:01::SCWMssOS::pm_counter.o psv_cortexa72_0/lib/xpm_init.o psv_cortexa72_0/lib/xpmonpsv.o psv_cortexa72_0/lib/xpmonpsv_g.o psv_cortexa72_0/lib
+TRACE::2025-04-10.23:50:01::SCWMssOS::/xpmonpsv_sint.o psv_cortexa72_0/lib/xrtcpsu.o psv_cortexa72_0/lib/xrtcpsu_g.o psv_cortexa72_0/lib/xrtcpsu_intr.o psv_cortexa72
+TRACE::2025-04-10.23:50:01::SCWMssOS::_0/lib/xrtcpsu_selftest.o psv_cortexa72_0/lib/xrtcpsu_sinit.o psv_cortexa72_0/lib/xscugic.o psv_cortexa72_0/lib/xscugic_g.o psv
+TRACE::2025-04-10.23:50:01::SCWMssOS::_cortexa72_0/lib/xscugic_hw.o psv_cortexa72_0/lib/xscugic_intr.o psv_cortexa72_0/lib/xscugic_selftest.o psv_cortexa72_0/lib/xsc
+TRACE::2025-04-10.23:50:01::SCWMssOS::ugic_sinit.o psv_cortexa72_0/lib/xsysmonpsv.o psv_cortexa72_0/lib/xsysmonpsv_common.o psv_cortexa72_0/lib/xsysmonpsv_direct.o p
+TRACE::2025-04-10.23:50:01::SCWMssOS::sv_cortexa72_0/lib/xsysmonpsv_g.o psv_cortexa72_0/lib/xsysmonpsv_intr.o psv_cortexa72_0/lib/xsysmonpsv_secure.o psv_cortexa72_0
+TRACE::2025-04-10.23:50:01::SCWMssOS::/lib/xsysmonpsv_services.o psv_cortexa72_0/lib/xsysmonpsv_sinit.o psv_cortexa72_0/lib/xtime_l.o psv_cortexa72_0/lib/xtrngpsv.o 
+TRACE::2025-04-10.23:50:01::SCWMssOS::psv_cortexa72_0/lib/xtrngpsv_df.o psv_cortexa72_0/lib/xtrngpsv_g.o psv_cortexa72_0/lib/xtrngpsv_sinit.o psv_cortexa72_0/lib/xtr
+TRACE::2025-04-10.23:50:01::SCWMssOS::ngpsv_tests.o psv_cortexa72_0/lib/xuartlite.o psv_cortexa72_0/lib/xuartlite_g.o psv_cortexa72_0/lib/xuartlite_intr.o psv_cortex
+TRACE::2025-04-10.23:50:01::SCWMssOS::a72_0/lib/xuartlite_l.o psv_cortexa72_0/lib/xuartlite_selftest.o psv_cortexa72_0/lib/xuartlite_sinit.o psv_cortexa72_0/lib/xuar
+TRACE::2025-04-10.23:50:01::SCWMssOS::tlite_stats.o psv_cortexa72_0/lib/xuartpsv.o psv_cortexa72_0/lib/xuartpsv_g.o psv_cortexa72_0/lib/xuartpsv_hw.o psv_cortexa72_0
+TRACE::2025-04-10.23:50:01::SCWMssOS::/lib/xuartpsv_intr.o psv_cortexa72_0/lib/xuartpsv_options.o psv_cortexa72_0/lib/xuartpsv_selftest.o psv_cortexa72_0/lib/xuartps
+TRACE::2025-04-10.23:50:01::SCWMssOS::v_sinit.o psv_cortexa72_0/lib/xzdma.o psv_cortexa72_0/lib/xzdma_g.o psv_cortexa72_0/lib/xzdma_intr.o psv_cortexa72_0/lib/xzdma_
+TRACE::2025-04-10.23:50:01::SCWMssOS::selftest.o psv_cortexa72_0/lib/xzdma_sinit.o
+
+TRACE::2025-04-10.23:50:02::SCWMssOS::'Finished building libraries'
+
+TRACE::2025-04-10.23:50:02::SCWMssOS::Copying to export directory.
+TRACE::2025-04-10.23:50:03::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2025-04-10.23:50:03::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+TRACE::2025-04-10.23:50:03::SCWMssOS:: Completed Standalone Artifacts creation 
+LOG::2025-04-10.23:50:03::SCWSystem::Completed Processing the domain standalone_psv_cortexa72_0
+LOG::2025-04-10.23:50:03::SCWSystem::Completed Processing the sysconfig control_wrapper
+LOG::2025-04-10.23:50:03::SCWPlatform::Completed generating the artifacts for system configuration control_wrapper
+TRACE::2025-04-10.23:50:03::SCWPlatform::Started preparing the platform 
+TRACE::2025-04-10.23:50:03::SCWSystem::Writing the bif file for system config control_wrapper
+TRACE::2025-04-10.23:50:03::SCWSystem::dir created 
+TRACE::2025-04-10.23:50:03::SCWSystem::Writing the bif 
+TRACE::2025-04-10.23:50:03::SCWPlatform::Started writing the spfm file 
+TRACE::2025-04-10.23:50:03::SCWPlatform::Started writing the xpfm file 
+TRACE::2025-04-10.23:50:03::SCWPlatform::Completed generating the platform
+TRACE::2025-04-10.23:50:03::SCWMssOS::Saving the mss changes C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss
+TRACE::2025-04-10.23:50:03::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2025-04-10.23:50:03::SCWMssOS::Completed writemss as part of save.
+TRACE::2025-04-10.23:50:03::SCWMssOS::Commit changes completed.
+TRACE::2025-04-10.23:50:03::SCWPlatform::Trying to open the hw design at C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:50:03::SCWPlatform::DSA given C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:50:03::SCWPlatform::DSA absoulate path C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:50:03::SCWPlatform::DSA directory C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw
+TRACE::2025-04-10.23:50:03::SCWPlatform:: Platform Path C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:50:03::SCWPlatform:: Unique name xilinx:vpk180::0.0
+TRACE::2025-04-10.23:50:03::SCWPlatform::Trying to set the existing hwdb with name control_wrapper_2
+TRACE::2025-04-10.23:50:03::SCWPlatform::Opened existing hwdb control_wrapper_2
+TRACE::2025-04-10.23:50:03::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-10.23:50:03::SCWMssOS::Checking the sw design at  C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss
+TRACE::2025-04-10.23:50:03::SCWMssOS::DEBUG:  swdes dump  C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss|system||
+
+TRACE::2025-04-10.23:50:03::SCWMssOS::Sw design exists and opened at  C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss
+TRACE::2025-04-10.23:50:03::SCWPlatform::Trying to open the hw design at C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:50:03::SCWPlatform::DSA given C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:50:03::SCWPlatform::DSA absoulate path C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:50:03::SCWPlatform::DSA directory C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw
+TRACE::2025-04-10.23:50:03::SCWPlatform:: Platform Path C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:50:03::SCWPlatform:: Unique name xilinx:vpk180::0.0
+TRACE::2025-04-10.23:50:03::SCWPlatform::Trying to set the existing hwdb with name control_wrapper_2
+TRACE::2025-04-10.23:50:03::SCWPlatform::Opened existing hwdb control_wrapper_2
+TRACE::2025-04-10.23:50:03::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-10.23:50:03::SCWMssOS::Checking the sw design at  C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss
+TRACE::2025-04-10.23:50:03::SCWMssOS::DEBUG:  swdes dump  C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss|system||
+
+TRACE::2025-04-10.23:50:03::SCWMssOS::Sw design exists and opened at  C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss
+TRACE::2025-04-10.23:50:03::SCWPlatform::Trying to open the hw design at C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:50:03::SCWPlatform::DSA given C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:50:03::SCWPlatform::DSA absoulate path C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:50:03::SCWPlatform::DSA directory C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw
+TRACE::2025-04-10.23:50:03::SCWPlatform:: Platform Path C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:50:03::SCWPlatform:: Unique name xilinx:vpk180::0.0
+TRACE::2025-04-10.23:50:03::SCWPlatform::Trying to set the existing hwdb with name control_wrapper_2
+TRACE::2025-04-10.23:50:03::SCWPlatform::Opened existing hwdb control_wrapper_2
+TRACE::2025-04-10.23:50:03::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-10.23:50:03::SCWMssOS::Checking the sw design at  C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss
+TRACE::2025-04-10.23:50:03::SCWMssOS::DEBUG:  swdes dump  C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss|system||
+
+TRACE::2025-04-10.23:50:03::SCWMssOS::Sw design exists and opened at  C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss
+TRACE::2025-04-10.23:50:03::SCWWriter::formatted JSON is {
+	"platformName":	"control_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"control_wrapper",
+	"platHandOff":	"C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/control_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/control_wrapper.xsa",
+	"deviceType":	"versal",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"control_wrapper",
+	"systems":	[{
+			"systemName":	"control_wrapper",
+			"systemDesc":	"control_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"control_wrapper",
+			"sysActiveDom":	"standalone_psv_cortexa72_0",
+			"sysDefaultDom":	"standalone_psv_cortexa72_0",
+			"domains":	[{
+					"domainName":	"standalone_psv_cortexa72_0",
+					"domainDispName":	"standalone_psv_cortexa72_0",
+					"domainDesc":	"standalone_psv_cortexa72_0",
+					"processors":	"versal_cips_0_pspmc_0_psv_cortexa72_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"<platformDir>/resources/control_wrapper/standalone_psv_cortexa72_0/qemu_args.txt",
+					"qemuData":	"<platformDir>/resources/control_wrapper/standalone_psv_cortexa72_0/qemu",
+					"pmuQemuArgs":	"<platformDir>/resources/control_wrapper/standalone_psv_cortexa72_0/pmc_args.txt",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"9.0",
+					"mssFile":	"",
+					"md5Digest":	"f224e9fa3fc443399fbe0d9bfb061e5e",
+					"compatibleApp":	"hello_world",
+					"domType":	"mssDomain",
+					"arch":	"64-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2025-04-10.23:50:03::SCWPlatform::updated the xpfm file.
+TRACE::2025-04-10.23:50:06::SCWPlatform::Trying to open the hw design at C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:50:06::SCWPlatform::DSA given C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:50:06::SCWPlatform::DSA absoulate path C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:50:06::SCWPlatform::DSA directory C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw
+TRACE::2025-04-10.23:50:06::SCWPlatform:: Platform Path C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/hw/control_wrapper.xsa
+TRACE::2025-04-10.23:50:06::SCWPlatform:: Unique name xilinx:vpk180::0.0
+TRACE::2025-04-10.23:50:06::SCWPlatform::Trying to set the existing hwdb with name control_wrapper_2
+TRACE::2025-04-10.23:50:06::SCWPlatform::Opened existing hwdb control_wrapper_2
+TRACE::2025-04-10.23:50:06::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-10.23:50:06::SCWMssOS::Checking the sw design at  C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss
+TRACE::2025-04-10.23:50:06::SCWMssOS::DEBUG:  swdes dump  C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss|system||
+
+TRACE::2025-04-10.23:50:06::SCWMssOS::Sw design exists and opened at  C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/psv_cortexa72_0/standalone_psv_cortexa72_0/bsp/system.mss

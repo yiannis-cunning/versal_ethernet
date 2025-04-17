@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ASCII"?>
+<systemproject:SystemProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdsproject="http://www.xilinx.com/sdsproject" xmlns:systemproject="http://www.xilinx.com/systemproject" name="mrmac_api_example_system" platform="C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/export/control_wrapper/control_wrapper.xpfm" platformUID="xilinx:vpk180::0.0(custom)" sysConfig="control_wrapper" runtime="C/C++" rootFSLocation="" linuxImage="" sysroot="">
+  <configuration name="Debug" id="com.xilinx.sdx.system.managedbuilder.debugConfiguration.565401619">
+    <configBuildOptions xsi:type="systemproject:SystemOptions">
+      <applications name="mrmac_api_example" domainName="standalone_psv_cortexa72_0" domainPrettyName="standalone_psv_cortexa72_0" appBuildConfig="Debug"/>
+      <options xsi:type="sdsproject:Option" gensdcard="true" dmclkid="0"/>
+    </configBuildOptions>
+    <lastBuildOptions xsi:type="systemproject:SystemOptions">
+      <applications name="mrmac_api_example" domainName="standalone_psv_cortexa72_0" domainPrettyName="standalone_psv_cortexa72_0" appBuildConfig="Debug"/>
+      <options xsi:type="sdsproject:Option" gensdcard="true" dmclkid="0"/>
+    </lastBuildOptions>
+  </configuration>
+  <configuration name="Release" id="com.xilinx.sdx.system.managedbuilder.releaseConfiguration.1256474329">
+    <configBuildOptions xsi:type="systemproject:SystemOptions">
+      <applications name="mrmac_api_example" domainName="standalone_psv_cortexa72_0" domainPrettyName="standalone_psv_cortexa72_0" appBuildConfig="Release"/>
+      <options xsi:type="sdsproject:Option" gensdcard="true" dmclkid="0"/>
+    </configBuildOptions>
+  </configuration>
+</systemproject:SystemProject>

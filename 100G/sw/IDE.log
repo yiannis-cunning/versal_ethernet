@@ -1,0 +1,484 @@
+23:23:46 DEBUG : Logs will be stored at 'C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/IDE.log'.
+23:23:54 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\yiann\vivado23\testbench2\mrmac_hdl_384bv2\software\temp_xsdb_launch_script.tcl
+23:23:55 INFO  : Registering command handlers for Vitis TCF services
+23:23:57 INFO  : Platform repository initialization has completed.
+23:23:59 INFO  : XSCT server has started successfully.
+23:23:59 INFO  : plnx-install-location is set to ''
+23:24:04 INFO  : Successfully done setting XSCT server connection channel  
+23:24:04 INFO  : Successfully done query RDI_DATADIR 
+23:24:04 INFO  : Successfully done setting workspace for the tool. 
+23:24:04 INFO  : Restoring global repository preferences: 
+		 C:\Users\yiann\vivado23\nexys_video\diligent_ips\vivado-library-master
+23:25:43 INFO  : Result from executing command 'getProjects': control_wrapper
+23:25:43 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_vck190_base_202320_1/xilinx_vck190_base_202320_1.xpfm;xilinx_vck190_base_dfx_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_vck190_base_dfx_202320_1/xilinx_vck190_base_dfx_202320_1.xpfm;xilinx_vek280_es1_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_vek280_es1_base_202320_1/xilinx_vek280_es1_base_202320_1.xpfm;xilinx_vmk180_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_vmk180_base_202320_1/xilinx_vmk180_base_202320_1.xpfm;xilinx_zcu102_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu102_base_202320_1/xilinx_zcu102_base_202320_1.xpfm;xilinx_zcu102_base_dfx_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu102_base_dfx_202320_1/xilinx_zcu102_base_dfx_202320_1.xpfm;xilinx_zcu104_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu104_base_202320_1/xilinx_zcu104_base_202320_1.xpfm
+23:25:45 WARN  : An unexpected exception occurred in the module 'platform project logging'
+23:25:48 INFO  : Platform 'control_wrapper' is added to custom repositories.
+23:26:11 INFO  : Platform 'control_wrapper' is added to custom repositories.
+23:50:03 INFO  : Result from executing command 'getProjects': control_wrapper
+23:50:03 INFO  : Result from executing command 'getPlatforms': control_wrapper|C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/export/control_wrapper/control_wrapper.xpfm;xilinx_vck190_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_vck190_base_202320_1/xilinx_vck190_base_202320_1.xpfm;xilinx_vck190_base_dfx_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_vck190_base_dfx_202320_1/xilinx_vck190_base_dfx_202320_1.xpfm;xilinx_vek280_es1_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_vek280_es1_base_202320_1/xilinx_vek280_es1_base_202320_1.xpfm;xilinx_vmk180_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_vmk180_base_202320_1/xilinx_vmk180_base_202320_1.xpfm;xilinx_zcu102_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu102_base_202320_1/xilinx_zcu102_base_202320_1.xpfm;xilinx_zcu102_base_dfx_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu102_base_dfx_202320_1/xilinx_zcu102_base_dfx_202320_1.xpfm;xilinx_zcu104_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu104_base_202320_1/xilinx_zcu104_base_202320_1.xpfm
+23:50:06 INFO  : Checking for BSP changes to sync application flags for project 'hello_mrmac'...
+23:50:21 INFO  : Checking for BSP changes to sync application flags for project 'hello_mrmac'...
+23:50:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:50:37 INFO  : Jtag cable 'Xilinx VPK180 FT4232H 382249155073A' is selected.
+23:50:38 INFO  : 'jtag frequency' command is executed.
+23:50:38 INFO  : Context for 'APU' is selected.
+23:50:40 INFO  : Hardware design and registers information is loaded from 'C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/export/control_wrapper/hw/control_wrapper.xsa'.
+23:50:40 INFO  : 'configparams force-mem-access 1' command is executed.
+23:50:40 INFO  : Context for 'Versal' is selected.
+23:50:40 INFO  : System reset is completed.
+23:50:43 INFO  : 'after 3000' command is executed.
+23:50:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx VPK180 FT4232H 382249155073A" && name=="PMC" && jtag_device_ctx=="jsn-VPK180 FT4232H-382249155073A-14d14093-0"}' command is executed.
+23:50:47 INFO  : Device configured successfully with "C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/hello_mrmac/_ide/bootimage/resources/control_wrapper.pdi"
+23:50:47 INFO  : Context for processor 'versal_cips_0_pspmc_0_psv_cortexa72_0' is selected.
+23:50:48 INFO  : Processor reset is completed for 'versal_cips_0_pspmc_0_psv_cortexa72_0'.
+23:50:50 INFO  : The application 'C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/hello_mrmac/Debug/hello_mrmac.elf' is downloaded to processor 'versal_cips_0_pspmc_0_psv_cortexa72_0'.
+23:50:50 INFO  : 'configparams force-mem-access 0' command is executed.
+23:50:50 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/export/control_wrapper/hw/control_wrapper.xsa -mem-ranges [list {0x80000000 0x9fffffff} {0xa4000000 0xafffffff} {0xb0000000 0xbfffffff} {0x20000000000 0x3FFFFFFFFFF}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"Versal*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx VPK180 FT4232H 382249155073A" && name=="PMC" && jtag_device_ctx=="jsn-VPK180 FT4232H-382249155073A-14d14093-0"}
+device program C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/hello_mrmac/_ide/bootimage/resources/control_wrapper.pdi
+targets -set -nocase -filter {name =~ "*A72*#0"}
+rst -processor
+dow C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/hello_mrmac/Debug/hello_mrmac.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:50:50 INFO  : Context for processor 'versal_cips_0_pspmc_0_psv_cortexa72_0' is selected.
+23:50:50 INFO  : 'con' command is executed.
+23:50:50 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A72*#0"}
+con
+----------------End of Script----------------
+
+23:50:50 INFO  : Launch script is exported to file 'C:\Users\yiann\vivado23\testbench2\mrmac_hdl_384bv2\software\hello_mrmac_system\_ide\scripts\systemdebugger_hello_mrmac_system_standalone.tcl'
+23:51:04 INFO  : Checking for BSP changes to sync application flags for project 'hello_mrmac'...
+23:51:08 INFO  : Disconnected from the channel tcfchan#2.
+23:51:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:51:09 INFO  : Jtag cable 'Xilinx VPK180 FT4232H 382249155073A' is selected.
+23:51:09 INFO  : 'jtag frequency' command is executed.
+23:51:09 INFO  : Context for 'APU' is selected.
+23:51:09 INFO  : Hardware design and registers information is loaded from 'C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/export/control_wrapper/hw/control_wrapper.xsa'.
+23:51:09 INFO  : 'configparams force-mem-access 1' command is executed.
+23:51:09 INFO  : Context for 'Versal' is selected.
+23:51:09 INFO  : System reset is completed.
+23:51:12 INFO  : 'after 3000' command is executed.
+23:51:12 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx VPK180 FT4232H 382249155073A" && name=="PMC" && jtag_device_ctx=="jsn-VPK180 FT4232H-382249155073A-14d14093-0"}' command is executed.
+23:51:16 INFO  : Device configured successfully with "C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/hello_mrmac/_ide/bootimage/resources/control_wrapper.pdi"
+23:51:17 INFO  : Context for processor 'versal_cips_0_pspmc_0_psv_cortexa72_0' is selected.
+23:51:18 INFO  : Processor reset is completed for 'versal_cips_0_pspmc_0_psv_cortexa72_0'.
+23:51:19 INFO  : The application 'C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/hello_mrmac/Debug/hello_mrmac.elf' is downloaded to processor 'versal_cips_0_pspmc_0_psv_cortexa72_0'.
+23:51:19 INFO  : 'configparams force-mem-access 0' command is executed.
+23:51:19 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/export/control_wrapper/hw/control_wrapper.xsa -mem-ranges [list {0x80000000 0x9fffffff} {0xa4000000 0xafffffff} {0xb0000000 0xbfffffff} {0x20000000000 0x3FFFFFFFFFF}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"Versal*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx VPK180 FT4232H 382249155073A" && name=="PMC" && jtag_device_ctx=="jsn-VPK180 FT4232H-382249155073A-14d14093-0"}
+device program C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/hello_mrmac/_ide/bootimage/resources/control_wrapper.pdi
+targets -set -nocase -filter {name =~ "*A72*#0"}
+rst -processor
+dow C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/hello_mrmac/Debug/hello_mrmac.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:51:19 INFO  : Context for processor 'versal_cips_0_pspmc_0_psv_cortexa72_0' is selected.
+23:51:19 INFO  : 'con' command is executed.
+23:51:19 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A72*#0"}
+con
+----------------End of Script----------------
+
+23:51:19 INFO  : Launch script is exported to file 'C:\Users\yiann\vivado23\testbench2\mrmac_hdl_384bv2\software\hello_mrmac_system\_ide\scripts\systemdebugger_hello_mrmac_system_standalone.tcl'
+23:57:45 INFO  : Checking for BSP changes to sync application flags for project 'hello_mrmac'...
+23:58:15 INFO  : Checking for BSP changes to sync application flags for project 'hello_mrmac'...
+23:58:29 INFO  : Checking for BSP changes to sync application flags for project 'hello_mrmac'...
+23:58:37 INFO  : Checking for BSP changes to sync application flags for project 'hello_mrmac'...
+23:58:57 INFO  : Checking for BSP changes to sync application flags for project 'hello_mrmac'...
+23:59:03 INFO  : Disconnected from the channel tcfchan#3.
+23:59:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:59:04 INFO  : Jtag cable 'Xilinx VPK180 FT4232H 382249155073A' is selected.
+23:59:04 INFO  : 'jtag frequency' command is executed.
+23:59:04 INFO  : Context for 'APU' is selected.
+23:59:04 INFO  : Hardware design and registers information is loaded from 'C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/export/control_wrapper/hw/control_wrapper.xsa'.
+23:59:04 INFO  : 'configparams force-mem-access 1' command is executed.
+23:59:04 INFO  : Context for 'Versal' is selected.
+23:59:04 INFO  : System reset is completed.
+23:59:07 INFO  : 'after 3000' command is executed.
+23:59:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx VPK180 FT4232H 382249155073A" && name=="PMC" && jtag_device_ctx=="jsn-VPK180 FT4232H-382249155073A-14d14093-0"}' command is executed.
+23:59:11 INFO  : Device configured successfully with "C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/hello_mrmac/_ide/bootimage/resources/control_wrapper.pdi"
+23:59:11 INFO  : Context for processor 'versal_cips_0_pspmc_0_psv_cortexa72_0' is selected.
+23:59:12 INFO  : Processor reset is completed for 'versal_cips_0_pspmc_0_psv_cortexa72_0'.
+23:59:14 INFO  : The application 'C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/hello_mrmac/Debug/hello_mrmac.elf' is downloaded to processor 'versal_cips_0_pspmc_0_psv_cortexa72_0'.
+23:59:14 INFO  : 'configparams force-mem-access 0' command is executed.
+23:59:14 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/export/control_wrapper/hw/control_wrapper.xsa -mem-ranges [list {0x80000000 0x9fffffff} {0xa4000000 0xafffffff} {0xb0000000 0xbfffffff} {0x20000000000 0x3FFFFFFFFFF}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"Versal*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx VPK180 FT4232H 382249155073A" && name=="PMC" && jtag_device_ctx=="jsn-VPK180 FT4232H-382249155073A-14d14093-0"}
+device program C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/hello_mrmac/_ide/bootimage/resources/control_wrapper.pdi
+targets -set -nocase -filter {name =~ "*A72*#0"}
+rst -processor
+dow C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/hello_mrmac/Debug/hello_mrmac.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:59:14 INFO  : Context for processor 'versal_cips_0_pspmc_0_psv_cortexa72_0' is selected.
+23:59:14 INFO  : 'con' command is executed.
+23:59:14 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A72*#0"}
+con
+----------------End of Script----------------
+
+23:59:14 INFO  : Launch script is exported to file 'C:\Users\yiann\vivado23\testbench2\mrmac_hdl_384bv2\software\hello_mrmac_system\_ide\scripts\systemdebugger_hello_mrmac_system_standalone.tcl'
+23:59:24 INFO  : Checking for BSP changes to sync application flags for project 'hello_mrmac'...
+23:59:28 INFO  : Disconnected from the channel tcfchan#4.
+23:59:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:59:29 INFO  : Jtag cable 'Xilinx VPK180 FT4232H 382249155073A' is selected.
+23:59:29 INFO  : 'jtag frequency' command is executed.
+23:59:29 INFO  : Context for 'APU' is selected.
+23:59:29 INFO  : Hardware design and registers information is loaded from 'C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/export/control_wrapper/hw/control_wrapper.xsa'.
+23:59:29 INFO  : 'configparams force-mem-access 1' command is executed.
+23:59:29 INFO  : Context for 'Versal' is selected.
+23:59:29 INFO  : System reset is completed.
+23:59:32 INFO  : 'after 3000' command is executed.
+23:59:32 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx VPK180 FT4232H 382249155073A" && name=="PMC" && jtag_device_ctx=="jsn-VPK180 FT4232H-382249155073A-14d14093-0"}' command is executed.
+23:59:37 INFO  : Device configured successfully with "C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/hello_mrmac/_ide/bootimage/resources/control_wrapper.pdi"
+23:59:37 INFO  : Context for processor 'versal_cips_0_pspmc_0_psv_cortexa72_0' is selected.
+23:59:38 INFO  : Processor reset is completed for 'versal_cips_0_pspmc_0_psv_cortexa72_0'.
+23:59:39 INFO  : The application 'C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/hello_mrmac/Debug/hello_mrmac.elf' is downloaded to processor 'versal_cips_0_pspmc_0_psv_cortexa72_0'.
+23:59:39 INFO  : 'configparams force-mem-access 0' command is executed.
+23:59:39 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/export/control_wrapper/hw/control_wrapper.xsa -mem-ranges [list {0x80000000 0x9fffffff} {0xa4000000 0xafffffff} {0xb0000000 0xbfffffff} {0x20000000000 0x3FFFFFFFFFF}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"Versal*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx VPK180 FT4232H 382249155073A" && name=="PMC" && jtag_device_ctx=="jsn-VPK180 FT4232H-382249155073A-14d14093-0"}
+device program C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/hello_mrmac/_ide/bootimage/resources/control_wrapper.pdi
+targets -set -nocase -filter {name =~ "*A72*#0"}
+rst -processor
+dow C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/hello_mrmac/Debug/hello_mrmac.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:59:39 INFO  : Context for processor 'versal_cips_0_pspmc_0_psv_cortexa72_0' is selected.
+23:59:39 INFO  : 'con' command is executed.
+23:59:39 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A72*#0"}
+con
+----------------End of Script----------------
+
+23:59:39 INFO  : Launch script is exported to file 'C:\Users\yiann\vivado23\testbench2\mrmac_hdl_384bv2\software\hello_mrmac_system\_ide\scripts\systemdebugger_hello_mrmac_system_standalone.tcl'
+00:01:09 INFO  : Checking for BSP changes to sync application flags for project 'hello_mrmac'...
+00:01:15 INFO  : Disconnected from the channel tcfchan#5.
+00:01:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:01:16 INFO  : Jtag cable 'Xilinx VPK180 FT4232H 382249155073A' is selected.
+00:01:16 INFO  : 'jtag frequency' command is executed.
+00:01:16 INFO  : Context for 'APU' is selected.
+00:01:16 INFO  : Hardware design and registers information is loaded from 'C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/export/control_wrapper/hw/control_wrapper.xsa'.
+00:01:16 INFO  : 'configparams force-mem-access 1' command is executed.
+00:01:16 INFO  : Context for 'Versal' is selected.
+00:01:16 INFO  : System reset is completed.
+00:01:19 INFO  : 'after 3000' command is executed.
+00:01:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx VPK180 FT4232H 382249155073A" && name=="PMC" && jtag_device_ctx=="jsn-VPK180 FT4232H-382249155073A-14d14093-0"}' command is executed.
+00:01:23 INFO  : Device configured successfully with "C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/hello_mrmac/_ide/bootimage/resources/control_wrapper.pdi"
+00:01:23 INFO  : Context for processor 'versal_cips_0_pspmc_0_psv_cortexa72_0' is selected.
+00:01:24 INFO  : Processor reset is completed for 'versal_cips_0_pspmc_0_psv_cortexa72_0'.
+00:01:26 INFO  : The application 'C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/hello_mrmac/Debug/hello_mrmac.elf' is downloaded to processor 'versal_cips_0_pspmc_0_psv_cortexa72_0'.
+00:01:26 INFO  : 'configparams force-mem-access 0' command is executed.
+00:01:26 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/export/control_wrapper/hw/control_wrapper.xsa -mem-ranges [list {0x80000000 0x9fffffff} {0xa4000000 0xafffffff} {0xb0000000 0xbfffffff} {0x20000000000 0x3FFFFFFFFFF}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"Versal*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx VPK180 FT4232H 382249155073A" && name=="PMC" && jtag_device_ctx=="jsn-VPK180 FT4232H-382249155073A-14d14093-0"}
+device program C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/hello_mrmac/_ide/bootimage/resources/control_wrapper.pdi
+targets -set -nocase -filter {name =~ "*A72*#0"}
+rst -processor
+dow C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/hello_mrmac/Debug/hello_mrmac.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+00:01:26 INFO  : Context for processor 'versal_cips_0_pspmc_0_psv_cortexa72_0' is selected.
+00:01:26 INFO  : 'con' command is executed.
+00:01:26 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A72*#0"}
+con
+----------------End of Script----------------
+
+00:01:26 INFO  : Launch script is exported to file 'C:\Users\yiann\vivado23\testbench2\mrmac_hdl_384bv2\software\hello_mrmac_system\_ide\scripts\systemdebugger_hello_mrmac_system_standalone.tcl'
+00:29:41 INFO  : Checking for BSP changes to sync application flags for project 'hello_mrmac'...
+00:30:03 INFO  : Checking for BSP changes to sync application flags for project 'hello_mrmac'...
+00:30:25 INFO  : Checking for BSP changes to sync application flags for project 'hello_mrmac'...
+00:30:35 INFO  : Disconnected from the channel tcfchan#6.
+00:30:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:30:36 INFO  : Jtag cable 'Xilinx VPK180 FT4232H 382249155073A' is selected.
+00:30:36 INFO  : 'jtag frequency' command is executed.
+00:30:36 INFO  : Context for 'APU' is selected.
+00:30:36 INFO  : Hardware design and registers information is loaded from 'C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/export/control_wrapper/hw/control_wrapper.xsa'.
+00:30:36 INFO  : 'configparams force-mem-access 1' command is executed.
+00:30:36 INFO  : Context for 'Versal' is selected.
+00:30:37 INFO  : System reset is completed.
+00:30:40 INFO  : 'after 3000' command is executed.
+00:30:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx VPK180 FT4232H 382249155073A" && name=="PMC" && jtag_device_ctx=="jsn-VPK180 FT4232H-382249155073A-14d14093-0"}' command is executed.
+00:30:45 INFO  : Device configured successfully with "C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/hello_mrmac/_ide/bootimage/resources/control_wrapper.pdi"
+00:30:46 INFO  : Context for processor 'versal_cips_0_pspmc_0_psv_cortexa72_0' is selected.
+00:30:47 INFO  : Processor reset is completed for 'versal_cips_0_pspmc_0_psv_cortexa72_0'.
+00:30:49 INFO  : The application 'C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/hello_mrmac/Debug/hello_mrmac.elf' is downloaded to processor 'versal_cips_0_pspmc_0_psv_cortexa72_0'.
+00:30:49 INFO  : 'configparams force-mem-access 0' command is executed.
+00:30:49 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/export/control_wrapper/hw/control_wrapper.xsa -mem-ranges [list {0x80000000 0x9fffffff} {0xa4000000 0xafffffff} {0xb0000000 0xbfffffff} {0x20000000000 0x3FFFFFFFFFF}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"Versal*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx VPK180 FT4232H 382249155073A" && name=="PMC" && jtag_device_ctx=="jsn-VPK180 FT4232H-382249155073A-14d14093-0"}
+device program C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/hello_mrmac/_ide/bootimage/resources/control_wrapper.pdi
+targets -set -nocase -filter {name =~ "*A72*#0"}
+rst -processor
+dow C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/hello_mrmac/Debug/hello_mrmac.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+00:30:50 INFO  : Context for processor 'versal_cips_0_pspmc_0_psv_cortexa72_0' is selected.
+00:30:50 INFO  : 'con' command is executed.
+00:30:50 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A72*#0"}
+con
+----------------End of Script----------------
+
+00:30:50 INFO  : Launch script is exported to file 'C:\Users\yiann\vivado23\testbench2\mrmac_hdl_384bv2\software\hello_mrmac_system\_ide\scripts\systemdebugger_hello_mrmac_system_standalone.tcl'
+00:31:53 INFO  : Checking for BSP changes to sync application flags for project 'hello_mrmac'...
+00:32:02 INFO  : Disconnected from the channel tcfchan#7.
+00:32:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:32:03 INFO  : Jtag cable 'Xilinx VPK180 FT4232H 382249155073A' is selected.
+00:32:03 INFO  : 'jtag frequency' command is executed.
+00:32:03 INFO  : Context for 'APU' is selected.
+00:32:03 INFO  : Hardware design and registers information is loaded from 'C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/export/control_wrapper/hw/control_wrapper.xsa'.
+00:32:03 INFO  : 'configparams force-mem-access 1' command is executed.
+00:32:03 INFO  : Context for 'Versal' is selected.
+00:32:03 INFO  : System reset is completed.
+00:32:07 INFO  : 'after 3000' command is executed.
+00:32:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx VPK180 FT4232H 382249155073A" && name=="PMC" && jtag_device_ctx=="jsn-VPK180 FT4232H-382249155073A-14d14093-0"}' command is executed.
+00:32:11 INFO  : Device configured successfully with "C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/hello_mrmac/_ide/bootimage/resources/control_wrapper.pdi"
+00:32:12 INFO  : Context for processor 'versal_cips_0_pspmc_0_psv_cortexa72_0' is selected.
+00:32:13 INFO  : Processor reset is completed for 'versal_cips_0_pspmc_0_psv_cortexa72_0'.
+00:32:15 INFO  : The application 'C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/hello_mrmac/Debug/hello_mrmac.elf' is downloaded to processor 'versal_cips_0_pspmc_0_psv_cortexa72_0'.
+00:32:15 INFO  : 'configparams force-mem-access 0' command is executed.
+00:32:15 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/export/control_wrapper/hw/control_wrapper.xsa -mem-ranges [list {0x80000000 0x9fffffff} {0xa4000000 0xafffffff} {0xb0000000 0xbfffffff} {0x20000000000 0x3FFFFFFFFFF}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"Versal*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx VPK180 FT4232H 382249155073A" && name=="PMC" && jtag_device_ctx=="jsn-VPK180 FT4232H-382249155073A-14d14093-0"}
+device program C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/hello_mrmac/_ide/bootimage/resources/control_wrapper.pdi
+targets -set -nocase -filter {name =~ "*A72*#0"}
+rst -processor
+dow C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/hello_mrmac/Debug/hello_mrmac.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+00:32:15 INFO  : Context for processor 'versal_cips_0_pspmc_0_psv_cortexa72_0' is selected.
+00:32:16 INFO  : 'con' command is executed.
+00:32:16 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A72*#0"}
+con
+----------------End of Script----------------
+
+00:32:16 INFO  : Launch script is exported to file 'C:\Users\yiann\vivado23\testbench2\mrmac_hdl_384bv2\software\hello_mrmac_system\_ide\scripts\systemdebugger_hello_mrmac_system_standalone.tcl'
+00:33:48 INFO  : Checking for BSP changes to sync application flags for project 'hello_mrmac'...
+00:34:17 INFO  : Checking for BSP changes to sync application flags for project 'hello_mrmac'...
+00:34:25 INFO  : Disconnected from the channel tcfchan#8.
+00:34:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:34:27 INFO  : Jtag cable 'Xilinx VPK180 FT4232H 382249155073A' is selected.
+00:34:27 INFO  : 'jtag frequency' command is executed.
+00:34:27 INFO  : Context for 'APU' is selected.
+00:34:27 INFO  : Hardware design and registers information is loaded from 'C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/export/control_wrapper/hw/control_wrapper.xsa'.
+00:34:27 INFO  : 'configparams force-mem-access 1' command is executed.
+00:34:28 INFO  : Context for 'Versal' is selected.
+00:34:28 INFO  : System reset is completed.
+00:34:31 INFO  : 'after 3000' command is executed.
+00:34:32 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx VPK180 FT4232H 382249155073A" && name=="PMC" && jtag_device_ctx=="jsn-VPK180 FT4232H-382249155073A-14d14093-0"}' command is executed.
+00:34:36 INFO  : Device configured successfully with "C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/hello_mrmac/_ide/bootimage/resources/control_wrapper.pdi"
+00:34:36 INFO  : Context for processor 'versal_cips_0_pspmc_0_psv_cortexa72_0' is selected.
+00:34:37 INFO  : Processor reset is completed for 'versal_cips_0_pspmc_0_psv_cortexa72_0'.
+00:34:40 INFO  : The application 'C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/hello_mrmac/Debug/hello_mrmac.elf' is downloaded to processor 'versal_cips_0_pspmc_0_psv_cortexa72_0'.
+00:34:40 INFO  : 'configparams force-mem-access 0' command is executed.
+00:34:40 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/export/control_wrapper/hw/control_wrapper.xsa -mem-ranges [list {0x80000000 0x9fffffff} {0xa4000000 0xafffffff} {0xb0000000 0xbfffffff} {0x20000000000 0x3FFFFFFFFFF}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"Versal*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx VPK180 FT4232H 382249155073A" && name=="PMC" && jtag_device_ctx=="jsn-VPK180 FT4232H-382249155073A-14d14093-0"}
+device program C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/hello_mrmac/_ide/bootimage/resources/control_wrapper.pdi
+targets -set -nocase -filter {name =~ "*A72*#0"}
+rst -processor
+dow C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/hello_mrmac/Debug/hello_mrmac.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+00:34:40 INFO  : Context for processor 'versal_cips_0_pspmc_0_psv_cortexa72_0' is selected.
+00:34:40 INFO  : 'con' command is executed.
+00:34:40 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A72*#0"}
+con
+----------------End of Script----------------
+
+00:34:40 INFO  : Launch script is exported to file 'C:\Users\yiann\vivado23\testbench2\mrmac_hdl_384bv2\software\hello_mrmac_system\_ide\scripts\systemdebugger_hello_mrmac_system_standalone.tcl'
+00:34:48 INFO  : Disconnected from the channel tcfchan#9.
+00:34:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:34:49 INFO  : Jtag cable 'Xilinx VPK180 FT4232H 382249155073A' is selected.
+00:34:49 INFO  : 'jtag frequency' command is executed.
+00:34:49 INFO  : Context for 'APU' is selected.
+00:34:50 INFO  : Hardware design and registers information is loaded from 'C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/export/control_wrapper/hw/control_wrapper.xsa'.
+00:34:50 INFO  : 'configparams force-mem-access 1' command is executed.
+00:34:50 INFO  : Context for 'Versal' is selected.
+00:34:50 INFO  : System reset is completed.
+00:34:54 INFO  : 'after 3000' command is executed.
+00:34:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx VPK180 FT4232H 382249155073A" && name=="PMC" && jtag_device_ctx=="jsn-VPK180 FT4232H-382249155073A-14d14093-0"}' command is executed.
+00:34:59 INFO  : Device configured successfully with "C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/hello_mrmac/_ide/bootimage/resources/control_wrapper.pdi"
+00:34:59 INFO  : Context for processor 'versal_cips_0_pspmc_0_psv_cortexa72_0' is selected.
+00:35:00 INFO  : Processor reset is completed for 'versal_cips_0_pspmc_0_psv_cortexa72_0'.
+00:35:02 INFO  : The application 'C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/hello_mrmac/Debug/hello_mrmac.elf' is downloaded to processor 'versal_cips_0_pspmc_0_psv_cortexa72_0'.
+00:35:02 INFO  : 'configparams force-mem-access 0' command is executed.
+00:35:02 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/export/control_wrapper/hw/control_wrapper.xsa -mem-ranges [list {0x80000000 0x9fffffff} {0xa4000000 0xafffffff} {0xb0000000 0xbfffffff} {0x20000000000 0x3FFFFFFFFFF}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"Versal*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx VPK180 FT4232H 382249155073A" && name=="PMC" && jtag_device_ctx=="jsn-VPK180 FT4232H-382249155073A-14d14093-0"}
+device program C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/hello_mrmac/_ide/bootimage/resources/control_wrapper.pdi
+targets -set -nocase -filter {name =~ "*A72*#0"}
+rst -processor
+dow C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/hello_mrmac/Debug/hello_mrmac.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+00:35:02 INFO  : Context for processor 'versal_cips_0_pspmc_0_psv_cortexa72_0' is selected.
+00:35:02 INFO  : 'con' command is executed.
+00:35:02 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A72*#0"}
+con
+----------------End of Script----------------
+
+00:35:02 INFO  : Launch script is exported to file 'C:\Users\yiann\vivado23\testbench2\mrmac_hdl_384bv2\software\hello_mrmac_system\_ide\scripts\systemdebugger_hello_mrmac_system_standalone.tcl'
+00:36:19 INFO  : Checking for BSP changes to sync application flags for project 'hello_mrmac'...
+00:36:29 INFO  : Disconnected from the channel tcfchan#10.
+00:36:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:36:30 INFO  : Jtag cable 'Xilinx VPK180 FT4232H 382249155073A' is selected.
+00:36:30 INFO  : 'jtag frequency' command is executed.
+00:36:30 INFO  : Context for 'APU' is selected.
+00:36:30 INFO  : Hardware design and registers information is loaded from 'C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/export/control_wrapper/hw/control_wrapper.xsa'.
+00:36:30 INFO  : 'configparams force-mem-access 1' command is executed.
+00:36:30 INFO  : Context for 'Versal' is selected.
+00:36:31 INFO  : System reset is completed.
+00:36:34 INFO  : 'after 3000' command is executed.
+00:36:34 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx VPK180 FT4232H 382249155073A" && name=="PMC" && jtag_device_ctx=="jsn-VPK180 FT4232H-382249155073A-14d14093-0"}' command is executed.
+00:36:39 INFO  : Device configured successfully with "C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/hello_mrmac/_ide/bootimage/resources/control_wrapper.pdi"
+00:36:39 INFO  : Context for processor 'versal_cips_0_pspmc_0_psv_cortexa72_0' is selected.
+00:36:40 INFO  : Processor reset is completed for 'versal_cips_0_pspmc_0_psv_cortexa72_0'.
+00:36:42 INFO  : The application 'C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/hello_mrmac/Debug/hello_mrmac.elf' is downloaded to processor 'versal_cips_0_pspmc_0_psv_cortexa72_0'.
+00:36:42 INFO  : 'configparams force-mem-access 0' command is executed.
+00:36:42 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/export/control_wrapper/hw/control_wrapper.xsa -mem-ranges [list {0x80000000 0x9fffffff} {0xa4000000 0xafffffff} {0xb0000000 0xbfffffff} {0x20000000000 0x3FFFFFFFFFF}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"Versal*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx VPK180 FT4232H 382249155073A" && name=="PMC" && jtag_device_ctx=="jsn-VPK180 FT4232H-382249155073A-14d14093-0"}
+device program C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/hello_mrmac/_ide/bootimage/resources/control_wrapper.pdi
+targets -set -nocase -filter {name =~ "*A72*#0"}
+rst -processor
+dow C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/hello_mrmac/Debug/hello_mrmac.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+00:36:42 INFO  : Context for processor 'versal_cips_0_pspmc_0_psv_cortexa72_0' is selected.
+00:36:43 INFO  : 'con' command is executed.
+00:36:43 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A72*#0"}
+con
+----------------End of Script----------------
+
+00:36:43 INFO  : Launch script is exported to file 'C:\Users\yiann\vivado23\testbench2\mrmac_hdl_384bv2\software\hello_mrmac_system\_ide\scripts\systemdebugger_hello_mrmac_system_standalone.tcl'
+20:33:54 INFO  : Disconnected from the channel tcfchan#11.
+13:16:39 DEBUG : Logs will be stored at 'C:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/IDE.log'.
+13:16:40 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\yiann\vivado23\testbench2\mrmac_hdl_384bv2\software\temp_xsdb_launch_script.tcl
+13:16:44 INFO  : Registering command handlers for Vitis TCF services
+13:16:46 INFO  : XSCT server has started successfully.
+13:16:46 INFO  : Successfully done setting XSCT server connection channel  
+13:16:46 INFO  : plnx-install-location is set to ''
+13:16:47 INFO  : Platform repository initialization has completed.
+13:16:51 INFO  : Successfully done setting workspace for the tool. 
+13:16:51 INFO  : Successfully done query RDI_DATADIR 
+13:16:51 INFO  : Restoring global repository preferences: 
+		 C:\Users\yiann\vivado23\nexys_video\diligent_ips\vivado-library-master
+13:35:49 INFO  : Checking for BSP changes to sync application flags for project 'hello_mrmac'...
+13:38:39 INFO  : Checking for BSP changes to sync application flags for project 'hello_mrmac'...
+13:41:40 INFO  : Checking for BSP changes to sync application flags for project 'hello_mrmac'...
+13:42:32 INFO  : Checking for BSP changes to sync application flags for project 'mrmac_api_example'...
+13:43:10 INFO  : Checking for BSP changes to sync application flags for project 'mrmac_api_example'...
+13:43:22 INFO  : Checking for BSP changes to sync application flags for project 'mrmac_api_example'...
+13:43:31 INFO  : Checking for BSP changes to sync application flags for project 'mrmac_api_example'...
+13:43:48 INFO  : Checking for BSP changes to sync application flags for project 'mrmac_api_example'...
+13:43:58 INFO  : Checking for BSP changes to sync application flags for project 'mrmac_api_example'...
+13:44:11 INFO  : Checking for BSP changes to sync application flags for project 'mrmac_api_example'...
+13:44:27 INFO  : Checking for BSP changes to sync application flags for project 'mrmac_api_example'...
+13:44:41 INFO  : Checking for BSP changes to sync application flags for project 'mrmac_api_example'...
+13:44:59 INFO  : Checking for BSP changes to sync application flags for project 'mrmac_api_example'...
+13:45:14 INFO  : Checking for BSP changes to sync application flags for project 'mrmac_api_example'...
+13:45:30 INFO  : Checking for BSP changes to sync application flags for project 'mrmac_api_example'...
+13:45:40 INFO  : Checking for BSP changes to sync application flags for project 'mrmac_api_example'...
+13:45:55 INFO  : Checking for BSP changes to sync application flags for project 'mrmac_api_example'...
+13:46:06 INFO  : Checking for BSP changes to sync application flags for project 'mrmac_api_example'...
+13:46:19 INFO  : Checking for BSP changes to sync application flags for project 'mrmac_api_example'...
+13:46:35 INFO  : Checking for BSP changes to sync application flags for project 'mrmac_api_example'...
+13:47:09 INFO  : Checking for BSP changes to sync application flags for project 'mrmac_api_example'...
+13:48:12 INFO  : Checking for BSP changes to sync application flags for project 'mrmac_api_example'...
+13:48:26 INFO  : Checking for BSP changes to sync application flags for project 'mrmac_api_example'...
+13:48:36 INFO  : Checking for BSP changes to sync application flags for project 'mrmac_api_example'...
+13:48:43 INFO  : Checking for BSP changes to sync application flags for project 'mrmac_api_example'...
+13:48:51 INFO  : Checking for BSP changes to sync application flags for project 'mrmac_api_example'...
+13:49:00 INFO  : Checking for BSP changes to sync application flags for project 'mrmac_api_example'...
+13:49:05 INFO  : Checking for BSP changes to sync application flags for project 'mrmac_api_example'...
+13:49:33 INFO  : Checking for BSP changes to sync application flags for project 'mrmac_api_example'...
+13:49:42 INFO  : Checking for BSP changes to sync application flags for project 'mrmac_api_example'...
+13:49:51 INFO  : Checking for BSP changes to sync application flags for project 'mrmac_api_example'...
+13:50:03 INFO  : Checking for BSP changes to sync application flags for project 'mrmac_api_example'...
+13:52:02 INFO  : Checking for BSP changes to sync application flags for project 'mrmac_api_example'...
+13:52:21 INFO  : Checking for BSP changes to sync application flags for project 'mrmac_api_example'...
+13:52:52 INFO  : Checking for BSP changes to sync application flags for project 'mrmac_api_example'...
+13:53:07 INFO  : Checking for BSP changes to sync application flags for project 'mrmac_api_example'...
+13:53:16 INFO  : Checking for BSP changes to sync application flags for project 'mrmac_api_example'...
+13:53:22 INFO  : Checking for BSP changes to sync application flags for project 'mrmac_api_example'...

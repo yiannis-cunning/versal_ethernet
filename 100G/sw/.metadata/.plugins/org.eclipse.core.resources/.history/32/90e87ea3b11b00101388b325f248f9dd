@@ -1,0 +1,12 @@
+
+
+
+int init_dma();
+
+void init_mrmac();
+
+
+void start_mrmac_stats();	*(u32 *) (MRMAC_0_TICK_REG_0) = 0x00000001;
+}
+
+void end_mrmac_stats(){

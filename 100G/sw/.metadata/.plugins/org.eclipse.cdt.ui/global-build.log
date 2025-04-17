@@ -1,0 +1,27 @@
+Nothing to build in platform 'control_wrapper'
+
+13:53:22 **** Incremental Build of configuration Debug for project mrmac_api_example ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a72 -IC:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/export/control_wrapper/sw/control_wrapper/standalone_psv_cortexa72_0/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:49:9: warning: unused variable 'nrxbytes' [-Wunused-variable]
+   49 |     int nrxbytes = get_packet(&srcaddr, &destaddr, buffer_rx);
+      |         ^~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: mrmac_api_example.elf'
+'Invoking: ARM v8 gcc linker'
+aarch64-none-elf-gcc -mcpu=cortex-a72 -Wl,-T -Wl,../src/lscript.ld -LC:/Users/yiann/vivado23/testbench2/mrmac_hdl_384bv2/software/control_wrapper/export/control_wrapper/sw/control_wrapper/standalone_psv_cortexa72_0/bsplib/lib -o "mrmac_api_example.elf"  ./src/helloworld.o ./src/mrmac_api.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mrmac_api_example.elf'
+' '
+'Invoking: ARM v8 Print Size'
+aarch64-none-elf-size mrmac_api_example.elf  |tee "mrmac_api_example.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 176821	   4424	  24715	 205960	  32488	mrmac_api_example.elf
+'Finished building: mrmac_api_example.elf.size'
+' '
+13:53:23 **** Incremental Build of configuration Debug for project mrmac_api_example_system ****
+make all 
+Generating BOOT.BIN in system project is not supported for versal devices. Use the bootgen utility to create a bootable image.
